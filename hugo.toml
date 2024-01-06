@@ -1,0 +1,4 @@
+baseURL = 'https://liyanasahir.in/'
+languageCode = 'en-us'
+title = 'Liyana Sahir | Blog'
+theme = "PaperMod"
