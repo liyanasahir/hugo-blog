@@ -1,4 +1,51 @@
 baseURL = 'https://www.liyanasahir.in/'
 languageCode = 'en-us'
-title = 'Liyana Sahir | Blog'
+title = 'Blog | Liyana Sahir'
+paginate = 20
 theme = "PaperMod"
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+
+[minify]
+  disableXML =  true
+  minifyOutput = true
+
+[params]
+  env = "production"
+  title = "Liyana"
+  description = "Blog | Liyana Sahir"
+  images = ["/media/01.jpg"]
+  DateFormat = "January 2, 2006"
+  defaultTheme = "light"
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = false
+  ShowWordCount = true
+  UseHugoToc = true
+  disableSpecial1stPost = false
+  disableScrollToTop = false
+  comments = false
+  hidemeta = false
+  hideSummary = false
+  showtoc = false
+  tocopen = false
+
+[params.assets]
+  favicon = "/media/logo.png"
+
+[params.homeInfoParams]
+  title = "Hi there 👋🏼"
+  Content = "I'm Liyana, and this blog is a digital garden. Everything is an experiment, and some are more thought out than others. Dip right in, maybe with a cup of chai for company?"
+
+[[socialIcons]]
+  name = "linkedin"
+  url = "linkedin.com/in/liyanasahir"
+
+[[socialIcons]]
+  name = "instagram"
+  url = "instagram.com/liyanasahir"

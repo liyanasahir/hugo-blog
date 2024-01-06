@@ -1,16 +1,8 @@
----
-title: "Guess who just became an engineer? (With 1.5 million others)"
-date: "2020-10-01T22:12:03.284Z"
-template: "post"
-draft: false
-slug: "on-graduating"
-category: "Personal"
-tags:
-  - "Education"
-  - "College Life"
-description: "Some thoughts on graduating in the middle of a pandemic (and a bit about the engineering college culture in Kerala)."
-socialImage: "/media/educated.jpg"
----
++++
+title = "Guess who just became an engineer? (With 1.5 million others)"
+date = "2020-10-01T22:12:03.284Z"
+draft = false
++++
 
 Checking my phone late evening last week, I saw that our final semester results had been published. The notification was not accompanied by the usual nervousness I would have had while checking results -  this time, I knew more or less what was to be expected.
 
