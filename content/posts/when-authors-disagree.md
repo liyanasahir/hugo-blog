@@ -12,7 +12,6 @@ description: "I am crediting Game Theory this semester, and found this interesti
 socialImage: "/media/author1.jpg"
 ---
 
-I am crediting Game Theory this semester, and found this interesting argument between two co-authors while browsing reference books in the library. 
 
 ![](/media/author1.jpg)
 *Underline not mine.*

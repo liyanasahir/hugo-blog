@@ -40,7 +40,7 @@ buildExpired = false
 
 [params.homeInfoParams]
   title = "Hi there 👋🏼"
-  Content = "I'm Liyana, and this blog is a digital garden. Everything is an experiment, and some are more thought out than others. Dip right in, maybe with a cup of chai for company?"
+  Content = "I'm Liyana, and this blog is a digital garden. Everything is an experiment - some just more thought out than others. Dip right in, maybe with a cup of chai for company?"
 
 [[socialIcons]]
   name = "linkedin"
