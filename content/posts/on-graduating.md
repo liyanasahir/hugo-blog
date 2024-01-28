@@ -18,7 +18,7 @@ At the time, I had this idea in my mind for some reason that I was stepping into
 
 The first half was harrowing and tiring to get through - you get to read how the family jumped from one trauma-inducing situation to another, both physical and mental, with seemingly no lessons learned in between. Regardless of the authenticity of the nitty-gritty details of her past, the core of her story still holds weight: in a poetic narrative style, she paints an image of not just how it was like to have a bizarre and traumatic childhood, but also sheds light on the long-lasting effects of gaslighting, emotional and physical abuse, as well as how it shapes a person’s identity for the rest of their life.
 
-| ![]("/media/educated.jpg") | 
+| ![](/media/educated.jpg) | 
 |:--:| 
 | *Educated by Tara Westover* |
 
