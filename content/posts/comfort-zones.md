@@ -9,7 +9,7 @@ tags:
   - "academic"
   - "iisc"
   - "gate"
-description: "Something I wrote after my first semester at IISc - sent out privately as a newsletter initially. "
+description: "This was something I wrote after my first semester at IISc, sent out privately as a newsletter initially, because it came from a very vulnerable place. Enough time - and the feelings mentioned - have passed that it feels finally ready for the public eye."
 socialImage: "/media/author1.jpg"
 ---
 
