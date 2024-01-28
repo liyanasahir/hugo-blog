@@ -10,7 +10,7 @@ date:	2021-03-31 13:20:00
 tags: PERSONAL
 --- -->
 
-Did a Q&A with Careers360 during the weekend. Adding the unedited version here. If you're here looking to learn more about my GATE prep, this post will cover most of it. 
+Did a Q&A with Careers360 during the weekend. Adding the unedited version here. If you're here looking to learn more about my GATE prep, this post will cover most of it. Questions not covered here might be covered in [this](https://www.youtube.com/watch?v=a39q6Dx40nY&t=1038s&ab_channel=SHEGCEK) video or [this](https://www.youtube.com/watch?v=KdULAmfCPio&ab_channel=GATEAppliedCourse). If you have anything else - feel free to get in touch!
 
 ***
 
