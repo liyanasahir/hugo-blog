@@ -13,11 +13,12 @@ description: "This was something I wrote after my first semester at IISc, sent o
 socialImage: "/media/author1.jpg"
 ---
 
+***
 
 ![](/media/iisc1.jpeg)
 
 
-Not a lot of people know this, but when I decided to rewrite GATE, I did it with mostly just IISc in mind. However, I tried to keep my expectations very realistic (read: low), to the extent that I didn’t even look up pictures of the campus until results came out, wanting to not have an image to go along with my disappointment if things were to go south. I spent five months telling myself to be ready to embrace the plan Bs and Cs instead, while doing whatever I could to ensure I wouldn't have to resort to them.
+Not a lot of people know this, but when I decided to write GATE, I did it with mostly just IISc in mind. However, I tried to keep my expectations very realistic (read: low), to the extent that I didn’t even look up pictures of the campus until results came out, wanting to not have an image to go along with my disappointment if things were to go south. I spent five months telling myself to be ready to embrace the plan Bs and Cs instead, while doing whatever I could to ensure I wouldn't have to resort to them.
 
 And so, with [everything that happened after](https://www.liyanasahir.in/posts/on-gate/), I felt strangely uprooted for a while. I constantly floated between telling myself on one hand that it's not a big deal, and on the other, thinking: *this sounds too good, when is the bad news going to drop?*
 

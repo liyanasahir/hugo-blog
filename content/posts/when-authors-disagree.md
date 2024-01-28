@@ -13,8 +13,8 @@ socialImage: "/media/author1.jpg"
 ---
 
 
-![](/media/author1.jpg)
-<p style="text-align:center">*Underline not mine.*</p>
+![Underlined](/media/author1.jpg "Testing")
+*Underline not mine.*
 
 ![](/media/author2.jpg)
 
