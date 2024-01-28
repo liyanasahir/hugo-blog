@@ -14,7 +14,7 @@ Did a Q&A with Careers360 during the weekend. Adding the unedited version here. 
 
 ***
 
-**Careers360: Congratulations on becoming a GATE 2021 topper. How do you feel when you come to know that you are the topper of GATE 2021?**
+**Careers360: Congratulations on becoming a GATE 2021 topper. How do you feel when you come to know about the results?**
 
 Thank you! And to answer your question - it felt unreal. I am still getting used to the idea of it.
 
