@@ -43,9 +43,13 @@ buildExpired = false
   Content = "I'm Liyana, and this blog is a digital garden. Everything is an experiment - some just more thought out than others. Dip right in, maybe with a cup of chai for company?"
 
 [[params.socialIcons]]
-  name = "linkedin"
-  url = "linkedin.com/in/liyanasahir"
+  name = "twitter"
+  url = "twitter.com/liyanasahir"
 
 [[params.socialIcons]]
   name = "instagram"
   url = "instagram.com/liyanasahir"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "linkedin.com/in/liyanasahir"

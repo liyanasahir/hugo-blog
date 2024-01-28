@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Blog | Liyana Sahir</title>
+    <link>https://www.liyanasahir.in/posts/</link>
+    <description>Recent content in Posts on Blog | Liyana Sahir</description>
+    <image>
+      <title>Blog | Liyana Sahir</title>
+      <url>https://www.liyanasahir.in/media/01.jpg</url>
+      <link>https://www.liyanasahir.in/media/01.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 17 Jan 2022 12:40:32 +0000</lastBuildDate>
+    <atom:link href="https://www.liyanasahir.in/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>When authors disagree..</title>
+      <link>https://www.liyanasahir.in/posts/heorshe/</link>
+      <pubDate>Mon, 17 Jan 2022 12:40:32 +0000</pubDate>
+      <guid>https://www.liyanasahir.in/posts/heorshe/</guid>
+      <description>I am crediting Game Theory this semester, and found this interesting argument between two co-authors while browsing reference books in the library.</description>
+    </item>
+    <item>
+      <title>On GATE</title>
+      <link>https://www.liyanasahir.in/posts/on-gate/</link>
+      <pubDate>Wed, 31 Mar 2021 21:50:04 +0530</pubDate>
+      <guid>https://www.liyanasahir.in/posts/on-gate/</guid>
+      <description>Did a Q&amp;amp;A with Careers360 during the weekend. Adding the unedited version here. If you&amp;rsquo;re here looking to learn more about my GATE prep, this post will cover most of it.
+Careers360: Congratulations on becoming a GATE 2021 topper. How do you feel when you come to know that you are the topper of GATE 2021?
+Thank you! And to answer your question - it felt unreal. I am still getting used to the idea of it.</description>
+    </item>
+    <item>
+      <title>Guess who just became an engineer? (With 1.5 million others)</title>
+      <link>https://www.liyanasahir.in/posts/on-graduating/</link>
+      <pubDate>Thu, 01 Oct 2020 22:12:03 +0000</pubDate>
+      <guid>https://www.liyanasahir.in/posts/on-graduating/</guid>
+      <description>Checking my phone late evening last week, I saw that our final semester results had been published. The notification was not accompanied by the usual nervousness I would have had while checking results - this time, I knew more or less what was to be expected.
+Our last exams were bizarre in and of itself, to begin with. Would any sane person have imagined writing their engineering papers completely within the comfort of home, with the only expectation that the answers be sent back neatly scanned in a span of 2 hours and 45 minutes?</description>
+    </item>
+    <item>
+      <title>I deleted my linkedin account.</title>
+      <link>https://www.liyanasahir.in/posts/deleted-linkedin/</link>
+      <pubDate>Mon, 17 Aug 2020 22:40:32 +0000</pubDate>
+      <guid>https://www.liyanasahir.in/posts/deleted-linkedin/</guid>
+      <description>I recently logged in to my linkedin account after a long period of neglect. It was then that I took a good hard look at what I looked like online.</description>
+    </item>
+    <item>
+      <title>Hacking the Night Away</title>
+      <link>https://www.liyanasahir.in/posts/hack-the-night/</link>
+      <pubDate>Sat, 09 Mar 2019 23:46:37 +0000</pubDate>
+      <guid>https://www.liyanasahir.in/posts/hack-the-night/</guid>
+      <description>A month ago, we organized Hack the Night — a 24-hour hackathon, exclusively for women. This is the story of all that went on behind the scenes.</description>
+    </item>
+  </channel>
+</rss>

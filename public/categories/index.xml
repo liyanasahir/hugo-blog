@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Blog | Liyana Sahir</title>
+    <link>https://www.liyanasahir.in/categories/</link>
+    <description>Recent content in Categories on Blog | Liyana Sahir</description>
+    <image>
+      <title>Blog | Liyana Sahir</title>
+      <url>https://www.liyanasahir.in/media/01.jpg</url>
+      <link>https://www.liyanasahir.in/media/01.jpg</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="https://www.liyanasahir.in/categories/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
