@@ -15,10 +15,7 @@ socialImage: "/media/author1.jpg"
 
 {{< figure align=center src="/media/author1.jpg" caption="Underline not mine.">}}
 
-![](/media/author2.jpg)
-
-
-The book is 'A course in game theory' by Martin J. Osborne and Ariel Rubinstein. 
+{{< figure align=center src="/media/author2.jpg" caption="The book is 'A course in game theory' by Martin J. Osborne and Ariel Rubinstein.">}}
 
 I'm fascinated by the conviction expressed by the author specially in these lines (brackets added by me for additional context): "If such usage diverts some readers' attentions from the subjects discussed in this book and leads them to contemplate sexism in the use of language, which is surely an issue at least as significant as the minutae of sequential equilibrium (a topic within game theory), then an increase in social welfare (an objective within some game theoretic problems) will have been achieved." -- Reader, I could feel a mic drop.
 
