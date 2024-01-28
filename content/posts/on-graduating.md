@@ -18,10 +18,16 @@ At the time, I had this idea in my mind for some reason that I was stepping into
 
 The first half was harrowing and tiring to get through - you get to read how the family jumped from one trauma inducing situation to another, both physical and mental, with seemingly no lessons learnt in between. Regardless of the authenticity of the nitty gritty details of her past, the core of her story still holds weight: in a poetic narrative style, she paints an image of not just how it was like to have a bizarre and traumatic childhood, but also shines light on the long lasting effects of gaslighting, emotional and physical abuse as well as how it shapes a person’s identity for the rest of their life.
 
-{{<figure class="float-right" style="width: 240px">
+
+| ![space-1.jpg]("/media/educated.jpg") | 
+|:--:| 
+| *Educated by Tara Westover* |
+
+
+<!-- {{<figure class="float-right" style="width: 240px">
 	<img src="/media/educated.jpg" alt="book cover">
 	<figcaption>Educated by Tara Westover</figcaption>
-</figure>}}x
+</figure>}}x -->
 
 However, the sections that plagued me were from the second half, as she discovered what it meant for her to be educated - learning, unlearning and relearning things in different contexts and phases of her life. "I read through the afternoon and into the evening, developing for the first time a vocabulary for the uneasiness I had felt since childhood", she writes in one chapter, upon discovering the works of first wave women’s rights advocates like Mary Wollstonecraft for the first time. 
 
