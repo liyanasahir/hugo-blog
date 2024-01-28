@@ -18,15 +18,7 @@ At the time, I had this idea in my mind for some reason that I was stepping into
 
 The first half was harrowing and tiring to get through - you get to read how the family jumped from one trauma-inducing situation to another, both physical and mental, with seemingly no lessons learned in between. Regardless of the authenticity of the nitty-gritty details of her past, the core of her story still holds weight: in a poetic narrative style, she paints an image of not just how it was like to have a bizarre and traumatic childhood, but also sheds light on the long-lasting effects of gaslighting, emotional and physical abuse, as well as how it shapes a person’s identity for the rest of their life.
 
-| ![](/media/educated.jpg) | 
-|:--:| 
-| *Educated by Tara Westover* |
-
-
-<figure class="float-right" style="width: 240px">
-	<img src="/media/educated.jpg" alt="book cover">
-	<figcaption>Educated by Tara Westover</figcaption>
-</figure>
+{{< figure align=center src="/media/educated.jpg" caption="Educated by Tara Westover">}}
 
 However, the sections that plagued me were from the second half, as she discovered what it meant for her to be educated - learning, unlearning and relearning things in different contexts and phases of her life. "I read through the afternoon and into the evening, developing for the first time a vocabulary for the uneasiness I had felt since childhood", she writes in one chapter, upon discovering the works of first wave women’s rights advocates like Mary Wollstonecraft for the first time. 
 
@@ -58,6 +50,9 @@ In our first year, we all were taught about the basics of the other branches, al
 
 Engineering mathematics and I had a complicated relationship. I was good at solving the numerical problems, but while math used to be a favorite subject before CS came along, it no longer felt intuitive like it used to. I didn’t expect mathematics to be riddled with equations that offered no context. I could still solve all the questions asked in the question paper, but I had no clue as to what I was actually doing, or where I would have to apply this knowledge in real life - or even if I would know how to apply them in a practical context should the need arise<sup>1</sup>. 
 
+{{< figure align=center src="/media/os.jpg" caption="Operating System Concepts by Silberschatz aka the "dinosaur book". Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)">}}
+
+
 <figure class="float-left" style="width: 240px">
 	<img src="/media/os.jpg" alt="book cover">
 	<figcaption>Operating System Concepts by Silberschatz aka the "dinosaur book". Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)*</figcaption>
@@ -75,14 +70,7 @@ There were periods of intense love but also periods where I couldn’t bring mys
 
 A few months ago, I came across an article written by Dr. RVG Menon for the college magazine. One particular part stuck with me: 
 
-<figure>
-	<blockquote>
-		<p>I [..] cannot accept wholeheartedly, the frequent demand from the industry to make engineering education more employment oriented. Of course the industry would always like to get readymade graduates who can step into their jobs with the minimum of training or preparation. But engineering is such a vast and varied field that no college can readily prepare them for any job. They may go into teaching and/or research, design, production or management in a hundred different fields. How can the college prepare the students for all these jobs? All that we can and should do is to prepare them for learning themselves on the job.</p>
-		<footer>
-			<cite>—Dr. RVG Menon</cite>
-		</footer>
-	</blockquote>
-</figure>
+> I [..] cannot accept wholeheartedly, the frequent demand from the industry to make engineering education more employment oriented. Of course the industry would always like to get readymade graduates who can step into their jobs with the minimum of training or preparation. But engineering is such a vast and varied field that no college can readily prepare them for any job. They may go into teaching and/or research, design, production or management in a hundred different fields. How can the college prepare the students for all these jobs? All that we can and should do is to prepare them for learning themselves on the job.</> — Dr. RVG Menon
 
 He goes on to talk about how things like the lack of communication skills in engineering students that we cry about is a result of a faulty primary education system<sup>2</sup>, and not something that an engineering college can put a band-aid over. That our engineering colleges do not make their students industry ready is a common complaint everyone hears at some stage. I could see where he was coming from. 
 
