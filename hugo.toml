@@ -53,3 +53,6 @@ buildExpired = false
 [[params.socialIcons]]
   name = "linkedin"
   url = "linkedin.com/in/liyanasahir"
+
+[markup.goldmark.renderer]
+unsafe = true

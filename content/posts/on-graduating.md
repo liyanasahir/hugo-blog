@@ -71,6 +71,7 @@ There were periods of intense love but also periods where I couldn’t bring mys
 A few months ago, I came across an article written by Dr. RVG Menon for the college magazine. One particular part stuck with me: 
 
 > I [..] cannot accept wholeheartedly, the frequent demand from the industry to make engineering education more employment oriented. Of course the industry would always like to get readymade graduates who can step into their jobs with the minimum of training or preparation. But engineering is such a vast and varied field that no college can readily prepare them for any job. They may go into teaching and/or research, design, production or management in a hundred different fields. How can the college prepare the students for all these jobs? All that we can and should do is to prepare them for learning themselves on the job.
+>
 > — Dr. RVG Menon
 
 He goes on to talk about how things like the lack of communication skills in engineering students that we cry about is a result of a faulty primary education system<sup>2</sup>, and not something that an engineering college can put a band-aid over. That our engineering colleges do not make their students industry ready is a common complaint everyone hears at some stage. I could see where he was coming from. 
