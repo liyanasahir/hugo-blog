@@ -50,7 +50,7 @@ In our first year, we all were taught about the basics of the other branches, al
 
 Engineering mathematics and I had a complicated relationship. I was good at solving the numerical problems, but while math used to be a favorite subject before CS came along, it no longer felt intuitive like it used to. I didn’t expect mathematics to be riddled with equations that offered no context. I could still solve all the questions asked in the question paper, but I had no clue as to what I was actually doing, or where I would have to apply this knowledge in real life - or even if I would know how to apply them in a practical context should the need arise<sup>1</sup>. 
 
-{{< figure align=center src="/media/os.jpg" caption="Operating System Concepts by Silberschatz aka the "dinosaur book". Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)">}}
+{{< figure align=center src="/media/os.jpg" caption="Operating System Concepts by Silberschatz aka the 'dinosaur book'. Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)">}}
 
 
 <figure class="float-left" style="width: 240px">
