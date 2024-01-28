@@ -4,30 +4,29 @@ date = "2020-10-01T22:12:03.284Z"
 draft = false
 +++
 
-Checking my phone late evening last week, I saw that our final semester results had been published. The notification was not accompanied by the usual nervousness I would have had while checking results -  this time, I knew more or less what was to be expected.
+Checking my phone late in the evening last week, I noticed that our final semester results had been published. The notification didn't bring the usual nervousness that typically accompanies result-checking; this time, I had a fairly good idea of what to expect.
 
-Our last exams were bizarre in and of itself, to begin with. Would any sane person have imagined writing their engineering papers completely within the comfort of home, with the only expectation that the answers be sent back neatly scanned in a span of 2 hours and 45 minutes? That they would be asked to write a 100 marks paper that would only need a score out of 70 which could then be scaled up, and with no other strings attached? Even with forecasts of normalization based on past SGPA’s, to say that our batch had a blast would be an understatement. (A pandemic would do that for you).
+To begin with, our last exams were bizarre in and of itself. Would any sane person have imagined writing their engineering papers completely within the comfort of home, with the only expectation that the answers be sent back neatly scanned in a span of 2 hours and 45 minutes? That they would be asked to write a 100 marks paper, which would only need a score out of 70 that could then be scaled back up to 100, and with no other strings attached? Even with forecasts of normalization based on past SGPA’s, to say that our batch had a blast would be an understatement. (A pandemic would do that for you).
 
-So when the results were published, they did look a little more picture perfect than usual. But in that moment, it didn’t feel like anything more than the results of yet another semester of engineering. I took a screenshot and sent it to my parents, and left it at that.
+So when the results were published, they did look a little more picture perfect than usual. But in that moment, it didn’t feel like anything more than the results of yet another semester of engineering. I took a screenshot, sent it to my parents, and left it at that.
 
 ***
 
 It was a coincidence that I happened to read Tara Westover's memoir just the week before. 
 
-At the time, I had this idea in my mind for some reason that I was stepping into a motivational book about someone learning how to learn all by herself after receiving no formal education as a child. Educated was about learning by yourself - but about the world at large and about yourself, coming from someone who led an unconventional life of seclusion till adulthood. Tara Westover paints a vivid picture of the sort of childhood she had in her mountain village, brought up by religious fundamentalist parents who didn't believe in modern medicine and who prepared rigorously for the end of the world. 
+At the time, I had this idea in my mind for some reason that I was stepping into a motivational book about someone learning how to learn all by herself after receiving no formal education as a child. Educated was about learning by yourself - but about the world at large and about yourself, coming from someone who led an unconventional life of seclusion until adulthood. Tara Westover paints a vivid picture of the sort of childhood she had in her mountain village, brought up by religious fundamentalist parents who didn't believe in modern medicine and who prepared rigorously for the end of the world. 
 
-The first half was harrowing and tiring to get through - you get to read how the family jumped from one trauma inducing situation to another, both physical and mental, with seemingly no lessons learnt in between. Regardless of the authenticity of the nitty gritty details of her past, the core of her story still holds weight: in a poetic narrative style, she paints an image of not just how it was like to have a bizarre and traumatic childhood, but also shines light on the long lasting effects of gaslighting, emotional and physical abuse as well as how it shapes a person’s identity for the rest of their life.
-
+The first half was harrowing and tiring to get through - you get to read how the family jumped from one trauma-inducing situation to another, both physical and mental, with seemingly no lessons learned in between. Regardless of the authenticity of the nitty-gritty details of her past, the core of her story still holds weight: in a poetic narrative style, she paints an image of not just how it was like to have a bizarre and traumatic childhood, but also sheds light on the long-lasting effects of gaslighting, emotional and physical abuse, as well as how it shapes a person’s identity for the rest of their life.
 
 | ![]("/media/educated.jpg") | 
 |:--:| 
 | *Educated by Tara Westover* |
 
 
-<!-- {{<figure class="float-right" style="width: 240px">
+<figure class="float-right" style="width: 240px">
 	<img src="/media/educated.jpg" alt="book cover">
 	<figcaption>Educated by Tara Westover</figcaption>
-</figure>}}x -->
+</figure>
 
 However, the sections that plagued me were from the second half, as she discovered what it meant for her to be educated - learning, unlearning and relearning things in different contexts and phases of her life. "I read through the afternoon and into the evening, developing for the first time a vocabulary for the uneasiness I had felt since childhood", she writes in one chapter, upon discovering the works of first wave women’s rights advocates like Mary Wollstonecraft for the first time. 
 
