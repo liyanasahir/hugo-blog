@@ -18,9 +18,9 @@ socialImage: "/media/author1.jpg"
 *Main Building*
 
 
-Not a lot of people know this, but when I decided to rewrite GATE, I did it with mostly just IISc in mind. However, I tried to keep my expectations very realistic (read: low), to the extent that I didn’t even look up pictures of the campus until results came out, wanting to not have an image to go along with my disappointment if things were to go south. I spent five months telling myself to be ready to embrace the plan Bs and Cs instead, while doing whatever I could to ensure I wouldn't have to.
+Not a lot of people know this, but when I decided to rewrite GATE, I did it with mostly just IISc in mind. However, I tried to keep my expectations very realistic (read: low), to the extent that I didn’t even look up pictures of the campus until results came out, wanting to not have an image to go along with my disappointment if things were to go south. I spent five months telling myself to be ready to embrace the plan Bs and Cs instead, while doing whatever I could to ensure I wouldn't have to resort to them.
 
-And so, with everything that happened after, I felt strangely uprooted for a while. I constantly floated between telling myself on one hand that it's not a big deal, and on the other, thinking: *this sounds too good, when is the bad news going to drop?*
+And so, with [everything that happened after](https://www.liyanasahir.in/posts/on-gate/), I felt strangely uprooted for a while. I constantly floated between telling myself on one hand that it's not a big deal, and on the other, thinking: *this sounds too good, when is the bad news going to drop?*
 
 ![](/media/iisc2.jpeg)
 
@@ -32,7 +32,7 @@ Despite all the articles I’ve read about imposter syndrome, all the discussion
 
 It’s a vicious thing, your inner voice. It’s not easy to admit this thinking to others either, knowing it comes from a deeply flawed place, and all logical evidence speaks to the contrary. I spoke to a lot of people about this - friends, family, mentors - people who have more faith in me than I have in myself. They remind me that I might truly be an idiot - but just not in the way I think I am. So I nodded along for the most part, knowing how much they truly mean what they say, all while feeling the dread grow stronger on the inside.
 
-My first semester, funnily enough in hindsight, turned out to be all my fears personified. I sat blinking throughout the first lecture in computational methods of optimization, trying to stay awake at 8am, feeling like perhaps the language my professor was speaking was not the same English I knew (little did I know, this feeling would be the first of many to come this semester). We were dumped headfirst into multivariate probability distributions, optimization techniques that required more calculus than I ever remembered learning, and proofs - endless and endless mathematical proofs. Dealing with assignments felt like whack-a-mole: one down, two up, down in time for midterms to pop up, and so the cycle continued - until one day I woke up and it was finals week. 
+My first semester, funnily enough in hindsight, turned out to be all my fears personified. I sat blinking throughout the first lecture in computational methods of optimization, trying to stay awake at 8am, feeling like perhaps the language my professor was speaking was not the same language I knew (little did I know, this feeling would be the first of many to come this semester). We were dumped headfirst into multivariate probability distributions, optimization techniques that required more calculus than I ever remembered learning, and proofs - endless and endless mathematical proofs. Dealing with assignments felt like whack-a-mole: one down, two up, down in time for midterms to pop up, and so the cycle continued - until one day I woke up and it was finals week. 
 
 After I slowly came back up from the post-semester haze in late December, I realized something: by the end, I had learnt to follow the language my professors were speaking. And turns out, as with any language, all that was needed to understand it better was learning a few more words - along with the patience, time, and effort required to learn them, ofcourse. (Apologies for the extended metaphor, but you get where I'm going with this?) 
 
@@ -52,9 +52,6 @@ With the rollercoaster that was last semester, I think I’ve found some mantras
 I’ve held my breath for long enough. Maybe it’s time to release it a bit and just see what happens. So before shit hits the fan with the highly packed second semester, I’m trying to soak in this calm feeling, this moment, for a bit longer.
 
 But until then, I’m all armed with my action plan. 
-
-Until next time, 
-Liyana.
 
 ***
 
