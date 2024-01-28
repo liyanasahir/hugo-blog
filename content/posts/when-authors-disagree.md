@@ -14,7 +14,7 @@ socialImage: "/media/author1.jpg"
 
 
 ![](/media/author1.jpg)
-*Underline not mine.*
+<p style="text-align:center">*Underline not mine.*</p>
 
 ![](/media/author2.jpg)
 
