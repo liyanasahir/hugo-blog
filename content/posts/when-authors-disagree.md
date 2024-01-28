@@ -13,8 +13,7 @@ socialImage: "/media/author1.jpg"
 ---
 
 
-![Underlined](/media/author1.jpg "Testing")
-*Underline not mine.*
+{{< figure src="/media/author1.jpg" title="Underline not mine." >}}
 
 ![](/media/author2.jpg)
 
