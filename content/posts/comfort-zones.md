@@ -21,7 +21,7 @@ Not a lot of people know this, but when I decided to rewrite GATE, I did it with
 
 And so, with [everything that happened after](https://www.liyanasahir.in/posts/on-gate/), I felt strangely uprooted for a while. I constantly floated between telling myself on one hand that it's not a big deal, and on the other, thinking: *this sounds too good, when is the bad news going to drop?*
 
-![](/media/iisc2.jpeg)
+![](/media/iisc2.jpeg "Main Building")
 
 For a while, more than being excited about classes starting, I was terrified. 
 
