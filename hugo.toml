@@ -44,7 +44,7 @@ buildExpired = false
 
 [[params.socialIcons]]
   name = "twitter"
-  url = "twitter.com/liyanasahir"
+  url = "https://twitter.com/liyanasahir"
 
 [[params.socialIcons]]
   name = "instagram"
