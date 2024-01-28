@@ -15,7 +15,6 @@ socialImage: "/media/author1.jpg"
 
 
 ![](/media/iisc1.jpeg)
-*Main Building*
 
 
 Not a lot of people know this, but when I decided to rewrite GATE, I did it with mostly just IISc in mind. However, I tried to keep my expectations very realistic (read: low), to the extent that I didn’t even look up pictures of the campus until results came out, wanting to not have an image to go along with my disappointment if things were to go south. I spent five months telling myself to be ready to embrace the plan Bs and Cs instead, while doing whatever I could to ensure I wouldn't have to resort to them.
