@@ -1,6 +1,6 @@
 ---
 title: "Goodbye to all that"
-date: "2024-01-17T12:40:32.169Z"
+date: "2024-01-27T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "boodbye-iisc"
