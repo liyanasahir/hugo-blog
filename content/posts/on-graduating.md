@@ -1,5 +1,5 @@
 +++
-title = "Guess who just became an engineer? (With 1.5 million others)"
+title = "guess who just became an engineer? (...with 1.5 million others)"
 date = "2020-10-01T22:12:03.284Z"
 draft = false
 +++

@@ -1,8 +1,8 @@
 ---
-title: "Goodbye to all that"
+title: "a goodbye to the bangalore days."
 date: "2024-01-27T12:40:32.169Z"
 template: "post"
-draft: false
+draft: true
 slug: "boodbye-iisc"
 category: "Personal"
 tags:
