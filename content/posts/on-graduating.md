@@ -52,12 +52,6 @@ Engineering mathematics and I had a complicated relationship. I was good at solv
 
 {{< figure align=center src="/media/os.jpg" caption="Operating System Concepts by Silberschatz aka the 'dinosaur book'. Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)">}}
 
-
-<figure class="float-left" style="width: 240px">
-	<img src="/media/os.jpg" alt="book cover">
-	<figcaption>Operating System Concepts by Silberschatz aka the "dinosaur book". Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)*</figcaption>
-</figure>
-
 The core subjects were a curious mixed bag. Some of it I am glad to lock away in the past (microprocessors, I am looking at you), but most of them were delightfully engaging. Operating Systems in particular has a special place in my heart for revealing to the child in me the unknown secrets about this magic box, the ones that compelled me the most - and now that I know, it's hard not to think of all the applications and tabs open on my laptop screen in anything other than in terms of multithreads and context switches (this awareness is also directly proportional to how slow my laptop could get). It's also one of the few subjects I actually bought the textbook for: a small and thick red book with dinosaurs on the cover, with chapters that were compulsively readable.
 
 Between learning about database management and computer architecture, between electives about computer vision and artificial intelligence, life unravelled. 
