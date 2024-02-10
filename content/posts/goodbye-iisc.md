@@ -3,7 +3,7 @@ title: "a goodbye to the bangalore days."
 date: "2024-02-10T11:40:32.169Z"
 template: "post"
 draft: false
-slug: "boodbye-iisc"
+slug: "goodbye-iisc"
 category: "Personal"
 tags:
   - "academic"
