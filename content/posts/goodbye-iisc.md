@@ -37,7 +37,7 @@ This was also my first time staying in a hostel, having a little room of my own 
 
 {{< figure align=center src="/media/bye4.jpeg" caption="On the way to classes, with Sanjay and Chaitanya. Somewhere around third sem. ">}}
 
-{{< figure align=center src="/media/bye5.jpeg" caption="A Sunday night at Corner House. Anticlockwise from bottom: Sriman, Chaitanya, Athira, Aryechi, Anagha, Manikanta, Sachin and Sanjay. Different departments and states, united by DBC (Death By Chocolate, for the uninitiated. I thought it referred to Dosa Butter Coffee when I heard it first, honest mistake given Bangalore's love for dosa places?) ">}}
+{{< figure align=center src="/media/bye5.jpeg" caption="A Sunday night at Corner House. Clockwise from bottom: Sriman, Chaitanya, Athira, Aryechi, Anagha, Manikanta, Sachin and Sanjay. Different departments and states, united by DBC (Death By Chocolate, for the uninitiated. I thought it referred to Dosa Butter Coffee when I heard it first, honest mistake given Bangalore's love for dosa places?) ">}}
 
 
 
