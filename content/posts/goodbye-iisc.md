@@ -9,8 +9,9 @@ tags:
   - "academic"
   - "iisc"
   - "bangalore"
-description: "and to the second edition of campus life. (This is a modified verseion of an email I sent in July 2023 as part of my newsletter project. If you'd like to receive these emails, you can sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9).)"
-socialImage: "/media/bye1.jpeg"
+description: "and to the second edition of campus life. (This is a modified verseion of an email I sent in July 2023 as part of my newsletter project. If you'd like to receive these emails, sign up link is at the end of the post!)"
+images: 
+ - /media/bye1.jpeg
 ---
 
 ***
