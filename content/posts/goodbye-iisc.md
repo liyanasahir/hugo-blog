@@ -1,6 +1,6 @@
 ---
 title: "a goodbye to the bangalore days."
-date: "2024-02-10T12:40:32.169Z"
+date: "2024-02-10T11:40:32.169Z"
 template: "post"
 draft: false
 slug: "boodbye-iisc"
@@ -60,5 +60,8 @@ Liyana
 {{< figure align=center src="/media/bye7.jpeg" caption="Malleshwaram, when the sun sets. ">}}
 
 ***
+
+
+*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out or use this [form](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
 
 I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9).
