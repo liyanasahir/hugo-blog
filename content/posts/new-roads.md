@@ -9,7 +9,8 @@ tags:
   - "gurgaon"
   - "bangalore"
 description: "(This is a modified verseion of an email I sent on Feb 4, 2024, as part of my newsletter project. If you'd like to receive these emails, sign up link is at the end of the post!)"
-socialImage: "/media/bye1.jpeg"
+images: 
+ - /media/bye1.jpeg
 ---
 
 ***
