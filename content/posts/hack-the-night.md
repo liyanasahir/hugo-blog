@@ -1,10 +1,11 @@
 +++
 title = "Hacking the Night Away"
 date = "2019-03-09T23:46:37.121Z"
-description = "A month ago, we organized Hack the Night — a 24-hour hackathon, exclusively for women. This is the story of all that went on behind the scenes."
 +++
 
 *A month ago, we organized Hack the Night — a 24-hour hackathon, exclusively for women. This is the story of all that went on behind the scenes.*
+
+---
 
 I got to know about [Arya](aryamurali.com), [SKG](sijokuruvilla.in) and [Rethink](https://medium.com/u/bb1d9b2aa269) around December 2017. Arya was leading the Opportunity Project at Rethink at the time. When I learnt that a [Women-in-Tech](https://wit.rethinkfoundation.in) initiative was being launched for female engineering students, I immediately applied for the same. The four weeks program culminated in 5 participants receiving GHCI scholarships — and that was how I met Sijo and Arya finally in person at Bangalore.
 
