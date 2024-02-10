@@ -48,11 +48,11 @@ buildExpired = false
 
 [[params.socialIcons]]
   name = "instagram"
-  url = "instagram.com/liyanasahir"
+  url = "https://instagram.com/liyanasahir"
 
 [[params.socialIcons]]
   name = "linkedin"
-  url = "linkedin.com/in/liyanasahir"
+  url = "https://linkedin.com/in/liyanasahir"
 
 [markup.goldmark.renderer]
 unsafe = true
