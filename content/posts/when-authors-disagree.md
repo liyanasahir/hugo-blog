@@ -1,5 +1,5 @@
 ---
-title: "When authors disagree.."
+title: "when authors disagree.."
 date: "2022-01-17T12:40:32.169Z"
 template: "post"
 draft: false
