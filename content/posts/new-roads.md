@@ -17,7 +17,7 @@ images:
 
 I took my scooty out yesterday for the first time since the year began, after letting her slowly gather dust for a month.
 
-The last time I drove was just before we headed to Mussoorie at the end of December. When we left for the bus terminal, I could feel the heavy fog settling in, appearing thicker than usual. The darkness cloaked the murky brownness of the pollution that was a defining characteristic of the Delhi sky. The fog wrapped around everything, floating very dramatically against the yellow glow from the windows of the moving metro trains. It felt like we were already in a hill station. 
+The last time I drove was just before we headed to Mussoorie at the end of December. When we left for the bus terminal, I could feel the heavy fog settling in, appearing thicker than usual. In the darkness and fog, it was difficult to see the murky brownness of the pollution that was a defining characteristic of the Delhi sky. The fog wrapped around everything, floating very dramatically against the yellow glow from the windows of the moving metro trains. It felt like we were already in a hill station. 
 
 By the time our short vacation ended and it was time to head back to work, the fog had found permanent residence here. The cold was a little too chilly for me to feel comfortable driving, so I started taking autos to work and back. 
 
@@ -70,7 +70,7 @@ As all fogs do, this one too moved out of my head eventually, taking its due tim
 
 In October, I found myself settling into a lovely little home, marking three months since my arrival in Delhi — two months later than anticipated. I've been slowly building new routines, dusting off the Activa to get back into the role of daily companion. She and I have been attempting to map the contours of Gurgaon together since then, both having each other’s backs. Building a life takes time, and in the seven months I've spent here, I can already see myself making homes out of people and places in a way that would be hard to let go. Isn't that both the beauty and tragedy of getting to live a full life?
 
-Seasons change, and life goes on. I've been feeling the fog (literal and otherwise) from late December getting lighter. The days are slightly warmer, the chill feels less harsh.
+Seasons change, and life goes on, inevitably. I've been feeling the fog (literal and otherwise) from late December getting lighter. The days are slightly warmer, the chill feels less harsh.
 
 So I wiped layers of accumulated dust from the Activa yesterday, a small part of my brain anxious that the engine might not start as I turned the key. I had left her for too long in the cold over the past month, the oil being allowed enough time to thicken and be stubborn about being left alone. 
 
