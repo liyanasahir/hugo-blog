@@ -8,7 +8,7 @@ category: "Personal"
 tags:
   - "gurgaon"
   - "bangalore"
-description: "(This is a modified version of an email I sent on Feb 4, 2024, as part of my newsletter project. If you'd like to receive these emails, sign up link is at the end of the post!)"
+description: "(This is a modified version of an email I sent on Feb 4, 2024, as part of my newsletter project. If you'd like to receive these emails in the future, sign up link is at the end of the post!)"
 images: 
  - /media/dashboard.jpeg
 ---
@@ -38,14 +38,13 @@ When I came back to Bangalore, it was to fully fledged offline classes in differ
 
 And here was the thing: I was beginning to realize that my Bangalore Days<sup>TM</sup> were going to come to an end sooner than for most others in my batch, and that the brief Delhi escapade might have been the start of something more. I hadn't seen half as much of Banglore as I did of Delhi over my 7 weeks there (granted, some of that was due to the back-breaking academics of the early semesters). Because you never really appreciate something until you know it's about to slip away, now I was struck with the yearning to properly experience at least my little corner of Bangalore. 
 
-I wanted to go to Yeshvantpur market and come back without having walked 4kms, or waited on 3 different apps for a reasonably priced auto, or getting stuck in traffic for an inordinate amount of time. I wanted to discover the street food of Malleswaram. I wanted to eat dosas from every competing outlet of Bangalore and see for myself what it was all about (for the record: IDC’s cannot be topped. CTR and MTR are good, and so is Rameshwaram Cafe - the copious amounts of ghee and gunpowder are not a bug, but a feature. Vidhyarthi Bhavan is worth it at least once, to soak in the history of the space; was not a fan of Veena Stores. And all of them are better than any you get elsewhere.) 
+I wanted to go to Yeshvantpur market and come back without having walked 4kms, or waited on 3 different apps for a reasonably priced auto, or getting stuck in traffic for an inordinate amount of time. I wanted to discover the street food of Malleswaram. I wanted to eat dosas from every competing outlet of Bangalore and see for myself what it was all about (for the record: IDC’s cannot be topped. CTR and MTR are good, and so is Rameshwaram Cafe - the copious amounts of ghee and gunpowder are not a bug, but a feature. Vidhyarthi Bhavan is worth it at least once, to soak in the history of the space; was not a fan of Veena Stores. And not to mention all the little local outlets that know what they're doing!) 
 
 But most of all, I *really* wanted to learn how to drive. 
- 
 
 {{< figure align=center src="/media/ctr.jpeg" caption="CTR in Malleswaram. Somewhere around the start of fourth semester.">}}
 
-Perhaps that’s where this story should start: I had a bucket list of things I wanted to get done during my gap year between finishing BTech and starting MTech. Then Covid happened, and confined to each of our homes, the list became more of a joke. However, in the years since, I’ve slowly gotten around to ticking each of them off. The second last item on the list was visiting Delhi (my motives were different while writing it down at the time - I had been wanting to visit a very dear friend who I hadn’t seen in a long while). The last item unticked? Getting a driver’s license. Perhaps it was finally time to get to that. 
+Perhaps that’s where this story should start: I had a bucket list of things I wanted to get done during my gap year between finishing BTech and starting MTech. Then Covid happened, and confined to each of our homes, the list became more of a joke. However, in the years since, I’ve slowly gotten around to ticking each of them off. The second last item on the list was visiting Delhi (my motives were different while writing it down at the time - I had been wanting to visit a very dear friend who I hadn’t seen in a long while). The last item unticked? Getting a driving license. Perhaps it was finally time to get to that. 
 
 I was talking about all of this - the desires, the dilemmas - in my lab on a daily basis by this point. And so, my labmates conspired together (Manogna and Goirik had wanted to learn as well), and rented a scooty for a day. With experience in riding cycles, managing a scooty came easily enough, and all three of us learnt the basics of handling a two-wheeler under the tutelage of a very patient Teja in a day. 
 
@@ -69,9 +68,9 @@ A mental fog had settled in and found a temporary residence in my head.
 
 As all fogs do, this one too moved out of my head eventually, taking its due time.
 
-In October, I found myself settling into a lovely little home, marking three months since my arrival in Delhi — two months more than anticipated. I've been slowly building new routines, dusting off the Activa to get back into the role of daily companion. She and I have been attempting to map the contours of Gurgaon together since then, both having each other’s backs. Building a life takes time, and in the seven months I've spent here, I can already see myself making homes out of people and places in a way that would be hard to let go. Isn't that both the beauty and tragedy of getting to live a full life?
+In October, I found myself settling into a lovely little home, marking three months since my arrival in Delhi — two months later than anticipated. I've been slowly building new routines, dusting off the Activa to get back into the role of daily companion. She and I have been attempting to map the contours of Gurgaon together since then, both having each other’s backs. Building a life takes time, and in the seven months I've spent here, I can already see myself making homes out of people and places in a way that would be hard to let go. Isn't that both the beauty and tragedy of getting to live a full life?
 
-Seasons change, and life goes on. I've been feeling the (literal) fog from late December getting lighter. The days are slightly warmer, the chill feels less harsh.
+Seasons change, and life goes on. I've been feeling the fog (literal and otherwise) from late December getting lighter. The days are slightly warmer, the chill feels less harsh.
 
 So I wiped layers of accumulated dust from the Activa yesterday, a small part of my brain anxious that the engine might not start as I turned the key. I had left her for too long in the cold over the past month, the oil being allowed enough time to thicken and be stubborn about being left alone. 
 
@@ -83,7 +82,7 @@ But the headlights came on, and as I tentatively twisted the accelerator, my sco
 
 
 
-*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out or use this [form](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
+*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out to me directly, via [instagram](https://instagram.com/liyanasahir), or [anonymously](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
 
 
 I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9).
