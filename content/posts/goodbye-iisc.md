@@ -63,6 +63,6 @@ Liyana
 ***
 
 
-*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out or use this [form](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
+*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out to me directly, via [instagram](https://instagram.com/liyanasahir), or [anonymously](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
 
 I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9).

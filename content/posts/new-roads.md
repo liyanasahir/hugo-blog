@@ -21,7 +21,7 @@ The last time I drove was just before we headed to Mussoorie at the end of Decem
 
 By the time our short vacation ended and it was time to head back to work, the fog had found permanent residence here. The cold was a little too chilly for me to feel comfortable driving, so I started taking autos to work and back. 
 
-While I blamed the cold at the time, I think my reluctance in taking out my scooty every day also had a lot to do with the lack of comfort I felt in driving in the roads of Gurgaon - and my lack of confidence was now couched in a convenient excuse, even if the only person judging mysel harshly for it was me. 
+While I blamed the cold at the time, I think my reluctance in taking out my scooty every day also had a lot to do with the lack of comfort I felt in driving in the roads of Gurgaon - and my lack of confidence was now couched in a convenient excuse, even if the only person judging myself harshly for it was me. 
 
 
 {{< figure align=center src="/media/rameshwaram.jpeg" caption="On the steps of Rameswaram Cafe, with Athira to split both in half.">}}
