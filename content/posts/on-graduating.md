@@ -28,7 +28,7 @@ It’s been over two weeks since I’ve turned the last page, and I've been tryi
 
 ***
 
-As I sat around the dining table that night surrounded by cousins and Pappa asked if anyone knew that my results were out and the family broke out in excitement that it suddenly dawned on me - that this wasn’t just another result, that it indicated I was well and truly an engineer by degree now. 
+As I sat around the dining table that night surrounded by cousins and Pappa asked if anyone knew that my results were out and the family broke out in excitement, it suddenly dawned on me - that this wasn’t just another result, that it indicated I was well and truly an engineer by degree now. 
 
 This shouldn’t be a big deal, really. Each year, India sees 1.5 million fresh engineering graduates, with CSE graduates being the obvious majority. In the past decade, engineering graduates have been considered a breed of their own; an engineering degree seen as a fresh canvas for anyone who didn’t know what to do after 12th and were ready to experiment. Which is not a completely bad thing - this has made our engineering campuses livelier, throbbing with people with a multitude of interests than it otherwise would have been. (That a small percent of these 1.5 million ended up here out of interest would be an inconsequential fact, because the person that came in wouldn't be the one that goes out.)
 
