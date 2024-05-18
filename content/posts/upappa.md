@@ -39,7 +39,7 @@ I’d go on to cut his hair six more times, and each time he’d insist enthusia
 
 ***
 
-{{< figure align=center src="/media/dinner.jpeg" caption="October 2023">}}
+{{< figure align=center src="/media/dinner.jpeg" caption="October 2023.">}}
 
 A few months ago, Lulu mentioned in passing about a Parker pen Upappa gave her. I realise what might have happened, and feel crushed. It was less about him passing on something that felt significant, and more to do with this nagging thought: what about all the stories he said he wanted to write? I bring this up to mamma, and upon hearing about my dismay he sends me an audio on whatsapp with her help. He was so exhausted constantly and feeling lazy all the time and not writing as planned anyway and he felt like Lulu deserved to have it more than him, and could I please forgive him?
 
@@ -50,7 +50,7 @@ Maybe I should have known then, and pressed a shirt regardless. Maybe I should h
 ***
 
 
-{{< figure align=center src="/media/praying.jpeg" caption="July 2021. ">}}
+{{< figure align=center src="/media/praying.jpeg" caption="July 2021. Photo by Pia.">}}
 
 
 Upappa left us early last Saturday. He was always reading, always on the search for more knowledge. He encouraged the same of his children and grandchildren. He wanted us to learn well and top our exams (and have our pictures in the papers he read), get good jobs and stand on our own feet. He wanted to hear all our stories, of events at college or of little trips to places he couldn’t visit. 
