@@ -35,7 +35,7 @@ I laughed, skeptical. Upappa’s hair had a fanbase of its own. It’s been whit
 
 After a bit more convincing (mostly him saying its okay if you let me go bald and me saying I don’t want such a crime on my hands), we got down to it. I wrapped his old mundu around him and painstakingly started chopping. White hair slowly collected in chunks on the floor, fragile, snowy. It ended up taking me over an hour to feel satisfied with the task. It wasn’t perfect - but it wasn’t also a disaster, all things considered. That day, he proclaimed as we sat down for dinner that it was the best hair cut he ever had. We both knew it was not true, but it was probably necessary in his eyes to get me back to cutting it again for him in the future. 
 
-I’d go on to cut his hair six more times, and each time he’d insist enthusiastically at the end how good of a hairdresser I was - until one day last year when I came back home from IISc, saw freshly cropped hair and realized he didn’t need me for it anymore, and felt a pang of unexpected loss for this ritual we had unexpectedly built together.
+I’d go on to cut his hair six more times, and each time he’d insist enthusiastically at the end how good of a hairdresser I was - until one day last year when I came back home from IISc, saw freshly cropped hair and realized he didn’t need me for it anymore, and felt a pang of unexpected loss for this ritual we had  built together.
 
 ***
 
