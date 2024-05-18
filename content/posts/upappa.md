@@ -15,7 +15,9 @@ images:
 
 ***
 
-Last year, one day when I was back home from IISc during some holidays, Upappa slid a newspaper clipping up to me while we were sitting in his room. It was an illustration of a fountain pen, the sort that appeared on student’s corner pages in malayalam dailies. Something about the way the neatly torn paper was folded and extracted from his everything-diary that was always at the foot of his bed was so endearing. He wanted me to get a pen like that for him. I joked about why he’d want one now, and he told me he wanted it for all the stories he had yet to write. 
+Last year, one day when I was back home from IISc during some holidays, Upappa slid a newspaper clipping up to me while we were sitting in his room. It was an illustration of a fountain pen, the sort that appeared on student’s corner pages in malayalam dailies. 
+
+Something about the way the neatly torn paper was folded and extracted from his everything-diary that was always at the foot of his bed was so endearing. He wanted me to get a pen like that for him. I joked about why he’d want one now, and he told me he wanted it for all the stories he had yet to write. 
 
 When it came to fountain pens, Upappa and I had history. There was a time between 4th and 6th grade when Lulu and I were living with Upappa and Ummamma, when Umma had her teaching posting in a little village in Kasargod and Pappa was in Dubai. We were only allowed to use fountain pens in school, and you could get a handy Hero pen for 30rs, which was the one I had. Every night I’d go to fill ink from Upappa’s very tidily kept shelf, and one day I realised the pen he had on his shirt pocket was a fountain pen as well - a Parker, which glided so well, made you fall in love with writing, and was also slightly expensive.
 
