@@ -21,13 +21,13 @@ When it came to fountain pens, Upappa and I had history. There was a time betwee
 
 I vaguely recollect Upappa being super exasperated by his absent minded grandchild borrowing his well-loved pen so many times. I think I might have been the one that finally broke it. It seemed reasonable then that I should be the one to get one for him now fifteen years later. The grandchild in me was happy he even made the request, newspaper cutting and all. It felt like an acknowledgement of not just a shared history, but of how far we’ve all come. I ordered one, and gave it to him the next time I visited. 
 
+***
 
 
 {{< figure align=center src="/media/abudhabi.jpeg" caption="July 2018.">}}
 
-***
 
-He had always been so well groomed, with pressed shirts and a pen on the front pocket, even while bed ridden at home from his many falls. I learned how to iron my uniforms after seeing him do them for me and Lulu every week during those early years we lived with him and Umamma in Mangad. (Later on, this role got flipped when I joined them again during bachelors to live with Mummy - he liked having pressed shirts even at home, and we’d have a weekly back and forth on how many shirts I could iron for him in one go. I never did enough). 
+He had always been so well groomed, with pressed shirts and a pen in his front pocket, even while bedridden at home after his many falls. I learned how to iron my clothes after seeing him iron our uniforms, during those early years we lived with him and Umamma in Mangad. Later on, our roles reversed when I joined them again during bachelors - he liked wearing pressed shirts even at home, and we’d have a weekly back-and-forth about how many shirts I could iron for him in one go (I never did enough). 
 
 During covid, when his health anxiety was at its peak and his hair the longest it had ever grown, one day Upappa asked me if I could cut it for him. 
 
@@ -39,11 +39,11 @@ I’d go on to cut his hair six more times, and each time he’d insist enthusia
 
 ***
 
-{{< figure align=center src="/media/dinner.heic" caption="October 2023">}}
+{{< figure align=center src="/media/dinner.jpeg" caption="October 2023">}}
 
 A few months ago, Lulu mentioned in passing about a Parker pen Upappa gave her. I realise what might have happened, and feel crushed. It was less about him passing on something that felt significant, and more to do with this nagging thought: what about all the stories he said he wanted to write? I bring this up to mamma, and upon hearing about my dismay he sends me an audio on whatsapp with her help. He was so exhausted constantly and feeling lazy all the time and not writing as planned anyway and he felt like Lulu deserved to have it more than him, and could I please forgive him?
 
-Now that I look back, that exhaustion had become so visible in the past year, but I was adamant about not giving it further meaning. Last month when I visited from Delhi he had on a wrinkled shirt, and when I asked him unprompted if he wanted me to iron any for him, he didn’t let me. He kept dozing off in different parts of the house, his thoughts always a little far away. He paid less attention to stories, didn’t ask too many questions, was unengaged in conversations. 
+Now that I look back, that exhaustion had become so visible in the past year, but I was adamant about not giving it further meaning. Last month when I visited from Delhi he had on a wrinkled shirt, and when I asked him unprompted if he wanted me to iron any for him, he didn’t let me. He kept dozing off in different parts of the house, his thoughts always a little far away even while awake. He paid less attention to stories, didn’t ask too many questions, was unengaged in conversations. 
 
 Maybe I should have known then, and pressed a shirt regardless. Maybe I should have sat down next to him for longer, even if in silence. Maybe, maybe, maybe.
 
