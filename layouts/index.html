@@ -1,0 +1,89 @@
+{{- define "main" }}
+<div class="lp">
+  <section class="lp-hero">
+    <div class="lp-intro">
+      <img class="lp-photo" src="/media/profile_seoul.jpg" alt="Liyana Sahir K">
+      <div class="lp-intro-text">
+        <h1>Hi, I'm Liyana.</h1>
+        <p class="lp-subtitle">Researcher, Data Scientist · Mastercard AI Garage</p>
+      </div>
+    </div>
+
+    <div class="lp-bio">
+      <p>I work on machine learning research at Mastercard's AI Garage, at the intersection of applied systems and publishable science. My current work focuses on representation learning, data-efficient training, and understanding what makes models memorize versus generalize, especially under noisy labels, class imbalance, and limited supervision.</p>
+      <p>I did my MTech in AI at IISc Bangalore, under Prof Soma Biswas. Before that, I was at GCE Kannur, where I first got curious about how machine learning models actually learn.</p>
+      <p>I also write: research notes, personal essays, and about the small details of ordinary life that somehow feel worth noting down.</p>
+    </div>
+
+    <div class="lp-links-row">
+      <a class="lp-pill" href="https://scholar.google.com/citations?user=6SdmbwQAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="lp-pill" href="https://github.com/liyanasahir" target="_blank" rel="noopener">GitHub</a>
+      <a class="lp-pill" href="https://linkedin.com/in/liyanasahir" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="lp-pill" href="https://liyana.substack.com/?utm_campaign=profile_chips" target="_blank" rel="noopener">Newsletter</a>
+    </div>
+  </section>
+
+  <hr class="lp-divider">
+
+  <section class="lp-section">
+    <p class="lp-section-label">Selected publications</p>
+    <ul class="lp-paper-list">
+      <li>
+        <span class="lp-venue lp-venue-top">CIKM 2025</span>
+        <div class="lp-paper-meta">
+          <p class="lp-paper-title">Towards Equitable Coreset Selection: Addressing Challenges Under Class Imbalance</p>
+          <p class="lp-paper-detail">Liyana Sahir Kallooriyakath*, AN Reddy, BS Achary, A Sharma, K Shah, et al.</p>
+        </div>
+      </li>
+      <li>
+        <span class="lp-venue lp-venue-mid">WACV 2024</span>
+        <div class="lp-paper-meta">
+          <p class="lp-paper-title">AMEND: Adaptive Margin and Expanded Neighborhood for Efficient Generalized Category Discovery</p>
+          <p class="lp-paper-detail">A Banerjee, Liyana Sahir Kallooriyakath, S Biswas</p>
+        </div>
+      </li>
+      <li>
+        <span class="lp-venue lp-venue-mid">ICIP 2024</span>
+        <div class="lp-paper-meta">
+          <p class="lp-paper-title">AdaPrompt: Prompt Tuning with Adaptive Neighbours for Generalized Category Discovery</p>
+          <p class="lp-paper-detail">Liyana Sahir Kallooriyakath*, A Banerjee, S Biswas</p>
+        </div>
+      </li>
+      <li>
+        <span class="lp-venue lp-venue-ws">ICDMW 2023</span>
+        <div class="lp-paper-meta">
+          <p class="lp-paper-title">Study of Topology Bias in GNN-based Knowledge Graph Algorithms</p>
+          <p class="lp-paper-detail">A Surisetty, A Malhotra, D Chaurasiya et al.</p>
+        </div>
+      </li>
+    </ul>
+    <a class="lp-see-more" href="{{ "research/" | absURL }}">All publications →</a>
+  </section>
+
+  <hr class="lp-divider">
+
+  <section class="lp-section">
+    <p class="lp-section-label">Recent writing</p>
+    <ul class="lp-post-list">
+      {{- range first 4 (where site.RegularPages "Type" "posts") }}
+      <li>
+        <a class="lp-post-title" href="{{ .Permalink }}">
+          {{- with .Params.tags }}
+            {{- $tag := index . 0 }}
+            {{- if eq $tag "personal" }}
+          <span class="lp-post-tag lp-tag-personal">personal</span>
+            {{- else if eq $tag "notes" }}
+          <span class="lp-post-tag lp-tag-notes">notes</span>
+            {{- else if eq $tag "tips" }}
+          <span class="lp-post-tag lp-tag-tips">tips</span>
+            {{- end }}
+          {{- end }}
+          {{- .Title }}</a>
+        <span class="lp-post-meta">{{ .Date.Format "2006" }}</span>
+      </li>
+      {{- end }}
+    </ul>
+    <a class="lp-see-more" href="{{ "posts/" | absURL }}">All writing →</a>
+  </section>
+</div>
+{{- end }}

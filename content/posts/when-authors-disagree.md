@@ -6,6 +6,7 @@ draft: false
 slug: "heorshe"
 category: "Random"
 tags:
+  - "personal"
   - "sexism"
   - "books"
 description: "I am crediting Game Theory this semester, and found this interesting argument between two co-authors while browsing reference books in the library."

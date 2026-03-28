@@ -6,6 +6,7 @@ draft: false
 slug: "comfort-zones"
 category: "Personal"
 tags:
+  - "personal"
   - "academic"
   - "iisc"
   - "gate"

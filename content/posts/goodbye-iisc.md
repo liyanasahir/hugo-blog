@@ -6,6 +6,7 @@ draft: false
 slug: "goodbye-iisc"
 category: "Personal"
 tags:
+  - "personal"
   - "academic"
   - "iisc"
   - "bangalore"

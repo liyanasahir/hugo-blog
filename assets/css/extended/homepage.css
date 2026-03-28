@@ -1,0 +1,243 @@
+/* ── Landing page ── */
+.lp {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+/* Hero intro (photo + name side by side) */
+.lp-intro {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+.lp-photo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.lp-intro-text {
+  flex: 1;
+}
+
+/* Hero */
+.lp-hero h1 {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 0.25rem;
+  line-height: 1.3;
+}
+.lp-subtitle {
+  font-size: 14px;
+  color: var(--secondary);
+  margin: 0;
+}
+.lp-bio p {
+  font-size: 16px;
+  color: var(--primary);
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+.lp-bio p:last-child {
+  margin-bottom: 0;
+}
+
+/* External link pills */
+.lp-links-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 1.75rem 0 0;
+}
+.lp-pill {
+  font-size: 13px;
+  padding: 5px 13px;
+  border-radius: 999px;
+  border: 0.5px solid var(--border);
+  color: var(--secondary);
+  text-decoration: none;
+  background: var(--theme);
+}
+.lp-pill:hover {
+  background: var(--code-bg);
+  color: var(--primary);
+}
+
+/* Divider */
+.lp-divider {
+  border: none;
+  border-top: 0.5px solid var(--tertiary);
+  margin: 2.5rem 0;
+}
+
+/* Sections */
+.lp-section {
+  margin-bottom: 2.5rem;
+}
+.lp-section:last-child {
+  margin-bottom: 0;
+}
+.lp-section-label {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 1.25rem;
+}
+
+/* Publication list */
+.lp-paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+.lp-paper-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--tertiary);
+}
+.lp-paper-list li:last-child {
+  border-bottom: none;
+}
+.lp-venue {
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  margin-top: 2px;
+  flex-shrink: 0;
+  min-width: 90px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.lp-venue-top { background: #EAF3DE; color: #3B6D11; }
+.lp-venue-mid { background: #E6F1FB; color: #185FA5; }
+.lp-venue-ws  { background: #F1EFE8; color: #5F5E5A; }
+
+/* Dark mode venue badge adjustments */
+.dark .lp-venue-top { background: #2A3D1A; color: #A8D87E; }
+.dark .lp-venue-mid { background: #1A2E45; color: #7BB8E8; }
+.dark .lp-venue-ws  { background: #2E2D28; color: #B5B3AB; }
+
+.lp-paper-meta {
+  flex: 1;
+}
+.lp-paper-title {
+  font-size: 14px;
+  color: var(--primary);
+  line-height: 1.5;
+  margin: 0 0 2px;
+}
+.lp-paper-detail {
+  font-size: 12px;
+  color: var(--secondary);
+  margin: 0;
+}
+
+/* Post list */
+.lp-post-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.lp-post-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.65rem 0;
+  border-bottom: 0.5px solid var(--tertiary);
+  gap: 1rem;
+}
+.lp-post-list li:last-child {
+  border-bottom: none;
+}
+.lp-post-title {
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+}
+.lp-post-title:hover {
+  color: var(--secondary);
+}
+.lp-post-meta {
+  font-size: 12px;
+  color: var(--secondary);
+  white-space: nowrap;
+}
+.lp-post-tag {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  margin-right: 4px;
+}
+.lp-tag-personal { background: #FAEEDA; color: #854F0B; }
+.lp-tag-notes    { background: #EEEDFE; color: #534AB7; }
+.lp-tag-tips     { background: #E6F1FB; color: #185FA5; }
+
+/* Dark mode tag adjustments */
+.dark .lp-tag-personal { background: #3D2E0F; color: #E4B560; }
+.dark .lp-tag-notes    { background: #2A2850; color: #A9A3E0; }
+.dark .lp-tag-tips     { background: #1A2E45; color: #7BB8E8; }
+
+/* See more link */
+.lp-see-more {
+  font-size: 13px;
+  color: var(--secondary);
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+.lp-see-more:hover {
+  color: var(--primary);
+}
+
+/* ── Writing page tag in post entries ── */
+.post-entry .entry-header .lp-post-tag {
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
+}
+
+/* ── Writing page filters ── */
+.writing-filters {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.writing-filter {
+  font-size: 13px;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 0.5px solid var(--border);
+  color: var(--secondary);
+  background: var(--theme);
+  cursor: pointer;
+  font-family: inherit;
+}
+.writing-filter:hover {
+  color: var(--primary);
+  background: var(--code-bg);
+}
+.writing-filter.active {
+  color: var(--primary);
+  background: var(--code-bg);
+  border-color: var(--secondary);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .lp-hero h1 { font-size: 22px; }
+  .lp-links-row { gap: 8px; }
+  .lp-photo { width: 80px; height: 80px; }
+  .lp-intro { gap: 1rem; }
+}
