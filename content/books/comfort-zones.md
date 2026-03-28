@@ -1,16 +1,14 @@
 ---
-title: "on stretching your comfort zones."
+title: "In Other Words, By Jhumpa Lahiri"
 date: "2024-01-17T12:40:32.169Z"
 template: "post"
 draft: false
-slug: "comfort-zones"
-category: "Personal"
+slug: "in-other-words"
+category: "Books"
 tags:
-  - "personal"
-  - "academic"
-  - "iisc"
-  - "gate"
-description: "This was something I wrote after my first semester at IISc, sent out privately as a newsletter initially, because it came from a very vulnerable place. Enough time - and the feelings mentioned - have passed that it feels okay to put this out here."
+  - "book reviews"
+
+description: "Testing"
 socialImage: "/media/author1.jpg"
 ---
 

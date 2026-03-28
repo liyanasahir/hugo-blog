@@ -1,6 +1,7 @@
 +++
 title = "hacking the night away."
 date = "2019-03-09T23:46:37.121Z"
+tags = ["personal"]
 +++
 
 *A month ago, we organized Hack the Night — a 24-hour hackathon, exclusively for women. This is the story of all that went on behind the scenes.*

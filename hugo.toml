@@ -1,8 +1,10 @@
 baseURL = 'https://www.liyanasahir.in/'
 languageCode = 'en-us'
-title = 'Blog | Liyana Sahir'
-paginate = 20
+title = 'Liyana Sahir'
 theme = "PaperMod"
+
+[pagination]
+  pagerSize = 20
 enableRobotsTXT = true
 buildDrafts = false
 buildFuture = false
@@ -14,9 +16,9 @@ buildExpired = false
 
 [params]
   env = "production"
-  title = "Liyana"
-  description = "Blog | Liyana Sahir"
-  images = ["/media/01.jpg"]
+  title = "Liyana Sahir"
+  description = "Liyana Sahir — Researcher, Data Scientist"
+  images = ["/media/profile_seoul.jpg"]
   DateFormat = "January 2, 2006"
   defaultTheme = "light"
   disableThemeToggle = false
@@ -35,24 +37,32 @@ buildExpired = false
   showtoc = false
   tocopen = false
 
+[params.label]
+  icon = "media/profile_seoul.jpg"
+  iconHeight = 28
+
 [params.assets]
-  favicon = "/media/logo.png"
+  favicon = "/media/profile_seoul.jpg"
 
-[params.homeInfoParams]
-  title = "Hi! 👋🏼"
-  Content = "I'm Liyana, and this blog is a digital garden. \nEverything is an experiment - some just more thought out than others. Dip right in."
+[[menu.main]]
+  name = "Research"
+  url = "/research/"
+  weight = 10
 
-[[params.socialIcons]]
-  name = "twitter"
-  url = "https://twitter.com/liyanasahir"
+[[menu.main]]
+  name = "Writing"
+  url = "/posts/"
+  weight = 20
 
-[[params.socialIcons]]
-  name = "instagram"
-  url = "https://instagram.com/liyanasahir"
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 30
 
-[[params.socialIcons]]
-  name = "linkedin"
-  url = "https://linkedin.com/in/liyanasahir"
+[[menu.main]]
+  name = "Now"
+  url = "/now/"
+  weight = 40
 
 [markup.goldmark.renderer]
 unsafe = true

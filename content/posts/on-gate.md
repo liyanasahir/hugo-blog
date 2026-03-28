@@ -1,6 +1,7 @@
 +++
 title = 'On GATE'
 date = 2021-03-31T21:50:04+05:30
+tags = ["tips", "gate"]
 +++
 
 <!-- ---

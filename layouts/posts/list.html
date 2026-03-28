@@ -1,0 +1,76 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>Writing</h1>
+  <div class="post-description">
+    <p>Research notes, personal essays, and the occasional useful tip — all in one place.</p>
+  </div>
+</header>
+
+<div class="writing-filters">
+  <button class="writing-filter active" data-filter="all">All</button>
+  <button class="writing-filter" data-filter="personal">Personal</button>
+  <button class="writing-filter" data-filter="notes">Notes</button>
+  <button class="writing-filter" data-filter="tips">Tips</button>
+</div>
+
+{{- $pages := .RegularPages }}
+
+{{- range $index, $page := $pages }}
+{{- $primaryTag := "" }}
+{{- with .Params.tags }}
+  {{- $primaryTag = index . 0 }}
+{{- end }}
+
+<article class="post-entry writing-item" data-tag="{{ $primaryTag }}">
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">
+      {{- if eq $primaryTag "personal" }}
+      <span class="lp-post-tag lp-tag-personal">personal</span>
+      {{- else if eq $primaryTag "notes" }}
+      <span class="lp-post-tag lp-tag-notes">notes</span>
+      {{- else if eq $primaryTag "tips" }}
+      <span class="lp-post-tag lp-tag-tips">tips</span>
+      {{- end }}
+      {{- .Title }}
+    </h2>
+  </header>
+  {{- if (ne (.Param "hideSummary") true) }}
+  <div class="entry-content">
+    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+  </div>
+  {{- end }}
+  {{- if not (.Param "hideMeta") }}
+  <footer class="entry-footer">
+    {{- partial "post_meta.html" . -}}
+  </footer>
+  {{- end }}
+  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+</article>
+{{- end }}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const filters = document.querySelectorAll('.writing-filter');
+  const items = document.querySelectorAll('.writing-item');
+
+  filters.forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      filters.forEach(function(b) { b.classList.remove('active'); });
+      btn.classList.add('active');
+      const tag = btn.getAttribute('data-filter');
+
+      items.forEach(function(item) {
+        if (tag === 'all' || item.getAttribute('data-tag') === tag) {
+          item.style.display = '';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    });
+  });
+});
+</script>
+
+{{- end }}{{- /* end main */ -}}
