@@ -199,11 +199,33 @@
   color: var(--primary);
 }
 
-/* ── Writing page tag in post entries ── */
-.post-entry .entry-header .lp-post-tag {
-  vertical-align: middle;
-  position: relative;
-  top: -2px;
+/* ── Writing page entries ── */
+.writing-item .entry-header h2 {
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 0.25rem 0 0.4rem;
+  line-height: 1.4;
+}
+.writing-entry-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+.writing-entry-top .lp-post-tag {
+  flex-shrink: 0;
+}
+.writing-entry-meta {
+  font-size: 0.8em;
+  color: var(--secondary);
+}
+.writing-item .entry-content p {
+  font-size: 0.85em;
+  line-height: 1.6;
+}
+.writing-item .entry-footer {
+  display: none;
 }
 
 /* ── Writing page filters ── */
