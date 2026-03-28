@@ -1,5 +1,5 @@
 ---
-title: "navigating new roads."
+title: "Navigating New Roads."
 date: "2024-02-10T12:40:32.169Z"
 template: "post"
 draft: false

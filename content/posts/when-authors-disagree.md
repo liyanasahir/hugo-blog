@@ -1,12 +1,12 @@
 ---
-title: "when authors disagree.."
+title: "When Authors Disagree.."
 date: "2022-01-17T12:40:32.169Z"
 template: "post"
 draft: false
 slug: "heorshe"
 category: "Random"
 tags:
-  - "personal"
+  - "notes"
   - "sexism"
   - "books"
 description: "I am crediting Game Theory this semester, and found this interesting argument between two co-authors while browsing reference books in the library."

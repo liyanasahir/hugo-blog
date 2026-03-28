@@ -1,5 +1,5 @@
 ---
-title: "a goodbye to the bangalore days."
+title: "A Goodbye to the Bangalore Days."
 date: "2024-02-10T11:40:32.169Z"
 template: "post"
 draft: false

@@ -1,5 +1,5 @@
 ---
-title: "on stretching your comfort zones."
+title: "On Stretching Your Comfort Zones."
 date: "2024-01-17T12:40:32.169Z"
 template: "post"
 draft: false

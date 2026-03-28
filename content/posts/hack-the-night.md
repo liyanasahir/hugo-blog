@@ -1,5 +1,5 @@
 +++
-title = "hacking the night away."
+title = "Hacking the Night Away."
 date = "2019-03-09T23:46:37.121Z"
 tags = ["personal"]
 +++

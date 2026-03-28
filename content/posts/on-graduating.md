@@ -1,5 +1,5 @@
 +++
-title = "guess who just became an engineer? (...with 1.5 million others)"
+title = "Guess Who Just Became an Engineer? (...with 1.5 Million Others)"
 date = "2020-10-01T22:12:03.284Z"
 draft = false
 tags = ["personal"]

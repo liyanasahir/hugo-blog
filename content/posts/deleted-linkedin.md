@@ -1,5 +1,5 @@
 +++
-title = "I deleted my linkedin account."
+title = "I Deleted My LinkedIn Account."
 date = "2020-08-17T22:40:32.169Z"
 draft = false
 description = "I recently logged in to my linkedin account after a long period of neglect. It was then that I took a good hard look at what I looked like online."
