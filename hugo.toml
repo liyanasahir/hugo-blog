@@ -38,11 +38,11 @@ buildExpired = false
   tocopen = false
 
 [params.label]
-  icon = "media/profile_seoul.jpg"
+  icon = "media/new_favicon.png"
   iconHeight = 28
 
 [params.assets]
-  favicon = "/media/profile_seoul.jpg"
+  favicon = "/media/new_favicon.png"
 
 [[menu.main]]
   name = "Research"
@@ -53,6 +53,11 @@ buildExpired = false
   name = "Writing"
   url = "/posts/"
   weight = 20
+
+[[menu.main]]
+  name = "Reading"
+  url = "/reading/"
+  weight = 25
 
 [[menu.main]]
   name = "About"
