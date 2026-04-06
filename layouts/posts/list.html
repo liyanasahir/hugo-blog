@@ -8,14 +8,35 @@
   </div>
 </header>
 
+{{- $pages := .RegularPages }}
+{{- $startYear := 2019 }}
+{{- $endYear := add now.Year 1 }}
+{{- $totalMonths := mul (sub $endYear $startYear) 12 }}
+<div class="velocity-timeline">
+  <div class="velocity-track">
+    {{- range $pages }}
+    {{- $postYear := .Date.Year }}
+    {{- $postMonth := sub (int (printf "%d" .Date.Month)) 1 }}
+    {{- $monthsFromStart := add (mul (sub $postYear $startYear) 12) $postMonth }}
+    {{- $pct := div (mul $monthsFromStart 96.0) $totalMonths | add 2.0 }}
+    {{- $primaryTag := "personal" }}
+    {{- with .Params.tags }}{{ $primaryTag = index . 0 }}{{ end }}
+    <a href="{{ .Permalink }}" class="velocity-dot velocity-dot-{{ $primaryTag }}" style="left: {{ $pct }}%" title="{{ .Title }} ({{ .Date.Format "Jan 2006" }})"></a>
+    {{- end }}
+  </div>
+  <div class="velocity-labels">
+    {{- range seq $startYear (sub $endYear 1) }}
+    <span>{{ . }}</span>
+    {{- end }}
+  </div>
+</div>
+
 <div class="writing-filters">
   <button class="writing-filter active" data-filter="all">All</button>
   <button class="writing-filter" data-filter="personal">Personal</button>
   <button class="writing-filter" data-filter="notes">Notes</button>
   <button class="writing-filter" data-filter="tips">Tips</button>
 </div>
-
-{{- $pages := .RegularPages }}
 
 {{- range $index, $page := $pages }}
 {{- $primaryTag := "" }}

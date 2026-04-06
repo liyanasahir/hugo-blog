@@ -38,11 +38,16 @@ buildExpired = false
   tocopen = false
 
 [params.label]
-  icon = "media/new_favicon.png"
+  icon = "media/favicon-malayalam.svg"
   iconHeight = 28
 
 [params.assets]
-  favicon = "/media/new_favicon.png"
+  favicon = "/media/favicon-malayalam.svg"
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 5
 
 [[menu.main]]
   name = "Research"
