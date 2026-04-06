@@ -49,7 +49,7 @@ And so it was a no-brainer that I would be pursuing Computer Science when board 
 
 In our first year, we all were taught about the basics of the other branches, along with a little bit of engineering physics and chemistry (oh sweet chemistry - how naive I was in thinking we broke up for good in high school). 
 
-Engineering mathematics and I had a complicated relationship. I was good at solving the numerical problems, but while math used to be a favorite subject before CS came along, it no longer felt intuitive like it used to. I didn’t expect mathematics to be riddled with equations that offered no context. I could still solve all the questions asked in the question paper, but I had no clue as to what I was actually doing, or where I would have to apply this knowledge in real life - or even if I would know how to apply them in a practical context should the need arise<sup>1</sup>. 
+Engineering mathematics and I had a complicated relationship. I was good at solving the numerical problems, but while math used to be a favorite subject before CS came along, it no longer felt intuitive like it used to. I didn’t expect mathematics to be riddled with equations that offered no context. I could still solve all the questions asked in the question paper, but I had no clue as to what I was actually doing, or where I would have to apply this knowledge in real life - or even if I would know how to apply them in a practical context should the need arise.{{< memory >}}If you are/were in similar straits and have wondered why the hell eugen stuffs have to be calculated or what beautiful nonsense the fourier transform was helping us do, [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) is an amazing youtube channel that will place things in context with the help of intuitive visualizations. Do take a look and #makemathcoolagain{{< /memory >}}
 
 {{< figure align=center src="/media/os.jpg" caption="Operating System Concepts by Silberschatz aka the 'dinosaur book'. Apparently the dinosaurs are meant to signify the evolution of operating systems over the years (and survival of the fittest to an extent.)">}}
 
@@ -69,7 +69,7 @@ A few months ago, I came across an article written by Dr. RVG Menon for the coll
 >
 > — Dr. RVG Menon
 
-He goes on to talk about how things like the lack of communication skills in engineering students that we cry about is a result of a faulty primary education system<sup>2</sup>, and not something that an engineering college can put a band-aid over. That our engineering colleges do not make their students industry ready is a common complaint everyone hears at some stage. I could see where he was coming from. 
+He goes on to talk about how things like the lack of communication skills in engineering students that we cry about is a result of a faulty primary education system{{< memory >}}The full article by Dr. RVG Menon, 'An Interlude at Kannur', can be found [here](https://online.fliphtml5.com/wqbwu/uwti/#p=152). Pages 152-153.{{< /memory >}}, and not something that an engineering college can put a band-aid over. That our engineering colleges do not make their students industry ready is a common complaint everyone hears at some stage. I could see where he was coming from. 
 
 In my last four years, I’ve been involved with a number of professional organizations within our college that all have more or less the same vision: to expose students to the life outside of the engineering college, to get our engineering students industry ready. Being able to smoothly navigate the job market is definitely a skill everyone should have, when engineers are ubiquitous and jobs are not. This is where clubs and peer learning groups fill in the existing gaps, to build a richer student community on the side. Not to mention all the many MOOCs you can find online on the latest advancements in your field.
 
@@ -90,13 +90,6 @@ I do not think that the value of my education comes from the degree that I now p
 There is a lot more I have to learn still, much more to dive in depth. But unlike my usual feelings of inadequacy, there’s a solace in me with that thought this time - I do not need to have all the answers yet. 
 
 There is a lot more to learn, and a lot more time to figure it all out.
-
-***
-
-*1. If you are/were in similar straits and have wondered why the hell eugen stuffs have to be calculated or what beautiful nonsense the fourier transform was helping us do, [3Blue1Brown](https://www.youtube.com/channel/UCYO_jab_esuFRV4b17AJtAw) is an amazing youtube channel that will place things in context with the help of intuitive visualizations. Do take a look and #makemathcoolagain*
-
-*2. The full article by DR. RVG Menon, ‘An Interlude at Kannur’, can be found [here](https://online.fliphtml5.com/wqbwu/uwti/#p=152). Pages 152-153.*
-
 
 ***
 

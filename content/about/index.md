@@ -2,6 +2,8 @@
 title: "About"
 ---
 
+<p class="malayalam-name">ലിയാന സാഹിർ</p>
+
 I'm a researcher at Mastercard's AI Garage, working at the intersection of applied ML and research. My day-to-day involves fraud detection at scale; my research is about what happens to models when data is imperfect - noisy labels, imbalanced classes, shifting distributions.
 
 I did my MTech in AI at IISc Bangalore with Prof. Soma Biswas, working on representation learning and generalized category discovery. Before that, I did my BTech in CS at GCE Kannur.

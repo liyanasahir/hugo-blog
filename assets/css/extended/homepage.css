@@ -380,6 +380,135 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
+/* ── Malayalam accent text ── */
+.malayalam-name {
+  font-family: 'Manjari', sans-serif;
+  font-size: 1.3em;
+  color: var(--secondary);
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.02em;
+}
+
+/* ── 404 page ── */
+.not-found {
+  position: static;
+  display: block;
+  height: auto;
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+  text-align: center;
+  font-size: inherit;
+  font-weight: inherit;
+}
+.not-found-malayalam {
+  font-family: 'Manjari', sans-serif;
+  font-size: 2.5em;
+  color: var(--tertiary);
+  margin: 0 0 0.5rem;
+  line-height: 1.2;
+}
+.not-found h1 {
+  font-size: 1.5em;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 0.75rem;
+}
+.not-found-sub {
+  font-size: 14px;
+  color: var(--secondary);
+  margin: 0 0 1.5rem;
+}
+.not-found-link {
+  font-size: 13px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.not-found-link:hover {
+  color: var(--primary);
+}
+
+/* ── Memory footnotes ── */
+.memory-note {
+  position: relative;
+}
+.memory-marker {
+  cursor: pointer;
+  color: #534AB7;
+  font-size: 0.75em;
+  font-weight: 600;
+  padding: 0 2px;
+  transition: color 0.15s;
+}
+.memory-marker:hover {
+  color: #3B2F9E;
+}
+.dark .memory-marker {
+  color: #A9A3E0;
+}
+.dark .memory-marker:hover {
+  color: #C5C0F0;
+}
+.memory-content {
+  display: none;
+  font-size: 0.85em;
+  line-height: 1.6;
+  color: var(--secondary);
+  background: var(--code-bg);
+  border-left: 2px solid #534AB7;
+  padding: 0.5rem 0.75rem;
+  margin: 0.4rem 0;
+  border-radius: 0 4px 4px 0;
+}
+.dark .memory-content {
+  border-left-color: #A9A3E0;
+}
+.memory-content.open {
+  display: block;
+}
+
+/* ── Writing velocity timeline ── */
+.velocity-timeline {
+  margin-bottom: 1.75rem;
+  padding: 0.75rem 0;
+}
+.velocity-track {
+  position: relative;
+  height: 24px;
+  background: var(--code-bg);
+  border-radius: 12px;
+  margin-bottom: 0.4rem;
+  padding: 0 8px;
+}
+.velocity-dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  z-index: 1;
+}
+.velocity-dot:hover {
+  transform: translate(-50%, -50%) scale(1.8);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.08);
+  z-index: 2;
+}
+.velocity-dot-personal { background: #C47A1A; }
+.velocity-dot-notes    { background: #534AB7; }
+.velocity-dot-tips     { background: #185FA5; }
+.dark .velocity-dot-personal { background: #E4B560; }
+.dark .velocity-dot-notes    { background: #A9A3E0; }
+.dark .velocity-dot-tips     { background: #7BB8E8; }
+.velocity-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: var(--tertiary);
+  padding: 0 2px;
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   .lp-hero h1 { font-size: 22px; }
