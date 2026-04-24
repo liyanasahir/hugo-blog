@@ -4,7 +4,10 @@ date = "2020-08-17T22:40:32.169Z"
 draft = false
 description = "I recently logged in to my linkedin account after a long period of neglect. It was then that I took a good hard look at what I looked like online."
 tags = ["personal"]
+substack = true
 +++
+
+{{< substack-cta >}}
 
 As someone who had been living pretty much on the internet since I got my first laptop in 8th grade, Linkedin wasn’t new to me. But back then, it was the “adults’ website” (no, not that kind) - a place where people with jobs went to meet other people with jobs and talked about their very adult lives - opportunities, openings, networking and the rest. It wasn’t until the first week of college, when professionals coordinating our orientation program mentioned how it was the most important place for students looking to get jobs that I actually went and created an account of my own.
 

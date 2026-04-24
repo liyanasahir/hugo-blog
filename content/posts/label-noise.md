@@ -40,6 +40,49 @@ A third type, **instance-dependent noise**, is harder to model but more faithful
 
 **What this tractability assumption costs you**: the transition matrix framework assumes noise is class-conditional, meaning knowing the true class is sufficient to characterize how it gets mislabeled. In practice, annotator behavior, ambiguous instances, and domain-specific label conventions all introduce structure that a single matrix cannot capture. Methods developed and evaluated under the symmetric noise assumption often degrade faster than expected when deployed on real-world noisy datasets like CIFAR-10N or WebVision, where the noise is genuinely instance-dependent.
 
+<figure style="margin: 2rem 0; text-align: center;">
+<svg viewBox="0 0 560 215" xmlns="http://www.w3.org/2000/svg" style="max-width: 560px; width: 100%; height: auto;">
+  <text x="140" y="18" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#4a9e9e">Symmetric noise (ε = 30%)</text>
+  <text x="420" y="18" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="#4a9e9e">Asymmetric noise (ε = 30%)</text>
+  <text x="44" y="66" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">dog</text>
+  <text x="44" y="106" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">cat</text>
+  <text x="44" y="146" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">horse</text>
+  <text x="80" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">dog</text>
+  <text x="130" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">cat</text>
+  <text x="180" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">horse</text>
+  <rect x="55" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="80" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <rect x="105" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="130" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="155" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="180" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="55" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="80" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="105" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="130" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <rect x="155" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="180" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="55" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="80" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="105" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.15"/><text x="130" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#666">0.15</text>
+  <rect x="155" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="180" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <line x1="280" y1="28" x2="280" y2="178" stroke="#ddd" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="324" y="66" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">dog</text>
+  <text x="324" y="106" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">cat</text>
+  <text x="324" y="146" text-anchor="end" font-family="-apple-system, sans-serif" font-size="10" fill="#888">horse</text>
+  <text x="360" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">dog</text>
+  <text x="410" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">cat</text>
+  <text x="460" y="34" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#888">horse</text>
+  <rect x="335" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="360" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <rect x="385" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.45"/><text x="410" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.30</text>
+  <rect x="435" y="44" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.04"/><text x="460" y="69" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ccc">0.00</text>
+  <rect x="335" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.04"/><text x="360" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ccc">0.00</text>
+  <rect x="385" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="410" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <rect x="435" y="84" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.45"/><text x="460" y="109" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.30</text>
+  <rect x="335" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.45"/><text x="360" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.30</text>
+  <rect x="385" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.04"/><text x="410" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#ccc">0.00</text>
+  <rect x="435" y="124" width="50" height="40" rx="4" fill="#4a9e9e" fill-opacity="0.75"/><text x="460" y="149" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" font-weight="600" fill="white">0.70</text>
+  <text x="130" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#aaa">← observed label (ỹ) →</text>
+  <text x="410" y="195" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#aaa">← observed label (ỹ) →</text>
+  <text x="27" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#aaa" transform="rotate(-90,27,105)">true label (y)</text>
+  <text x="307" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" fill="#aaa" transform="rotate(-90,307,105)">true label (y)</text>
+</svg>
+<figcaption style="font-size: 13px; color: #999; margin-top: 0.5rem;">Figure 1. Noise transition matrix Q for symmetric vs. asymmetric noise (3-class, ε = 0.30). Cell opacity encodes flip probability. Symmetric noise spreads evenly; asymmetric noise flips only to the next class (dog→cat, cat→horse, horse→dog).</figcaption>
+</figure>
+
 ---
 
 ## Four Foundational Observations
@@ -63,6 +106,28 @@ There is a qualitative difference in how networks learn real data versus random 
 Imagine plotting clean-label accuracy and noisy-label accuracy on the same axes over training epochs: they rise together in the early phase, then diverge as the network starts fitting noisy examples. The peak of clean-label accuracy (before the divergence) is the target you're trying to preserve.
 
 **Scope**: this temporal structure is most visible at moderate noise rates (roughly 20-60% symmetric noise). At very high noise rates, the clean signal may be too weak to produce a meaningful early learning phase. In long-tailed settings, tail classes may show almost no clean learning phase at all, since there are simply too few clean examples to establish a pattern before memorization begins.
+
+<figure style="margin: 2rem 0; text-align: center;">
+<svg viewBox="0 0 500 210" xmlns="http://www.w3.org/2000/svg" style="max-width: 500px; width: 100%; height: auto;">
+  <line x1="50" y1="160" x2="460" y2="160" stroke="#ddd" stroke-width="1"/>
+  <line x1="50" y1="20" x2="50" y2="160" stroke="#ddd" stroke-width="1"/>
+  <text x="255" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#aaa">training epochs →</text>
+  <text x="16" y="90" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="11" fill="#aaa" transform="rotate(-90,16,90)">accuracy</text>
+  <path d="M50,148 C100,122 160,90 230,70 290,56 360,50 460,48 L460,62 C360,64 290,72 230,88 160,108 100,140 50,162 Z" fill="#4a9e9e" fill-opacity="0.08"/>
+  <path d="M50,148 C100,122 160,90 230,70 290,56 330,56 360,64 400,78 440,96 460,108" fill="none" stroke="#4a9e9e" stroke-width="2.2" stroke-dasharray="6,3" stroke-linecap="round"/>
+  <path d="M50,148 C100,120 160,88 230,66 290,50 360,44 460,42" fill="none" stroke="#333" stroke-width="2.2" stroke-linecap="round"/>
+  <line x1="308" y1="58" x2="308" y2="162" stroke="#e0e0e0" stroke-width="1" stroke-dasharray="3,3"/>
+  <rect x="248" y="165" width="130" height="22" rx="6" fill="#f0fafa" stroke="#4a9e9e" stroke-width="0.8"/>
+  <text x="313" y="180" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">memorization begins ↑</text>
+  <line x1="280" y1="28" x2="306" y2="28" stroke="#333" stroke-width="2.2" stroke-linecap="round"/>
+  <text x="312" y="32" font-family="-apple-system, sans-serif" font-size="11" fill="#555">clean labels</text>
+  <line x1="280" y1="46" x2="306" y2="46" stroke="#4a9e9e" stroke-width="2.2" stroke-dasharray="6,3" stroke-linecap="round"/>
+  <text x="312" y="50" font-family="-apple-system, sans-serif" font-size="11" fill="#555">noisy labels</text>
+  <text x="44" y="50" text-anchor="end" font-family="-apple-system, sans-serif" font-size="9" fill="#ccc">high</text>
+  <text x="44" y="164" text-anchor="end" font-family="-apple-system, sans-serif" font-size="9" fill="#ccc">low</text>
+</svg>
+<figcaption style="font-size: 13px; color: #999; margin-top: 0.5rem;">Figure 2. Memorization dynamics over training. Both curves rise together in the early phase as the network learns generalizable patterns, then diverge as it starts fitting noisy examples. Methods that intervene before the divergence point preserve clean accuracy.</figcaption>
+</figure>
 
 ### #3: Small-loss instances are more likely to have correct labels
 
@@ -94,6 +159,43 @@ The effect is visible in the geometry of the learned representations: supervised
 ## A Taxonomy of Approaches
 
 The literature organizes into four broad families. A useful survey is *Learning from Noisy Labels with Deep Neural Networks: A Survey* (Song et al., TNNLS 2022).
+
+<figure style="margin: 2rem 0; text-align: center;">
+<svg viewBox="0 0 580 210" xmlns="http://www.w3.org/2000/svg" style="max-width: 580px; width: 100%; height: auto;">
+  <rect x="190" y="8" width="200" height="36" rx="18" fill="#4a9e9e"/>
+  <text x="290" y="31" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="12" font-weight="600" fill="white">Noisy Label Methods</text>
+  <path d="M290 44 C290 62 75 62 75 80" fill="none" stroke="#4a9e9e" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M290 44 C290 62 195 62 195 80" fill="none" stroke="#4a9e9e" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M290 44 C290 62 385 62 385 80" fill="none" stroke="#4a9e9e" stroke-width="1.5" stroke-opacity="0.5"/>
+  <path d="M290 44 C290 62 505 62 505 80" fill="none" stroke="#4a9e9e" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="25" y="80" width="100" height="42" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="75" y="99" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Robust</text>
+  <text x="75" y="113" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Architecture</text>
+  <rect x="145" y="80" width="100" height="42" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="195" y="99" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Robust</text>
+  <text x="195" y="113" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Regularization</text>
+  <rect x="335" y="80" width="100" height="42" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="385" y="99" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Robust</text>
+  <text x="385" y="113" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Loss Design</text>
+  <rect x="455" y="80" width="100" height="42" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="505" y="99" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Sample</text>
+  <text x="505" y="113" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">Selection</text>
+  <line x1="75" y1="122" x2="75" y2="138" stroke="#ccc" stroke-width="1"/>
+  <line x1="195" y1="122" x2="195" y2="138" stroke="#ccc" stroke-width="1"/>
+  <line x1="385" y1="122" x2="385" y2="138" stroke="#ccc" stroke-width="1"/>
+  <line x1="505" y1="122" x2="505" y2="138" stroke="#ccc" stroke-width="1"/>
+  <text x="75" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">noise adapt. layer</text>
+  <text x="195" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">early stopping,</text>
+  <text x="195" y="162" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">consistency reg.</text>
+  <text x="385" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">MAE, GCE,</text>
+  <text x="385" y="162" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">Peer Loss</text>
+  <text x="505" y="150" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">Co-teaching,</text>
+  <text x="505" y="162" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#999">DivideMix</text>
+  <rect x="455" y="173" width="100" height="20" rx="10" fill="#4a9e9e" fill-opacity="0.12" stroke="#4a9e9e" stroke-width="0.8"/>
+  <text x="505" y="187" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9" fill="#4a9e9e">+ RRL (deep dive ↓)</text>
+</svg>
+<figcaption style="font-size: 13px; color: #999; margin-top: 0.5rem;">Figure 3. Four families of noisy-label methods. Sample selection currently achieves strongest benchmark results; RRL extends this family with SSL-based representation regularization.</figcaption>
+</figure>
 
 **Robust architecture**: modify the network to be inherently noise-resistant, typically by adding a noise adaptation layer that models the transition matrix explicitly, learning to correct predictions before computing loss. The limitation is fundamental: these methods treat noise as a fixed property of the label space, and are agnostic to the memorization dynamics of the network itself.
 
@@ -129,6 +231,49 @@ A neural classifier can be written as $C(X) = g(f(X))$, an encoder $f$ followed 
 The finding: under high noise, a properly chosen fixed encoder outperforms an unfixed one. But freezing entirely is suboptimal at low noise. RRL finds a principled compromise by adding a regularization term that allows the encoder to move, but penalizes it for moving in directions that disagree with the SSL feature structure.
 
 ### The training framework
+
+<figure style="margin: 2rem 0; text-align: center;">
+<svg viewBox="0 0 580 200" xmlns="http://www.w3.org/2000/svg" style="max-width: 580px; width: 100%; height: auto;">
+  <defs>
+    <marker id="arr-rrl" markerWidth="7" markerHeight="7" refX="5" refY="3.5" orient="auto">
+      <path d="M0,0 L0,7 L7,3.5 z" fill="#4a9e9e" opacity="0.65"/>
+    </marker>
+  </defs>
+  <rect x="8" y="82" width="68" height="36" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="42" y="101" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">image xₙ</text>
+  <path d="M76 90 C100 90 108 48 132 48" fill="none" stroke="#4a9e9e" stroke-width="1.4" stroke-opacity="0.6" marker-end="url(#arr-rrl)"/>
+  <path d="M76 100 C100 100 108 152 132 152" fill="none" stroke="#4a9e9e" stroke-width="1.4" stroke-opacity="0.6" marker-end="url(#arr-rrl)"/>
+  <rect x="132" y="28" width="105" height="38" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="184" y="47" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">SSL encoder  f→h</text>
+  <text x="184" y="59" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">label-agnostic</text>
+  <line x1="237" y1="47" x2="268" y2="47" stroke="#4a9e9e" stroke-width="1.4" stroke-opacity="0.6" marker-end="url(#arr-rrl)"/>
+  <rect x="268" y="28" width="88" height="38" rx="8" fill="#4a9e9e" fill-opacity="0.12" stroke="#4a9e9e" stroke-width="1"/>
+  <text x="312" y="47" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">tₙ = h(f(xₙ))</text>
+  <text x="312" y="59" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">SSL features</text>
+  <rect x="132" y="132" width="105" height="38" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="184" y="151" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">SL encoder  f→g</text>
+  <text x="184" y="163" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">noisy labels</text>
+  <line x1="237" y1="151" x2="268" y2="151" stroke="#4a9e9e" stroke-width="1.4" stroke-opacity="0.6" marker-end="url(#arr-rrl)"/>
+  <rect x="268" y="132" width="88" height="38" rx="8" fill="#4a9e9e" fill-opacity="0.12" stroke="#4a9e9e" stroke-width="1"/>
+  <text x="312" y="151" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">sₙ = g(f(xₙ))</text>
+  <text x="312" y="163" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">SL features</text>
+  <path d="M312 66 L312 90" fill="none" stroke="#4a9e9e" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <path d="M312 112 L312 132" fill="none" stroke="#4a9e9e" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <rect x="244" y="90" width="136" height="22" rx="11" fill="#e8f4f4" stroke="#4a9e9e" stroke-width="1"/>
+  <text x="312" y="105" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" font-weight="600" fill="#4a9e9e">ℓ_Reg (repr. regularizer)</text>
+  <line x1="356" y1="151" x2="388" y2="151" stroke="#4a9e9e" stroke-width="1.4" stroke-opacity="0.6" marker-end="url(#arr-rrl)"/>
+  <rect x="388" y="132" width="72" height="38" rx="8" fill="#f0fafa" stroke="#4a9e9e" stroke-width="1.2"/>
+  <text x="424" y="151" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="10" font-weight="600" fill="#2d7a7a">classifier g</text>
+  <text x="424" y="163" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#2d7a7a">→ ŷ</text>
+  <rect x="478" y="28" width="90" height="24" rx="6" fill="#4a9e9e" fill-opacity="0.1" stroke="#4a9e9e" stroke-width="0.8"/>
+  <text x="523" y="44" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">ℓ_Info (SSL loss)</text>
+  <rect x="478" y="145" width="90" height="24" rx="6" fill="#4a9e9e" fill-opacity="0.1" stroke="#4a9e9e" stroke-width="0.8"/>
+  <text x="523" y="161" text-anchor="middle" font-family="-apple-system, sans-serif" font-size="9.5" fill="#4a9e9e">ℓ_CE (SL loss)</text>
+  <line x1="356" y1="47" x2="478" y2="47" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="460" y1="160" x2="478" y2="160" stroke="#ccc" stroke-width="1" stroke-dasharray="3,3"/>
+</svg>
+<figcaption style="font-size: 13px; color: #999; margin-top: 0.5rem;">Figure 4. RRL dual-path training. Both paths share encoder f. The representation regularizer (dashed bridge) penalizes divergence between SSL feature geometry (tₙ) and SL features (sₙ), preventing noisy supervision from corrupting the encoder.</figcaption>
+</figure>
 
 RRL adds a self-supervised path $f \to h$ alongside the supervised path $f \to g$. The full loss is:
 
@@ -173,6 +318,22 @@ More problematically for applied settings: anomalous nodes also tend to have hig
 *Identifying Hard Noise in Long-Tailed Sample Distribution* (Yi et al., ECCV 2022) addresses a compounded challenge: datasets that are simultaneously long-tailed and noisy. In long-tailed settings, tail-class examples are rare enough that the loss distributions for clean and noisy examples overlap significantly, and the small-loss heuristic breaks down. A noisy head-class example may have lower loss than a clean tail-class example simply because the head class is better represented in training.
 
 The practical implication: most of the sample selection literature has been developed and evaluated on balanced datasets with synthetic noise. The benchmark performance numbers do not transfer cleanly to real-world settings where imbalance and noise co-occur. This gap between benchmark evaluation and deployment reality is, I think, the most underacknowledged problem in this literature.
+
+---
+
+## Recent Developments (2022–2025)
+
+The post above reflects the literature as of early 2024. A few papers since then are worth noting, particularly those that address the scope limitations discussed throughout.
+
+**UNICON** (Karim et al., CVPR 2022) extends DivideMix by combining contrastive learning with a uniform selection procedure that avoids the class-imbalance failures of purely GMM-based separation. It treats the GMM as a soft prior rather than a hard gate, which helps in regimes where clean and noisy loss distributions overlap significantly.
+
+**SED** (Li et al., NeurIPS 2023) takes a semantic embedding distillation approach: use a teacher network trained on pseudo-clean subsets to distill noise-robust representations into the student. The key contribution is a per-sample distillation weight based on semantic consistency — examples whose semantics disagree between teacher and student are down-weighted. This partially addresses the problem of noisy minority classes, since semantic consistency is a less biased signal than loss magnitude.
+
+**DISC** (Li et al., ICLR 2024) is notable for explicitly targeting the distribution mismatch between noisy training sets and clean test distributions. It uses a distribution-aware sample selection criterion that accounts for class frequency, making the selection less biased toward majority classes under imbalance. This is one of the first papers to directly attack the imbalance-noise interaction that I flag as an open question below.
+
+**PNP** (Zhang et al., ICLR 2024) — *Progressive Noise Purification* — frames noise correction as a progressive refinement problem: start with a rough label correction and iteratively improve it using the model's own evolving representations. The progressive framing helps avoid the circularity problem with the small-loss heuristic by anchoring early-round corrections to a cleaner signal.
+
+**Benchmark re-evaluation** (2024): Several teams have re-evaluated standard methods on CIFAR-10N, CIFAR-100N, and WebVision with controlled compute budgets, finding that the benchmark rankings shift considerably from prior work. DivideMix and its variants remain competitive, but simpler methods (early stopping + temperature scaling) close the gap significantly when hyperparameters are properly tuned — a reminder that the reported improvements in the literature are often against undertuned baselines.
 
 ---
 

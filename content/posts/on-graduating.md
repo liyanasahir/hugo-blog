@@ -3,7 +3,10 @@ title = "Guess Who Just Became an Engineer? (...with 1.5 Million Others)"
 date = "2020-10-01T22:12:03.284Z"
 draft = false
 tags = ["personal"]
+substack = true
 +++
+
+{{< substack-cta >}}
 
 Checking my phone late in the evening last week, I noticed that our final semester results had been published. The notification didn't bring the usual nervousness that typically accompanies result-checking; this time, I had a fairly good idea of what to expect.
 
