@@ -12,7 +12,10 @@ tags:
 description: "(This is a modified version of an email I sent on Feb 4, 2024, as part of my newsletter project. If you'd like to receive these emails in the future, sign up link is at the end of the post!)"
 images: 
  - /media/dashboard.jpeg
+substack: true
 ---
+
+{{< substack-cta >}}
 
 ***
 

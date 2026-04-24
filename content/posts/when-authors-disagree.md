@@ -11,8 +11,10 @@ tags:
   - "books"
 description: "I am crediting Game Theory this semester, and found this interesting argument between two co-authors while browsing reference books in the library."
 socialImage: "/media/author1.jpg"
+substack: true
 ---
 
+{{< substack-cta >}}
 
 {{< figure align=center src="/media/author1.jpg" caption="Underline not mine.">}}
 

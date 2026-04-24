@@ -11,7 +11,10 @@ tags:
 description: ""
 images: 
  - /media/dinner.heic
+substack: true
 ---
+
+{{< substack-cta >}}
 
 ***
 

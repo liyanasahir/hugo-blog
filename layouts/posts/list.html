@@ -31,6 +31,8 @@
   </div>
 </div>
 
+<p class="writing-substack-note">Personal writing also lives on <a href="https://liyana.substack.com/?utm_source=blog_writing" target="_blank" rel="noopener">my Substack</a> — subscribe to follow along.</p>
+
 <div class="writing-filters">
   <button class="writing-filter active" data-filter="all">All</button>
   <button class="writing-filter" data-filter="personal">Personal</button>
@@ -53,6 +55,9 @@
       <span class="lp-post-tag lp-tag-notes">notes</span>
       {{- else if eq $primaryTag "tips" }}
       <span class="lp-post-tag lp-tag-tips">tips</span>
+      {{- end }}
+      {{- if .Params.substack }}
+      <span class="lp-post-tag lp-tag-substack">substack</span>
       {{- end }}
       {{- if not (.Param "hideMeta") }}
       <span class="writing-entry-meta">
