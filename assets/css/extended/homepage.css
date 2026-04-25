@@ -406,7 +406,7 @@
   content: '›';
   font-size: 16px;
   font-weight: 400;
-  color: var(--secondary);
+  color: #C0392B;
   display: inline-block;
   transition: transform 0.2s ease;
   line-height: 1;
@@ -419,7 +419,7 @@ details.reading-section[open] .reading-section-summary::before {
   color: var(--primary);
 }
 .reading-section-summary:hover::before {
-  color: var(--primary);
+  color: #A93226;
 }
 
 /* ── Essays list ── */
