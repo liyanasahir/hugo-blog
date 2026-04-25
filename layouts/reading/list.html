@@ -4,13 +4,14 @@
   {{- partial "breadcrumbs.html" . }}
   <h1>Reading</h1>
   <div class="post-description">
-    <p>Books from 2023 onwards. Click a cover to read my notes.</p>
+    <p>Books mostly from 2023 onwards, with a few older favourites (click a cover to read my notes). Also here: essays I found thought-provoking and keep returning to.</p>
   </div>
 </header>
 
 <div class="reading-page">
 
-  <p class="lp-section-label">Non-Fiction</p>
+  <details class="reading-section" open>
+  <summary class="reading-section-summary">Non-Fiction</summary>
   <div class="bookshelf-grid" id="grid-nonfiction">
 
     <div class="book-card" data-review="empire-of-ai">
@@ -97,7 +98,7 @@
 
     <div class="book-card">
       <div class="book-cover-wrap">
-        <img class="book-cover" src="https://covers.openlibrary.org/b/isbn/9780593297612-M.jpg" alt="Intimations" loading="lazy">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/71tqiTMzXeL._UF1000,1000_QL80_.jpg" alt="Intimations" loading="lazy">
         <div class="book-cover-placeholder" style="display:none">Intimations</div>
       </div>
       <p class="book-title">Intimations</p>
@@ -118,7 +119,17 @@
 
     <div class="book-card">
       <div class="book-cover-wrap">
-        <img class="book-cover" src="https://covers.openlibrary.org/b/isbn/9780385480017-M.jpg" alt="Bird by Bird" loading="lazy">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/61CVxL+KULL._AC_UF1000,1000_QL80_.jpg" alt="Lies Our Mothers Told Us" loading="lazy">
+        <div class="book-cover-placeholder" style="display:none">Lies Our Mothers Told Us</div>
+      </div>
+      <p class="book-title">Lies Our Mothers Told Us</p>
+      <p class="book-author">Nilanjana Bhowmick</p>
+      <p class="book-date">2023</p>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/71LdEmU9n-L._UF1000,1000_QL80_.jpg" alt="Bird by Bird" loading="lazy">
         <div class="book-cover-placeholder" style="display:none">Bird by Bird</div>
       </div>
       <p class="book-title">Bird by Bird</p>
@@ -128,7 +139,7 @@
 
     <div class="book-card">
       <div class="book-cover-wrap">
-        <img class="book-cover" src="https://covers.openlibrary.org/b/isbn/9780525510567-M.jpg" alt="Trick Mirror" loading="lazy">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/71RcO9LQRZL._UF1000,1000_QL80_.jpg" alt="Trick Mirror" loading="lazy">
         <div class="book-cover-placeholder" style="display:none">Trick Mirror</div>
       </div>
       <p class="book-title">Trick Mirror</p>
@@ -160,10 +171,41 @@
     <p class="book-review-text">Ultimately, In Other Words serves as Lahiri's personal "Why I Write." Wholeheartedly recommend this to people who love words, and are obsessed with picking the right ones.</p>
   </div>
 
-  <hr class="lp-divider">
+  </details>
 
-  <p class="lp-section-label">Fiction</p>
+  <details class="reading-section" open>
+  <summary class="reading-section-summary">Fiction</summary>
   <div class="bookshelf-grid" id="grid-fiction">
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/81q8GTFL1EL._UF1000,1000_QL80_.jpg" alt="Exit West" loading="lazy">
+        <div class="book-cover-placeholder" style="display:none">Exit West</div>
+      </div>
+      <p class="book-title">Exit West</p>
+      <p class="book-author">Mohsin Hamid</p>
+      <p class="book-date">2026</p>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img class="book-cover" src="https://m.media-amazon.com/images/I/71iv56nvW2L._UF1000,1000_QL80_.jpg" alt="The Anthropologists" loading="lazy">
+        <div class="book-cover-placeholder" style="display:none">The Anthropologists</div>
+      </div>
+      <p class="book-title">The Anthropologists</p>
+      <p class="book-author">Ays&#x0327;eg&#xFC;l Savas&#x0327;</p>
+      <p class="book-date">2026</p>
+    </div>
+
+    <div class="book-card">
+      <div class="book-cover-wrap">
+        <img class="book-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1318966691i/37819.jpg" alt="The God of Small Things" loading="lazy">
+        <div class="book-cover-placeholder" style="display:none">The God of Small Things</div>
+      </div>
+      <p class="book-title">The God of Small Things</p>
+      <p class="book-author">Arundhati Roy</p>
+      <p class="book-date">2014</p>
+    </div>
 
     <div class="book-card" data-review="good-houses">
       <div class="book-cover-wrap">
@@ -208,6 +250,126 @@
   <div class="book-review-panel" id="review-minor-detail">
     <p class="book-review-text">Despite being just around roughly more than a hundred pages, it took me close to a year to complete this book: the first half is haunting and tells with excruciatingly mundane detail something that happens to a female prisoner of war &mdash; which by itself wouldn't have stood out to the narrator when she comes across it in passing 25 years later, if not for a minor detail. The second part &mdash; written in what feels like a stream of consciousness as the narrator looks into the incident by retracing borders physically and emotionally &mdash; feels real, frantic, and finally, gut punching.</p>
   </div>
+
+  </details>
+
+  <details class="reading-section" open>
+  <summary class="reading-section-summary">Essays</summary>
+  <ul class="essay-list">
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://writing.upenn.edu/library/Sontag-Susan-Photography.pdf" target="_blank" rel="noopener">On Photography</a>
+          <span class="essay-byline">Susan Sontag &middot; 1977</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>A photograph is not just the result of an encounter between an event and a photographer; picture-taking is an event in itself, and one with ever more peremptory rights &mdash; to interfere with, to invade, or to ignore whatever is going on. Our very sense of situation is now articulated by the camera&rsquo;s interventions. The omnipresence of cameras persuasively suggests that time consists of interesting events, events worth photographing. This, in turn, makes it easy to feel that any event, once underway, and whatever its moral character, should be allowed to complete itself &mdash; so that something else can be brought into the world, the photograph.</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://cdn.thewirecutter.com/wp-content/uploads/2020/04/Joan-Didion-On-Keeping-a-Notebook.pdf" target="_blank" rel="noopener">On Keeping a Notebook</a>
+          <span class="essay-byline">Joan Didion &middot; 1966</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://sandhoefner.com/2019/01/27/on-disbelieving-atrocities/" target="_blank" rel="noopener">On Disbelieving Atrocities</a>
+          <span class="essay-byline">Arthur Koestler &middot; 1944</span>
+        </div>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://thedublinreview.com/article/even-if-you-beat-me/" target="_blank" rel="noopener">Even If You Beat Me</a>
+          <span class="essay-byline">Sally Rooney &middot; 2015</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>Competitive university debating requires of its participants a particular intersection of personal qualities. You have to enjoy talking out loud in front of people. You need to have a taste for ritualized, abstract interpersonal aggression. You have to be willing to tolerate physical and mental discomfort: weekends of sleeplessness, bad food or no food, and interminable group conversations about how tired and ill everybody feels. And you have to learn how to lose.</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://www.vogue.com/article/joan-didion-self-respect-essay-1961" target="_blank" rel="noopener">On Self-Respect</a>
+          <span class="essay-byline">Joan Didion &middot; 1961</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>Most of our platitudes notwithstanding, self-deception remains the most difficult deception. The charms that work on others count for nothing in that devastatingly well-lit back alley where one keeps assignations with oneself: no winning smiles will do here, no prettily drawn lists of good intentions.</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://alablog.in/issues/45/brewing-exclusion/" target="_blank" rel="noopener">Brewing Exclusion: Tea Shops and Women in Kerala</a>
+          <span class="essay-byline">Gaya Hadiya &middot; 2022</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>The mere sight of a tea shop was intimidating for my teenage self. It was beyond unusual to see women of any age hanging out at a tea shop in Kerala. Shilpa Padhke talks about the need for women to look purposeful while occupying public spaces in her book, <em>Why Loiter</em>. Loitering is not a luxury women have in our country. They will be interfered with and interrogated in order to remind them of this rule if they are found to be behaving not in accordance with it; more so in the case of young women.</p>
+        <p>This is why the accepted rule in Kerala is that a woman has no business being in a tea shop. All the &lsquo;respectable&rsquo; things women are allowed do not include socializing in the local tea shop.</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://feministkilljoys.com/2017/05/21/snap/" target="_blank" rel="noopener">Snap!</a>
+          <span class="essay-byline">Sara Ahmed &middot; 2017</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>Say you hear the sound of a twig snapping. You might not have noticed the twig before; you might have not noticed the pressure on the twig, how it was bent, but when it snaps, it catches your attention. You might hear the snap as the start of something. A snap is only the start of something because of what you did not notice, the pressure on the twig.</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://www.bostonreview.net/forum/agnes-callard-philosophy-anger/" target="_blank" rel="noopener">On Anger</a>
+          <span class="essay-byline">Agnes Callard &middot; 2020</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>Suppose that you are angry on Tuesday because I stole from you on Monday. Suppose that on Wednesday I return what I stole; I compensate you for any disadvantage occasioned by your not having had it for two days; I offer additional gifts to show my good will; I apologize for my theft as a moment of weakness; and, finally, I promise never to do it again. Suppose, in addition, that you believe my apology is sincere and that I will keep my promise.</p>
+        <p>Could it be rational for you to be just as angry on Thursday as you were on Tuesday? Moreover, could it be rational for you to conceive of a plan to steal from me in turn? And what if you don&rsquo;t stop at one theft: could it be rational for you to go on to steal from me again, and again, and again?</p>
+      </div>
+    </li>
+
+    <li class="essay-item">
+      <div class="essay-row">
+        <div class="essay-info">
+          <a class="essay-title" href="https://www.nobelprize.org/uploads/2018/06/ishiguro-lecture_en-1.pdf" target="_blank" rel="noopener">Nobel Lecture</a>
+          <span class="essay-byline">Kazuo Ishiguro &middot; 2017</span>
+        </div>
+        <button class="essay-expand" aria-expanded="false" aria-label="Show excerpt">+</button>
+      </div>
+      <div class="essay-snippet" hidden>
+        <p>I&rsquo;ve been emphasising here the small and the private, because essentially that&rsquo;s what my work is about. One person writing in a quiet room, trying to connect with another person, reading in another quiet &mdash; or maybe not so quiet &mdash; room. Stories can entertain, sometimes teach or argue a point. But for me the essential thing is that they communicate feelings. That they appeal to what we share as human beings across our borders and divides. But in the end, stories are about one person saying to another: This is the way it feels to me. Can you understand what I&rsquo;m saying? Does it also feel this way to you?</p>
+      </div>
+    </li>
+
+  </ul>
+  </details>
 
   <hr class="lp-divider">
 
@@ -276,6 +438,18 @@ document.addEventListener('DOMContentLoaded', function() {
       setTimeout(function() {
         panel.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
       }, 50);
+    });
+  });
+
+  // Essay snippet expand/collapse
+  document.querySelectorAll('.essay-expand').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var snippet = btn.closest('.essay-item').querySelector('.essay-snippet');
+      if (!snippet) return;
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      btn.textContent = open ? '+' : '−';
+      snippet.hidden = open;
     });
   });
 
