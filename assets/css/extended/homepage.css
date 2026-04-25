@@ -402,16 +402,23 @@
   user-select: none;
 }
 .reading-section-summary::-webkit-details-marker { display: none; }
-.reading-section-summary::after {
-  content: '▾';
-  font-size: 10px;
-  color: var(--tertiary);
+.reading-section-summary::before {
+  content: '›';
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary);
+  display: inline-block;
   transition: transform 0.2s ease;
+  line-height: 1;
+  margin-right: 2px;
 }
-details.reading-section:not([open]) .reading-section-summary::after {
-  transform: rotate(-90deg);
+details.reading-section[open] .reading-section-summary::before {
+  transform: rotate(90deg);
 }
 .reading-section-summary:hover {
+  color: var(--primary);
+}
+.reading-section-summary:hover::before {
   color: var(--primary);
 }
 
