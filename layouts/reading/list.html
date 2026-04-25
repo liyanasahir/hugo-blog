@@ -371,6 +371,72 @@
   </ul>
   </details>
 
+  <details class="reading-section">
+  <summary class="reading-section-summary">Poetry</summary>
+
+    <div class="poem-entry">
+      <p class="poem-highlight">&ldquo;and are we not of interest to each other?&rdquo;</p>
+      <div class="poem-meta-row">
+        <span class="poem-meta">Ars Poetica #100: I Believe &middot; Elizabeth Alexander</span>
+        <button class="poem-expand" aria-expanded="false">&#8250; read poem</button>
+      </div>
+      <div class="poem-full" hidden>
+        <div class="poem-text">Poetry, I tell my students,
+is idiosyncratic. Poetry
+
+is where we are ourselves
+(though Sterling Brown said
+
+&ldquo;Every &lsquo;I&rsquo; is a dramatic &lsquo;I&rsquo;&rdquo;),
+digging in the clam flats
+
+for the shell that snaps,
+emptying the proverbial pocketbook.
+
+Poetry is what you find
+in the dirt in the corner,
+
+overhear on the bus, God
+in the details, the only way
+
+to get from here to there.
+Poetry (and now my voice is rising)
+
+is not all love, love, love,
+and I&rsquo;m sorry the dog died.
+
+Poetry (here I hear myself loudest)
+is the human voice,
+
+and are we not of interest to each other?</div>
+      </div>
+    </div>
+
+    <div class="poem-entry">
+      <p class="poem-highlight">&ldquo;Joy is not made to be a crumb.&rdquo;</p>
+      <div class="poem-meta-row">
+        <span class="poem-meta">Don&rsquo;t Hesitate &middot; Mary Oliver</span>
+        <button class="poem-expand" aria-expanded="false">&#8250; read poem</button>
+      </div>
+      <div class="poem-full" hidden>
+        <div class="poem-text">If you suddenly and unexpectedly feel joy,
+don&rsquo;t hesitate. Give in to it. There are plenty
+of lives and whole towns destroyed or about
+to be. We are not wise, and not very often
+kind. And much can never be redeemed.
+Still, life has some possibility left. Perhaps this
+is its way of fighting back, that sometimes
+something happens better than all the riches
+or power in the world. It could be anything,
+but very likely you notice it in the instant
+when love begins. Anyway, that&rsquo;s often the case.
+Anyway, whatever it is, don&rsquo;t be afraid
+of its plenty. Joy is not made to be a crumb.</div>
+      </div>
+    </div>
+
+  </details>
+
   <hr class="lp-divider">
 
   <p class="reading-footer">
@@ -450,6 +516,18 @@ document.addEventListener('DOMContentLoaded', function() {
       btn.setAttribute('aria-expanded', open ? 'false' : 'true');
       btn.textContent = open ? '+' : '−';
       snippet.hidden = open;
+    });
+  });
+
+  // Poem expand/collapse
+  document.querySelectorAll('.poem-expand').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var full = btn.closest('.poem-entry').querySelector('.poem-full');
+      if (!full) return;
+      var open = btn.getAttribute('aria-expanded') === 'true';
+      btn.setAttribute('aria-expanded', open ? 'false' : 'true');
+      btn.innerHTML = open ? '&#8250; read poem' : '&#8249; close';
+      full.hidden = open;
     });
   });
 
