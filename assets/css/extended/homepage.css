@@ -199,77 +199,6 @@
   color: var(--primary);
 }
 
-/* Substack pill highlight */
-.lp-pill-substack {
-  border-color: #E05A2B;
-  color: #E05A2B;
-}
-.lp-pill-substack:hover {
-  background: #FEF0EB;
-  color: #C04418;
-  border-color: #C04418;
-}
-.dark .lp-pill-substack {
-  border-color: #F08060;
-  color: #F08060;
-}
-.dark .lp-pill-substack:hover {
-  background: #3D1F14;
-  color: #F8A88A;
-  border-color: #F8A88A;
-}
-
-/* Substack CTA banner */
-.substack-cta {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
-  background: var(--code-bg);
-  border: 0.5px solid var(--border);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
-  margin: 0 0 2rem;
-  flex-wrap: wrap;
-}
-.substack-cta-text {
-  font-size: 13.5px;
-  color: var(--secondary);
-  line-height: 1.5;
-}
-.substack-cta-link {
-  font-size: 13px;
-  font-weight: 500;
-  color: #E05A2B;
-  text-decoration: none;
-  white-space: nowrap;
-  padding: 4px 12px;
-  border-radius: 999px;
-  border: 0.5px solid #E05A2B;
-}
-.substack-cta-link:hover {
-  background: #FEF0EB;
-  color: #C04418;
-}
-.dark .substack-cta-link {
-  color: #F08060;
-  border-color: #F08060;
-}
-.dark .substack-cta-link:hover {
-  background: #3D1F14;
-  color: #F8A88A;
-}
-
-/* Substack badge on Writing page post cards */
-.lp-tag-substack {
-  background: #FEF0EB;
-  color: #C04418;
-}
-.dark .lp-tag-substack {
-  background: #3D1F14;
-  color: #F8A88A;
-}
-
 /* ── Writing page entries ── */
 .writing-item .entry-header h2 {
   font-size: 1.1em;
@@ -297,23 +226,6 @@
 }
 .writing-item .entry-footer {
   display: none;
-}
-
-/* Writing page Substack note */
-.writing-substack-note {
-  font-size: 13px;
-  color: var(--secondary);
-  margin: 0 0 1rem;
-}
-.writing-substack-note a {
-  color: #E05A2B;
-  text-decoration: none;
-}
-.writing-substack-note a:hover {
-  text-decoration: underline;
-}
-.dark .writing-substack-note a {
-  color: #F08060;
 }
 
 /* ── Writing page filters ── */
@@ -466,6 +378,122 @@
 }
 .dark .book-card:hover {
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/* ── Reading page collapsible sections ── */
+.reading-section {
+  margin-bottom: 0;
+}
+.reading-section + .reading-section {
+  margin-top: 2rem;
+}
+.reading-section-summary {
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-bottom: 1.25rem;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  user-select: none;
+}
+.reading-section-summary::-webkit-details-marker { display: none; }
+.reading-section-summary::before {
+  content: '›';
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--secondary);
+  display: inline-block;
+  transition: transform 0.2s ease;
+  line-height: 1;
+  margin-right: 2px;
+}
+details.reading-section[open] .reading-section-summary::before {
+  transform: rotate(90deg);
+}
+.reading-section-summary:hover {
+  color: var(--primary);
+}
+.reading-section-summary:hover::before {
+  color: var(--primary);
+}
+
+/* ── Essays list ── */
+.essay-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem;
+}
+.essay-item {
+  border-bottom: 0.5px solid var(--tertiary);
+}
+.essay-item:first-child {
+  border-top: 0.5px solid var(--tertiary);
+}
+.essay-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem 0;
+}
+.essay-info {
+  flex: 1;
+  min-width: 0;
+}
+.essay-title {
+  font-size: 15px;
+  color: var(--primary);
+  text-decoration: none;
+  display: block;
+  line-height: 1.4;
+}
+.essay-title:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.essay-byline {
+  font-size: 12.5px;
+  color: var(--secondary);
+  display: block;
+  margin-top: 2px;
+}
+.essay-expand {
+  background: none;
+  border: 0.5px solid var(--border);
+  border-radius: 4px;
+  color: var(--secondary);
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1;
+  padding: 2px 7px;
+  flex-shrink: 0;
+  transition: color 0.15s, border-color 0.15s;
+}
+.essay-expand:hover {
+  color: var(--primary);
+  border-color: var(--secondary);
+}
+.essay-expand[aria-expanded="true"] {
+  color: var(--primary);
+}
+.essay-snippet {
+  background: var(--code-bg);
+  border-left: 2px solid var(--border);
+  border-radius: 0 6px 6px 0;
+  margin: 0 0 0.85rem;
+  padding: 0.75rem 1rem;
+}
+.essay-snippet p {
+  font-size: 14px;
+  color: var(--secondary);
+  font-style: italic;
+  line-height: 1.75;
+  margin: 0;
 }
 
 /* ── Malayalam accent text ── */
