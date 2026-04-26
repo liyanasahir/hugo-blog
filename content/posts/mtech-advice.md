@@ -1,6 +1,7 @@
 ---
 title: "What They Don't Tell You in the MTech Offer Letter."
 date: "2026-03-22"
+draft: true
 tags:
   - "tips"
   - "academic"
