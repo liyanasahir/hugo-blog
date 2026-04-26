@@ -1,0 +1,135 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>Work</h1>
+</header>
+
+<div class="work-tabs" role="tablist">
+  <button class="work-tab active" data-tab="research" role="tab" aria-selected="true">Research</button>
+  <button class="work-tab" data-tab="talks" role="tab" aria-selected="false">Talks</button>
+  <button class="work-tab" data-tab="community" role="tab" aria-selected="false">Community</button>
+</div>
+
+<div class="work-tab-panel" data-tab="research">
+  <p>My research sits at the intersection of representation learning and data-centric ML, with a thread running through vision, graphs, and tabular data. I care about what happens when the data itself is imperfect: noisy labels, severe class imbalance, scarce supervision, or distributions that shift in ways that are hard to anticipate.</p>
+
+  <p>Some of this is theoretical curiosity: what a model memorizes versus generalizes, how neighborhood structure shapes representations, how learned embeddings behave when the underlying distribution is adversarial or long-tailed. But much of it is grounded in working directly with large-scale financial transaction data, where class imbalance is not a benchmark setting but a structural reality, where fraud patterns evolve adversarially, and where a model's failure modes have real consequences. That operational experience shapes how I think about research problems. I'm drawn to methods that are principled enough to publish and robust enough to actually deploy.</p>
+
+  <p>Lately I've been thinking about tabular representation learning: how SSL objectives developed for vision and language translate (or don't) to structured, heterogeneous tabular data, and what the right inductive biases look like for this setting.</p>
+
+  <details class="reading-section work-pubs-details">
+    <summary class="reading-section-summary">Publications</summary>
+
+    <div class="pub-list">
+
+      <div class="pub-block">
+        <p class="pub-title">Towards Equitable Coreset Selection: Addressing Challenges Under Class Imbalance</p>
+        <p class="pub-meta-line"><em>Liyana Sahir, AN Reddy, BS Achary, A Sharma, K Shah, S Gupta, S Asthana</em> · CIKM 2025</p>
+        <p class="pub-desc">Selecting which data to train on is as important as selecting how to train — specially when you're working at the scale of billions of samples, and even more so when that data is heavily class imbalanced. This work looks at when and why standard coreset selection methods fail under class imbalance, and proposes a more equitable approach without sacrificing efficiency.</p>
+      </div>
+
+      <div class="pub-block">
+        <p class="pub-title">AMEND: Adaptive Margin and Expanded Neighborhood for Efficient Generalized Category Discovery</p>
+        <p class="pub-meta-line"><em>A Banerjee, Liyana Sahir, S Biswas</em> · WACV 2024</p>
+      </div>
+
+      <div class="pub-block">
+        <p class="pub-title">AdaPrompt: Prompt Tuning with Adaptive Neighbours for Generalized Category Discovery</p>
+        <p class="pub-meta-line"><em>Liyana Sahir, A Banerjee, S Biswas</em> · ICIP 2024</p>
+        <p class="pub-desc">Both from my masters at IISc, advised by Prof. Soma Biswas. These tackle generalized category discovery (GCD): the problem of learning representations that simultaneously recognize known classes from your labelled and unlabelled set and discover novel unlabelled classes from unlabeled data. The open-world setting forces you to think carefully about what good representations actually mean when the label space itself is incomplete.</p>
+      </div>
+
+      <div class="pub-block">
+        <p class="pub-title">Study of Topology Bias in GNN-based Knowledge Graph Algorithms</p>
+        <p class="pub-meta-line"><em>A Surisetty, A Malhotra, D Chaurasiya, S Modak, S Yerramsetty, A Singh, L Sahir, E Abdel-Raheem</em> · ICDM-W 2023</p>
+        <p class="pub-desc">Some findings while working on representations for knowledge graphs using graph neural networks, undertaken while interning at Mastercard, made it into this paper.</p>
+      </div>
+
+      <p class="pub-scholar"><a href="https://scholar.google.com/citations?user=6SdmbwQAAAAJ" target="_blank" rel="noopener">Google Scholar →</a></p>
+
+    </div>
+  </details>
+</div>
+
+<div class="work-tab-panel" data-tab="talks" hidden>
+  <div class="talk-block">
+    <p class="talk-title">The Trustworthiness of AI</p>
+    <div class="talk-meta-row">
+      <span class="talk-meta">GDG DevFest Kozhikode · December 2024</span>
+      <a class="social-link-card" href="https://x.com/GDGKozhikode/status/1867818356692463731" target="_blank" rel="noopener">
+        <span class="social-link-icon social-icon-x">𝕏</span>
+        <span class="social-link-label">View post →</span>
+      </a>
+    </div>
+    <p class="talk-desc">On what trustworthy AI means in practice: reliability, interpretability, and the gap between benchmark performance and real-world deployment.</p>
+  </div>
+
+  <div class="talk-block">
+    <p class="talk-title">Women in AI: Initiatives and Impact</p>
+    <div class="talk-meta-row">
+      <span class="talk-meta">AI Impact Summit · 2026</span>
+      <a class="social-link-card" href="https://www.linkedin.com/feed/update/urn:li:activity:7429945090934013952/" target="_blank" rel="noopener">
+        <span class="social-link-icon social-icon-li">in</span>
+        <span class="social-link-label">View post →</span>
+      </a>
+    </div>
+    <p class="talk-desc">Representing Mastercard AI Garage's work on building more inclusive AI research communities.</p>
+  </div>
+
+  <div class="talk-block">
+    <p class="talk-title">Career Journeys in AI <span class="talk-role">(panel moderator)</span></p>
+    <div class="talk-meta-row">
+      <span class="talk-meta">WiDS India · 2024</span>
+      <a class="social-link-card" href="https://www.linkedin.com/posts/liyanasahir_it-was-a-lovely-experience-getting-to-moderate-activity-7200204125228183552-KBOT" target="_blank" rel="noopener">
+        <span class="social-link-icon social-icon-li">in</span>
+        <span class="social-link-label">View post →</span>
+      </a>
+    </div>
+    <p class="talk-desc">Moderated a panel on career paths in AI, with a focus on non-linear journeys and underrepresented voices in the field.</p>
+  </div>
+</div>
+
+<div class="work-tab-panel" data-tab="community" hidden>
+  <div class="community-block">
+    <p class="community-name">Mastercard AI Garage</p>
+    <p class="community-desc">I co-organize the Paper Reading Group which hosts weekly sessions to discuss the latest as well as the seminal works in AI/ML. Active member of Women@AIG.</p>
+  </div>
+
+  <div class="community-block">
+    <p class="community-name"><a class="community-link" href="https://kerala.gov.in/articledetail/NDQxNzk4NTI2Ljg0/0?lan=en" target="_blank" rel="noopener">SHE GCEK ↗</a></p>
+    <p class="community-desc">Founding member for what is now a statewide initiative for female engineering students. Led the organization in its initial course of establishment in the campus, coordinating over a dozen sessions between students, alumni and industry experts.</p>
+  </div>
+
+  <div class="community-block">
+    <p class="community-name"><a class="community-link" href="https://witi.com" target="_blank" rel="noopener">WITI (Women in Technology International) ↗</a></p>
+    <p class="community-desc">WITI is a 30-year-old global network that promotes women in technology. Program Manager for WITI India for 6 months, full-time; co-organized WITI's first APAC conference.</p>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var tabs = document.querySelectorAll('.work-tab');
+  var panels = document.querySelectorAll('.work-tab-panel');
+
+  tabs.forEach(function(tab) {
+    tab.addEventListener('click', function() {
+      var target = tab.getAttribute('data-tab');
+
+      tabs.forEach(function(t) {
+        t.classList.remove('active');
+        t.setAttribute('aria-selected', 'false');
+      });
+      panels.forEach(function(p) {
+        p.hidden = true;
+      });
+
+      tab.classList.add('active');
+      tab.setAttribute('aria-selected', 'true');
+      document.querySelector('.work-tab-panel[data-tab="' + target + '"]').hidden = false;
+    });
+  });
+});
+</script>
+
+{{- end }}{{- /* end main */ -}}

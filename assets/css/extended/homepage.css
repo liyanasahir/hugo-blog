@@ -1,3 +1,7 @@
+/* ── Nav: move | separator before theme toggle ── */
+#theme-toggle { order: 2; }
+.lang-switch   { order: 1; }
+
 /* ── Landing page ── */
 .lp {
   max-width: 680px;
@@ -34,7 +38,23 @@
 .lp-subtitle {
   font-size: 14px;
   color: var(--secondary);
-  margin: 0;
+  margin: 0 0 0.15rem;
+}
+.lp-malayalam-hint {
+  margin: 0.45rem 0 0;
+  font-size: 13px;
+  font-family: 'Manjari', sans-serif;
+}
+.lp-malayalam-hint a {
+  color: #E8A930;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+}
+.dark .lp-malayalam-hint a {
+  color: #E8A930;
+}
+.lp-malayalam-hint a:hover {
+  opacity: 0.8;
 }
 .lp-bio p {
   font-size: 16px;
@@ -44,6 +64,15 @@
 }
 .lp-bio p:last-child {
   margin-bottom: 0;
+}
+.lp-bio a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--secondary);
+}
+.lp-bio a:hover {
+  text-decoration-color: var(--primary);
 }
 
 /* External link pills */
@@ -65,6 +94,52 @@
 .lp-pill:hover {
   background: var(--code-bg);
   color: var(--primary);
+}
+
+/* Substack CTA */
+.lp-substack-cta {
+  display: inline-block;
+  font-size: 13px;
+  color: #1a1a1a;
+  text-decoration: none;
+  padding: 5px 13px;
+  border: none;
+  border-radius: 999px;
+  background: #E8A930;
+  opacity: 0.82;
+  transition: opacity 0.15s;
+  font-weight: 500;
+}
+.lp-substack-cta:hover {
+  opacity: 1;
+}
+.lp-substack-sub {
+  color: #5a4a00;
+  font-size: 12px;
+}
+
+/* About dictionary entry */
+.about-dict-entry {
+  margin-bottom: 2rem;
+}
+.about-dict-headword {
+  font-family: 'Manjari', sans-serif;
+  font-size: 2em;
+  color: var(--primary);
+  margin: 0 0 0.25rem;
+  line-height: 1.2;
+}
+.about-dict-pronun {
+  font-size: 13.5px;
+  color: var(--tertiary);
+  margin: 0 0 0.75rem;
+  letter-spacing: 0.01em;
+}
+.about-dict-def {
+  font-size: 15.5px;
+  color: var(--secondary);
+  line-height: 1.75;
+  margin: 0;
 }
 
 /* Divider */
@@ -508,12 +583,16 @@ details.reading-section[open] .reading-section-summary::before {
   border-bottom: none;
 }
 .poem-highlight {
-  font-size: 19px;
+  font-size: 15px;
   font-style: italic;
-  color: var(--primary);
-  line-height: 1.5;
+  font-family: Georgia, 'Times New Roman', serif;
+  color: #E8A930;
+  line-height: 1.6;
   margin: 0 0 0.85rem;
   font-weight: 400;
+}
+.dark .poem-highlight {
+  color: #E8A930;
 }
 .poem-meta-row {
   display: flex;
@@ -681,6 +760,183 @@ details.reading-section[open] .reading-section-summary::before {
   font-size: 11px;
   color: var(--tertiary);
   padding: 0 2px;
+}
+
+/* ── Work page ── */
+.work-tabs {
+  display: flex;
+  gap: 0;
+  margin-bottom: 2.5rem;
+  border-bottom: 1.5px solid var(--border);
+}
+.work-tab {
+  background: none;
+  border: none;
+  border-bottom: 2.5px solid transparent;
+  margin-bottom: -1.5px;
+  padding: 0.5rem 1.1rem;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--secondary);
+  cursor: pointer;
+  letter-spacing: 0.01em;
+  transition: color 0.15s, border-color 0.15s;
+}
+.work-tab:hover {
+  color: var(--primary);
+}
+.work-tab.active {
+  color: var(--primary);
+  border-bottom-color: var(--primary);
+}
+
+.work-tab-panel p {
+  margin-bottom: 1rem;
+  line-height: 1.75;
+}
+
+.work-pubs-details {
+  margin-top: 1.75rem;
+}
+
+.pub-list {
+  padding-top: 0.5rem;
+}
+.pub-block {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.pub-block:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+.pub-title {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 0.3rem;
+  line-height: 1.5;
+}
+.pub-meta-line {
+  font-size: 13px;
+  color: var(--secondary);
+  margin: 0 0 0.6rem;
+  line-height: 1.5;
+}
+.pub-desc {
+  font-size: 13.5px;
+  color: var(--secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+.pub-scholar {
+  margin-top: 0.75rem;
+  font-size: 13px;
+}
+.pub-scholar a {
+  color: var(--secondary);
+}
+.pub-scholar a:hover {
+  color: var(--primary);
+}
+
+.talk-block {
+  margin-bottom: 2rem;
+}
+.talk-title {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 0.25rem;
+}
+.talk-role {
+  font-weight: 400;
+  color: var(--secondary);
+  font-size: 13.5px;
+}
+.talk-meta-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap;
+}
+.talk-meta {
+  font-size: 12.5px;
+  color: var(--secondary);
+  margin: 0;
+}
+.talk-desc {
+  font-size: 13.5px;
+  color: var(--secondary);
+  line-height: 1.65;
+  margin: 0;
+}
+.social-link-card {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.3rem 0.7rem;
+  border: 0.5px solid var(--border);
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 12.5px;
+  color: var(--secondary);
+  background: var(--code-bg);
+  transition: border-color 0.15s, color 0.15s;
+}
+.social-link-card:hover {
+  border-color: var(--secondary);
+  color: var(--primary);
+}
+.social-link-icon {
+  font-size: 11px;
+  font-weight: 700;
+  line-height: 1;
+  font-style: normal;
+}
+.social-icon-x { font-family: serif; }
+.social-icon-li {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  background: #0A66C2;
+  color: white;
+  border-radius: 2px;
+  font-size: 9px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+.social-link-label {
+  font-size: 12px;
+}
+
+.community-block {
+  margin-bottom: 1.5rem;
+}
+.community-name {
+  font-size: 14.5px;
+  font-weight: 500;
+  color: var(--primary);
+  margin: 0 0 0.3rem;
+}
+.community-link {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--border);
+}
+.community-link:hover {
+  text-decoration-color: var(--primary);
+}
+.community-desc {
+  font-size: 13.5px;
+  color: var(--secondary);
+  line-height: 1.65;
+  margin: 0;
 }
 
 /* Responsive */

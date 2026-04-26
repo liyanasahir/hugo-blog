@@ -50,8 +50,8 @@ buildExpired = false
   weight = 5
 
 [[menu.main]]
-  name = "Research"
-  url = "/research/"
+  name = "Work"
+  url = "/work/"
   weight = 10
 
 [[menu.main]]
@@ -69,10 +69,6 @@ buildExpired = false
   url = "/about/"
   weight = 30
 
-[[menu.main]]
-  name = "Now"
-  url = "/now/"
-  weight = 40
 
 [markup.goldmark.renderer]
 unsafe = true
