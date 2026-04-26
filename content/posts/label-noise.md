@@ -2,6 +2,7 @@
 title: "A Field Guide to Learning with Noisy Labels"
 date: "2025-12-01"
 slug: "label-noise"
+draft: true
 tags: ["notes", "label-noise", "deep-learning", "memorization"]
 math: true
 ---
