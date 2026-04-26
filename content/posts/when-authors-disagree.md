@@ -14,7 +14,6 @@ socialImage: "/media/author1.jpg"
 substack: true
 ---
 
-{{< substack-cta >}}
 
 {{< figure align=center src="/media/author1.jpg" caption="Underline not mine.">}}
 
@@ -41,4 +40,4 @@ All this to say: as pointless as this debate may sound for some, the words you u
 
 ***
 
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9).
+I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/).
