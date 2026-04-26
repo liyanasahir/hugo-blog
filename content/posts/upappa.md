@@ -14,7 +14,6 @@ images:
 substack: true
 ---
 
-{{< substack-cta >}}
 
 ***
 

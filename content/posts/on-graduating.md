@@ -6,7 +6,6 @@ tags = ["personal"]
 substack = true
 +++
 
-{{< substack-cta >}}
 
 Checking my phone late in the evening last week, I noticed that our final semester results had been published. The notification didn't bring the usual nervousness that typically accompanies result-checking; this time, I had a fairly good idea of what to expect.
 
@@ -96,4 +95,4 @@ There is a lot more to learn, and a lot more time to figure it all out.
 
 ***
 
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://forms.gle/ngZyP7agyeFGx3QC9). And as always, if you've reached this far, I'd love to know your thoughts. 
+I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/). And as always, if you've reached this far, I'd love to know your thoughts. 

@@ -5,7 +5,6 @@ tags = ["personal"]
 substack = true
 +++
 
-{{< substack-cta >}}
 
 *A month ago, we organized Hack the Night — a 24-hour hackathon, exclusively for women. This is the story of all that went on behind the scenes.*
 
