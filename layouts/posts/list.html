@@ -56,9 +56,6 @@
       {{- else if eq $primaryTag "tips" }}
       <span class="lp-post-tag lp-tag-tips">tips</span>
       {{- end }}
-      {{- if .Params.substack }}
-      <span class="lp-post-tag lp-tag-substack">substack</span>
-      {{- end }}
       {{- if not (.Param "hideMeta") }}
       <span class="writing-entry-meta">
         {{- partial "post_meta.html" . -}}
