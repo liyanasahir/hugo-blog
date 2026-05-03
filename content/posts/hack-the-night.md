@@ -123,7 +123,7 @@ Our techno-cultural management fest which took place every three years was just 
 
 *Atthri — mentor and role model when it comes to event management. Gave a detailed overview of all the possible work lying ahead, the task force that would be needed, and all the possible issues that could arise (even though it didn’t come to that, thankfully).*
 
-*Amegh — a totally calm and confident pillar of strength, and the one to initially plan out all our food related requirements; before suggesting that the event be completely organized by girls and handing over those tasks to Ashika, while providing all other sorts of support throughout.*
+*Amegh - a totally calm and confident pillar of strength, and the one to initially plan out all our food related requirements; before suggesting that the event be completely organized by girls and handing over those tasks to Ashika, while providing all other sorts of support throughout.*
 
 *Arfad — for stepping up and working overtime in times of need, specially when we were worried that the participant count could be lesser than expected, despite the efforts being put in.*
 

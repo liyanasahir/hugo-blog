@@ -69,7 +69,7 @@ A few months ago, I came across an article written by Dr. RVG Menon for the coll
 
 > I [..] cannot accept wholeheartedly, the frequent demand from the industry to make engineering education more employment oriented. Of course the industry would always like to get readymade graduates who can step into their jobs with the minimum of training or preparation. But engineering is such a vast and varied field that no college can readily prepare them for any job. They may go into teaching and/or research, design, production or management in a hundred different fields. How can the college prepare the students for all these jobs? All that we can and should do is to prepare them for learning themselves on the job.
 >
-> — Dr. RVG Menon
+> - Dr. RVG Menon
 
 He goes on to talk about how things like the lack of communication skills in engineering students that we cry about is a result of a faulty primary education system{{< memory >}}The full article by Dr. RVG Menon, 'An Interlude at Kannur', can be found [here](https://online.fliphtml5.com/wqbwu/uwti/#p=152). Pages 152-153.{{< /memory >}}, and not something that an engineering college can put a band-aid over. That our engineering colleges do not make their students industry ready is a common complaint everyone hears at some stage. I could see where he was coming from. 
 

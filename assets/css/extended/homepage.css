@@ -141,6 +141,21 @@
   line-height: 1.75;
   margin: 0;
 }
+.about-dict-defs {
+  margin: 0.5rem 0 0 1.4rem;
+  padding: 0;
+  font-size: 15.5px;
+  color: var(--secondary);
+  line-height: 1.85;
+}
+.about-dict-defs li {
+  margin-bottom: 0.1rem;
+}
+.about-dict-defs a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
 
 /* Divider */
 .lp-divider {

@@ -138,7 +138,7 @@ The canonical operationalization is **Co-teaching** (Han et al., NeurIPS 2018): 
 
 Prior work explored related ideas:
 - **MentorNet**: a separate mentor network selects clean instances, but requires clean validation data or a predefined curriculum when none is available.
-- **Decoupling**: trains two networks and updates only on instances where they disagree — simpler than loss thresholding, but less principled about the selection criterion.
+- **Decoupling**: trains two networks and updates only on instances where they disagree - simpler than loss thresholding, but less principled about the selection criterion.
 - **Co-teaching+**: extends Co-teaching by also requiring disagreement between networks, combining both signals.
 
 What does Co-teaching buy over Decoupling? The loss-based selection is more directly motivated by the memorization dynamics: it selects examples the network hasn't yet memorized. Disagreement-based selection (Decoupling) is more conservative and can fail when both networks agree on a wrong answer early in training.
@@ -296,7 +296,7 @@ $$\mathbb{E}_\mathcal{D}[\mathbf{1}(g^*(f^*(X), Y))] = e \cdot \left(\frac{1}{2}
 
 where $\Delta(\Sigma, \mu_1, \mu_2) = 8 \cdot \text{tr}(\Sigma) / ||\mu_1 - \mu_2||^2$ measures class separability of the SSL features. Better SSL representations produce more separated distributions and lower expected error.
 
-The Gaussian assumption (3) is the most load-bearing and the least obviously satisfied. SSL features in practice are not Gaussian — they tend to be concentrated on manifolds, often with heavy tails. For vision features this may be a reasonable approximation; for graph or tabular data, it is much less clear. The theorem is useful for building intuition but should be treated cautiously as a practical guarantee.
+The Gaussian assumption (3) is the most load-bearing and the least obviously satisfied. SSL features in practice are not Gaussian - they tend to be concentrated on manifolds, often with heavy tails. For vision features this may be a reasonable approximation; for graph or tabular data, it is much less clear. The theorem is useful for building intuition but should be treated cautiously as a practical guarantee.
 
 ### What RRL gets right, and what it doesn't address
 
@@ -328,13 +328,13 @@ The post above reflects the literature as of early 2024. A few papers since then
 
 **UNICON** (Karim et al., CVPR 2022) extends DivideMix by combining contrastive learning with a uniform selection procedure that avoids the class-imbalance failures of purely GMM-based separation. It treats the GMM as a soft prior rather than a hard gate, which helps in regimes where clean and noisy loss distributions overlap significantly.
 
-**SED** (Li et al., NeurIPS 2023) takes a semantic embedding distillation approach: use a teacher network trained on pseudo-clean subsets to distill noise-robust representations into the student. The key contribution is a per-sample distillation weight based on semantic consistency — examples whose semantics disagree between teacher and student are down-weighted. This partially addresses the problem of noisy minority classes, since semantic consistency is a less biased signal than loss magnitude.
+**SED** (Li et al., NeurIPS 2023) takes a semantic embedding distillation approach: use a teacher network trained on pseudo-clean subsets to distill noise-robust representations into the student. The key contribution is a per-sample distillation weight based on semantic consistency - examples whose semantics disagree between teacher and student are down-weighted. This partially addresses the problem of noisy minority classes, since semantic consistency is a less biased signal than loss magnitude.
 
 **DISC** (Li et al., ICLR 2024) is notable for explicitly targeting the distribution mismatch between noisy training sets and clean test distributions. It uses a distribution-aware sample selection criterion that accounts for class frequency, making the selection less biased toward majority classes under imbalance. This is one of the first papers to directly attack the imbalance-noise interaction that I flag as an open question below.
 
-**PNP** (Zhang et al., ICLR 2024) — *Progressive Noise Purification* — frames noise correction as a progressive refinement problem: start with a rough label correction and iteratively improve it using the model's own evolving representations. The progressive framing helps avoid the circularity problem with the small-loss heuristic by anchoring early-round corrections to a cleaner signal.
+**PNP** (Zhang et al., ICLR 2024) - *Progressive Noise Purification* - frames noise correction as a progressive refinement problem: start with a rough label correction and iteratively improve it using the model's own evolving representations. The progressive framing helps avoid the circularity problem with the small-loss heuristic by anchoring early-round corrections to a cleaner signal.
 
-**Benchmark re-evaluation** (2024): Several teams have re-evaluated standard methods on CIFAR-10N, CIFAR-100N, and WebVision with controlled compute budgets, finding that the benchmark rankings shift considerably from prior work. DivideMix and its variants remain competitive, but simpler methods (early stopping + temperature scaling) close the gap significantly when hyperparameters are properly tuned — a reminder that the reported improvements in the literature are often against undertuned baselines.
+**Benchmark re-evaluation** (2024): Several teams have re-evaluated standard methods on CIFAR-10N, CIFAR-100N, and WebVision with controlled compute budgets, finding that the benchmark rankings shift considerably from prior work. DivideMix and its variants remain competitive, but simpler methods (early stopping + temperature scaling) close the gap significantly when hyperparameters are properly tuned - a reminder that the reported improvements in the literature are often against undertuned baselines.
 
 ---
 

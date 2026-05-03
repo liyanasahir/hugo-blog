@@ -17,7 +17,7 @@ buildExpired = false
 [params]
   env = "production"
   title = "Liyana Sahir"
-  description = "Liyana Sahir — Researcher, Data Scientist"
+  description = "Liyana Sahir | AI/ML Researcher, Data Scientist, Occasional Writer"
   images = ["/media/profile_seoul.jpg"]
   DateFormat = "January 2, 2006"
   defaultTheme = "light"

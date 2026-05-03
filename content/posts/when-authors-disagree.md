@@ -19,7 +19,7 @@ substack: true
 
 {{< figure align=center src="/media/author2.jpg" caption="The book is 'A course in game theory' by Martin J. Osborne and Ariel Rubinstein.">}}
 
-I'm fascinated by the conviction expressed by the author specially in these lines (brackets added by me for additional context): "If such usage diverts some readers' attentions from the subjects discussed in this book and leads them to contemplate sexism in the use of language, which is surely an issue at least as significant as the minutae of sequential equilibrium (a topic within game theory), then an increase in social welfare (an objective within some game theoretic problems) will have been achieved." -- Reader, I could feel a mic drop.
+I'm fascinated by the conviction expressed by the author specially in these lines (brackets added by me for additional context): "If such usage diverts some readers' attentions from the subjects discussed in this book and leads them to contemplate sexism in the use of language, which is surely an issue at least as significant as the minutae of sequential equilibrium (a topic within game theory), then an increase in social welfare (an objective within some game theoretic problems) will have been achieved." - Reader, I could feel a mic drop.
 
 It's interesting to observe academics within STEM express passionate opinions about topics and issues outside their primary academic interests. More so when they are expressed in print, with such understated passion as shown here. Perhaps the more interesting thing to note was that this was written and published in 1994. I was naively under the impression that this was a more modern debate. 
 

@@ -53,6 +53,6 @@ Moderated a panel on career paths in AI, with a focus on non-linear journeys and
 
 ## Community
 
-**Mastercard AI Garage** — I co-organize the Paper Reading Group which hosts weekly sessions to discuss the latest as well as the seminal works in AI/ML. I've also co-organized the ML Symposium 2025, and the Product Innovation Championship 2026. Active member of Women@AIG.
+**Mastercard AI Garage** - I co-organize the Paper Reading Group which hosts weekly sessions to discuss the latest as well as the seminal works in AI/ML. I've also co-organized the ML Symposium 2025, and the Product Innovation Championship 2026. Active member of Women@AIG.
 
-**Older work** — Founding member of SHE GCEK; previously with WITI India.
+**Older work** - Founding member of SHE GCEK; previously with WITI India.

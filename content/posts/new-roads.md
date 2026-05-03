@@ -71,7 +71,7 @@ A mental fog had settled in and found a temporary residence in my head.
 
 As all fogs do, this one too moved out of my head eventually, taking its due time.
 
-In October, I found myself settling into a lovely little home, marking three months since my arrival in Delhi — two months later than anticipated. I've been slowly building new routines, dusting off the Activa to get back into the role of daily companion. She and I have been attempting to map the contours of Gurgaon together since then, both having each other’s backs. Building a life takes time, and in the seven months I've spent here, I can already see myself making homes out of people and places in a way that would be hard to let go. Isn't that both the beauty and tragedy of getting to live a full life?
+In October, I found myself settling into a lovely little home, marking three months since my arrival in Delhi - two months later than anticipated. I've been slowly building new routines, dusting off the Activa to get back into the role of daily companion. She and I have been attempting to map the contours of Gurgaon together since then, both having each other’s backs. Building a life takes time, and in the seven months I've spent here, I can already see myself making homes out of people and places in a way that would be hard to let go. Isn't that both the beauty and tragedy of getting to live a full life?
 
 Seasons change, and life goes on, inevitably. I've been feeling the fog (literal and otherwise) from late December getting lighter. The days are slightly warmer, the chill feels less harsh.
 
