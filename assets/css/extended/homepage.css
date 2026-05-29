@@ -954,6 +954,233 @@ details.reading-section[open] .reading-section-summary::before {
   margin: 0;
 }
 
+/* ── Garden (Open Tabs) ── */
+.garden-page {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.garden-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.garden-item {
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--tertiary);
+}
+.garden-item:last-child {
+  border-bottom: none;
+}
+.garden-item-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  margin-bottom: 0.3rem;
+}
+.garden-title {
+  font-size: 14px;
+  color: var(--primary);
+  text-decoration: none;
+}
+.garden-title:hover {
+  color: var(--secondary);
+}
+.garden-stage {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.garden-stage-seedling { background: #EEF2E6; color: #5A7247; }
+.garden-stage-growing  { background: #E6F0EE; color: #3D7A6A; }
+.garden-stage-in-bloom { background: #FAEEDA; color: #854F0B; }
+.dark .garden-stage-seedling { background: #2A3320; color: #A3C48A; }
+.dark .garden-stage-growing  { background: #1E3330; color: #7BC4AD; }
+.dark .garden-stage-in-bloom { background: #3D2E0F; color: #E4B560; }
+.garden-item-meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+.garden-topics {
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+  flex-wrap: wrap;
+}
+.garden-topic {
+  font-size: 12px;
+  color: var(--secondary);
+  white-space: nowrap;
+  text-transform: lowercase;
+}
+.garden-topic + .garden-topic::before {
+  content: "\00b7";
+  margin: 0 0.4rem;
+  color: var(--tertiary);
+}
+.garden-tended {
+  font-size: 12px;
+  color: var(--tertiary);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.garden-legend {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+.garden-legend-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+.garden-legend-img {
+  height: 80px;
+  width: auto;
+}
+.garden-legend-desc {
+  font-size: 12px;
+  color: var(--secondary);
+}
+.garden-intro {
+  font-size: 14px;
+  color: var(--secondary);
+  line-height: 1.7;
+  margin: 0 0 1rem;
+}
+.garden-intro a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--secondary);
+}
+.garden-intro a:hover {
+  text-decoration-color: var(--primary);
+}
+
+/* Garden single note */
+.garden-note {
+  max-width: 680px;
+  margin: 0 auto;
+}
+.garden-note-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
+}
+.garden-note-meta .garden-tended {
+  margin-left: auto;
+}
+.garden-note-tags {
+  font-size: 12px;
+  color: var(--secondary);
+  text-transform: lowercase;
+}
+.garden-note-tag-link {
+  color: var(--secondary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--tertiary);
+}
+.garden-note-tag-link:hover {
+  text-decoration-color: var(--secondary);
+}
+.garden-back {
+  font-size: 13px;
+  color: var(--secondary);
+  text-decoration: none;
+}
+.garden-back:hover {
+  color: var(--primary);
+}
+
+/* Garden tag cluster */
+.garden-tags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+.garden-tag {
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 3px;
+  border: 0.5px solid var(--tertiary);
+  background: transparent;
+  color: var(--secondary);
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: lowercase;
+  transition: background 0.15s, color 0.15s;
+}
+.garden-tag:hover {
+  background: var(--code-bg);
+}
+.garden-tag.active {
+  background: var(--primary);
+  color: var(--theme);
+  border-color: var(--primary);
+}
+
+/* Garden TODOs (inline) */
+.garden-todo {
+  border-left: 2px solid var(--tertiary);
+  padding: 0.4rem 0 0.4rem 1rem;
+  margin: 1.5rem 0;
+  font-size: 13px;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+.garden-todo::before {
+  content: "open thread";
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.03em;
+  color: var(--tertiary);
+  margin-bottom: 0.2rem;
+}
+.garden-todo p {
+  margin: 0;
+}
+
+/* Garden threads (aggregation on list page) */
+.garden-threads-title {
+  font-size: 13px;
+  color: var(--secondary);
+  font-weight: 500;
+  margin: 0 0 0.75rem;
+}
+.garden-threads-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.garden-thread-item {
+  font-size: 13px;
+  color: var(--secondary);
+  line-height: 1.6;
+  padding: 0.4rem 0;
+  border-bottom: 0.5px solid var(--tertiary);
+}
+.garden-thread-item:first-child {
+  border-top: 0.5px solid var(--tertiary);
+}
+.garden-thread-note {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+.garden-thread-note:hover {
+  color: var(--secondary);
+}
+
 /* Responsive */
 @media (max-width: 500px) {
   .lp-hero h1 { font-size: 22px; }

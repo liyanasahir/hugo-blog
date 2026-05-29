@@ -1,0 +1,30 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+</header>
+
+<div class="garden-note">
+
+  <div class="garden-note-meta">
+    {{- $stage := .Params.stage }}
+    <span class="garden-stage garden-stage-{{ replace $stage " " "-" }}">{{ $stage }}</span>
+    {{- if .Params.topics }}
+    <span class="garden-note-tags">tags: {{ range $i, $t := .Params.topics }}{{ if $i }}, {{ end }}<a class="garden-note-tag-link" href="/garden/?tag={{ $t | urlquery }}">{{ $t }}</a>{{ end }}</span>
+    {{- end }}
+    {{- $tended := time .Params.lastTended }}
+    <span class="garden-tended">last tended {{ $tended.Format "January 2, 2006" }}</span>
+  </div>
+
+  <div class="post-content">
+    {{ .Content }}
+  </div>
+
+  <hr class="lp-divider">
+
+  <a class="garden-back" href="/garden/">&larr; back to open tabs</a>
+
+</div>
+
+{{- end }}

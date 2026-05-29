@@ -1,0 +1,120 @@
+{{- define "main" }}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  <div class="post-description">
+    <p>A <a href="https://maggieappleton.com/garden-history" target="_blank" rel="noopener">digital garden</a>: notes, quotes, and thinking-in-progress, tended over time rather than published once.</p>
+  </div>
+</header>
+
+<div class="garden-page">
+
+  <div class="garden-legend">
+    <div class="garden-legend-item">
+      <img src="/media/garden/seedling.png" alt="" class="garden-legend-img">
+      <span class="garden-stage garden-stage-seedling">seedling</span>
+      <span class="garden-legend-desc">just planted</span>
+    </div>
+    <div class="garden-legend-item">
+      <img src="/media/garden/growing.png" alt="" class="garden-legend-img">
+      <span class="garden-stage garden-stage-growing">growing</span>
+      <span class="garden-legend-desc">taking shape</span>
+    </div>
+    <div class="garden-legend-item">
+      <img src="/media/garden/in_bloom.png" alt="" class="garden-legend-img">
+      <span class="garden-stage garden-stage-in-bloom">in bloom</span>
+      <span class="garden-legend-desc">fully formed, for now</span>
+    </div>
+  </div>
+
+  {{- $allTopics := slice -}}
+  {{- range .Pages -}}
+    {{- range .Params.topics -}}
+      {{- $allTopics = $allTopics | append . -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $uniqueTopics := $allTopics | uniq | sort }}
+
+  <div class="garden-tags">
+    <button class="garden-tag active" data-filter="all">All</button>
+    {{- range $uniqueTopics }}
+    <button class="garden-tag" data-filter="{{ . }}">{{ . }}</button>
+    {{- end }}
+  </div>
+
+  <hr class="lp-divider">
+
+  <ul class="garden-list">
+    {{- range sort .Pages "Params.lastTended" "desc" }}
+    <li class="garden-item" data-topics="{{ delimit .Params.topics "|" }}">
+      <div class="garden-item-main">
+        <a class="garden-title" href="{{ .Permalink }}">{{ .Title }}</a>
+        {{- $stage := .Params.stage }}
+        <span class="garden-stage garden-stage-{{ replace $stage " " "-" }}">{{ $stage }}</span>
+      </div>
+      <div class="garden-item-meta">
+        <span class="garden-topics">
+          {{- range .Params.topics }}
+          <span class="garden-topic">{{ . }}</span>
+          {{- end }}
+        </span>
+        {{- $tended := time .Params.lastTended }}
+        <span class="garden-tended">tended {{ $tended.Format "Jan 2, 2006" }}</span>
+      </div>
+    </li>
+    {{- end }}
+  </ul>
+
+  {{- $hasThreads := false -}}
+  {{- range sort .Pages "Params.lastTended" "desc" -}}
+    {{- $rawTodos := findRE `\{\{< todo >\}\}[\s\S]*?\{\{< /todo >\}\}` .RawContent -}}
+    {{- if $rawTodos }}{{ $hasThreads = true }}{{ end -}}
+  {{- end -}}
+
+  {{- if $hasThreads }}
+  <hr class="lp-divider">
+  <h3 class="garden-threads-title">Open threads</h3>
+  <ul class="garden-threads-list">
+    {{- range sort .Pages "Params.lastTended" "desc" }}
+      {{- $page := . -}}
+      {{- $rawTodos := findRE `\{\{< todo >\}\}[\s\S]*?\{\{< /todo >\}\}` .RawContent -}}
+      {{- range $rawTodos }}
+        {{- $text := replaceRE `\{\{< /?todo >\}\}` "" . | strings.TrimSpace -}}
+        <li class="garden-thread-item">
+          <a class="garden-thread-note" href="{{ $page.Permalink }}">{{ $page.Title }}</a>: {{ $text | markdownify }}
+        </li>
+      {{- end }}
+    {{- end }}
+  </ul>
+  {{- end }}
+
+</div>
+
+<script>
+(function() {
+  var tags = document.querySelectorAll('.garden-tag');
+  var items = document.querySelectorAll('.garden-item');
+  function applyFilter(filter) {
+    tags.forEach(function(t) {
+      t.classList.toggle('active', t.getAttribute('data-filter') === filter);
+    });
+    items.forEach(function(item) {
+      if (filter === 'all' || item.getAttribute('data-topics').split('|').indexOf(filter) !== -1) {
+        item.style.display = '';
+      } else {
+        item.style.display = 'none';
+      }
+    });
+  }
+  tags.forEach(function(tag) {
+    tag.addEventListener('click', function() {
+      applyFilter(tag.getAttribute('data-filter'));
+    });
+  });
+  var param = new URLSearchParams(window.location.search).get('tag');
+  if (param) { applyFilter(param); }
+})();
+</script>
+
+{{- end }}
