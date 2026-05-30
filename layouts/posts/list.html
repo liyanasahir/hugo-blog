@@ -8,7 +8,7 @@
   </div>
 </header>
 
-{{- $pages := .RegularPages }}
+{{- $pages := where .RegularPages ".Params.protected" "!=" true }}
 {{- $startYear := 2019 }}
 {{- $endYear := add now.Year 1 }}
 {{- $totalMonths := mul (sub $endYear $startYear) 12 }}

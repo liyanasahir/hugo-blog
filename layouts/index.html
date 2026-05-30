@@ -67,7 +67,7 @@
   <section class="lp-section">
     <p class="lp-section-label">Recent writing</p>
     <ul class="lp-post-list">
-      {{- range first 10 (where site.RegularPages "Type" "posts") }}
+      {{- range first 10 (where (where site.RegularPages "Type" "posts") ".Params.protected" "!=" true) }}
       <li>
         <a class="lp-post-title" href="{{ .Permalink }}">
           {{- with .Params.tags }}

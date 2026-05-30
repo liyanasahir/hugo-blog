@@ -59,7 +59,14 @@ jobs:
           hugo \
             --gc \
             --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"          
+            --baseURL "${{ steps.pages.outputs.base_url }}/"
+      - name: Encrypt protected posts
+        if: ${{ env.STATICRYPT_PASSWORD != '' }}
+        env:
+          STATICRYPT_PASSWORD: ${{ secrets.STATICRYPT_PASSWORD }}
+        run: |
+          npm install -g staticrypt
+          bash encrypt-protected.sh
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
