@@ -1003,9 +1003,39 @@ body.list:has(.reading-page) .main {
 }
 
 /* ── Garden (Open Tabs) ── */
+/* Hide nav on garden page, full-bleed banner */
+body.list:has(.garden-page) > .header {
+  display: none;
+}
+body.list:has(.garden-page) .main {
+  max-width: none;
+  padding: 0;
+}
+.garden-banner-wrap {
+  position: relative;
+}
+.garden-canopy-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.garden-home-link {
+  position: absolute;
+  top: 1rem;
+  left: 1.5rem;
+  font-size: 13px;
+  color: var(--secondary);
+  text-decoration: none;
+  z-index: 1;
+}
+.garden-home-link:hover {
+  color: var(--primary);
+}
+
 .garden-page {
   max-width: 900px;
   margin: 0 auto;
+  padding: 0 1.5rem;
   position: relative;
 }
 .garden-page::before {
@@ -1152,10 +1182,6 @@ body.list:has(.reading-page) .main {
 .dark .garden-stage-growing  { background: #1C2E36; color: #9CC5D8; }
 .dark .garden-stage-in-bloom { background: #33300F; color: #D6C85A; }
 
-/* Widen parent .main for garden page */
-body.list:has(.garden-page) .main {
-  max-width: 948px;
-}
 .garden-intro {
   font-size: 14px;
   color: var(--secondary);

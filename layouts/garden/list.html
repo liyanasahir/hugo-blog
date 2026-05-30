@@ -1,14 +1,18 @@
 {{- define "main" }}
 
+<div class="garden-banner-wrap">
+  <a href="/" class="garden-home-link">← Home</a>
+  <img src="/media/garden/canopy-banner.png" alt="" class="garden-canopy-banner" aria-hidden="true">
+</div>
+
+<div class="garden-page">
+
 <header class="page-header">
-  {{- partial "breadcrumbs.html" . }}
   <h1>{{ .Title }}</h1>
   <div class="post-description">
     <p>A <a href="https://maggieappleton.com/garden-history" target="_blank" rel="noopener">digital garden</a>: notes, quotes, and thinking-in-progress, tended over time rather than published once.</p>
   </div>
 </header>
-
-<div class="garden-page">
 
   {{- $allTopics := slice -}}
   {{- range .Pages -}}
