@@ -38,6 +38,4 @@ All this to say: as pointless as this debate may sound for some, the words you u
 (And also: I really should be catching up on the rest of my Game Theory coursework, seeing as I've been stuck on the preface for a while).
 
 
-***
-
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/).
+{{< substack-cta >}}

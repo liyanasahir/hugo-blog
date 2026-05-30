@@ -348,12 +348,15 @@
 
 /* ── Reading page ── */
 .reading-page {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
+}
+body.list:has(.reading-page) .main {
+  max-width: 948px;
 }
 .bookshelf-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(115px, 1fr));
   gap: 1.5rem;
   margin-bottom: 1rem;
 }
@@ -470,46 +473,91 @@
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
 
-/* ── Reading page collapsible sections ── */
-.reading-section {
+/* ── Reading page side-by-side layout ── */
+.reading-main {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+}
+.reading-sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 1.5rem;
+}
+.reading-books {
+  flex: 1;
+  min-width: 0;
+}
+@media (max-width: 700px) {
+  .reading-main {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .reading-sidebar {
+    flex: none;
+    width: 100%;
+    position: static;
+  }
+}
+
+/* ── Currently reading ── */
+.currently-reading {
   margin-bottom: 0;
 }
-.reading-section + .reading-section {
-  margin-top: 2rem;
+.currently-reading-items {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
 }
-.reading-section-summary {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--primary);
-  margin-bottom: 1.25rem;
-  cursor: pointer;
-  list-style: none;
+.currently-reading-item {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  user-select: none;
+  gap: 0.75rem;
 }
-.reading-section-summary::-webkit-details-marker { display: none; }
-.reading-section-summary::before {
-  content: '›';
-  font-size: 16px;
-  font-weight: 400;
-  color: #C0392B;
-  display: inline-block;
-  transition: transform 0.2s ease;
-  line-height: 1;
-  margin-right: 2px;
+.currently-reading-cover {
+  width: 40px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 3px;
+  flex-shrink: 0;
 }
-details.reading-section[open] .reading-section-summary::before {
-  transform: rotate(90deg);
-}
-.reading-section-summary:hover {
+.currently-reading-title {
+  font-size: 14px;
   color: var(--primary);
+  margin: 0;
+  font-weight: 500;
+  line-height: 1.3;
 }
-.reading-section-summary:hover::before {
-  color: #A93226;
+.currently-reading-title a {
+  color: inherit;
+  text-decoration: none;
+}
+.currently-reading-title a:hover {
+  color: var(--secondary);
+}
+.currently-reading-author {
+  font-size: 12px;
+  color: var(--secondary);
+  margin: 2px 0 0;
+}
+
+/* ── Reading year headers ── */
+.reading-year-header {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--tertiary);
+  margin: 2rem 0 1rem;
+}
+.lp-section-label + .reading-year-header {
+  margin-top: 0;
+}
+
+/* ── Book genre label ── */
+.book-genre {
+  font-size: 10px;
+  color: var(--tertiary);
+  margin: 2px 0 0;
+  text-transform: lowercase;
 }
 
 /* ── Essays list ── */
@@ -536,7 +584,7 @@ details.reading-section[open] .reading-section-summary::before {
   min-width: 0;
 }
 .essay-title {
-  font-size: 15px;
+  font-size: 14px;
   color: var(--primary);
   text-decoration: none;
   display: block;
@@ -956,35 +1004,140 @@ details.reading-section[open] .reading-section-summary::before {
 
 /* ── Garden (Open Tabs) ── */
 .garden-page {
-  max-width: 680px;
+  max-width: 900px;
   margin: 0 auto;
+  position: relative;
 }
-.garden-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.garden-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(ellipse 65% 55% at 10% 15%, rgba(136, 168, 92, 0.22) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 90% 10%, rgba(174, 207, 224, 0.25) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 45% at 50% 85%, rgba(214, 200, 90, 0.16) 0%, transparent 70%),
+    radial-gradient(ellipse 35% 40% at 75% 55%, rgba(136, 168, 92, 0.14) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 35% at 20% 60%, rgba(174, 207, 224, 0.16) 0%, transparent 70%),
+    radial-gradient(ellipse 30% 25% at 45% 30%, rgba(214, 200, 90, 0.10) 0%, transparent 70%);
+  z-index: -1;
+  pointer-events: none;
 }
-.garden-item {
-  padding: 0.75rem 0;
-  border-bottom: 0.5px solid var(--tertiary);
+.dark .garden-page::before {
+  background:
+    radial-gradient(ellipse 65% 55% at 10% 15%, rgba(136, 168, 92, 0.10) 0%, transparent 70%),
+    radial-gradient(ellipse 55% 65% at 90% 10%, rgba(174, 207, 224, 0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 45% at 50% 85%, rgba(214, 200, 90, 0.08) 0%, transparent 70%);
 }
-.garden-item:last-child {
-  border-bottom: none;
+
+/* Card grid */
+.garden-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.25rem;
+  margin-top: 1.5rem;
 }
-.garden-item-main {
+.garden-card {
+  position: relative;
+  border-radius: 0;
+  padding: 1.2rem 1.1rem 1rem;
   display: flex;
-  align-items: baseline;
-  gap: 0.5rem;
-  margin-bottom: 0.3rem;
-}
-.garden-title {
-  font-size: 14px;
-  color: var(--primary);
+  flex-direction: column;
+  gap: 0.4rem;
   text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s, transform 0.2s;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-left-width: 3.5px;
+  min-height: 180px;
+  background: var(--theme);
 }
-.garden-title:hover {
+.garden-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+}
+.garden-card-accent {
+  display: none;
+}
+.garden-card[data-stage="seedling"] { border-color: #88A85C; }
+.garden-card[data-stage="growing"]  { border-color: #AECFE0; }
+.garden-card[data-stage="in-bloom"] { border-color: #D6C85A; }
+.dark .garden-card[data-stage="seedling"] { border-color: #A3C48A; }
+.dark .garden-card[data-stage="growing"]  { border-color: #9CC5D8; }
+.dark .garden-card[data-stage="in-bloom"] { border-color: #D6C85A; }
+.garden-card-title {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  color: var(--primary);
+  margin: 0;
+  line-height: 1.4;
+}
+.garden-card-desc {
+  font-size: 12.5px;
   color: var(--secondary);
+  line-height: 1.5;
+  margin: 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
+.garden-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.3rem;
+}
+.garden-card-stage {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 3px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+}
+.garden-icon {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+}
+.garden-card-topics {
+  display: flex;
+  gap: 0;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+.garden-card-topic {
+  font-size: 11px;
+  color: var(--secondary);
+  text-transform: lowercase;
+}
+.garden-card-topic + .garden-card-topic::before {
+  content: "\00b7";
+  margin: 0 0.3rem;
+  color: var(--tertiary);
+}
+.garden-card-tended {
+  font-size: 11px;
+  color: var(--tertiary);
+  margin-left: auto;
+}
+@media (max-width: 700px) {
+  .garden-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 450px) {
+  .garden-grid { grid-template-columns: 1fr; }
+}
+
+/* Stage badge colors (shared with single page) */
 .garden-stage {
   font-size: 11px;
   padding: 2px 7px;
@@ -992,60 +1145,16 @@ details.reading-section[open] .reading-section-summary::before {
   white-space: nowrap;
   flex-shrink: 0;
 }
-.garden-stage-seedling { background: #EEF2E6; color: #5A7247; }
-.garden-stage-growing  { background: #E6F0EE; color: #3D7A6A; }
-.garden-stage-in-bloom { background: #FAEEDA; color: #854F0B; }
+.garden-stage-seedling { background: #EFF3E6; color: #5C7A30; }
+.garden-stage-growing  { background: #E8F1F6; color: #4A8DA8; }
+.garden-stage-in-bloom { background: #F5F0D8; color: #8A7A20; }
 .dark .garden-stage-seedling { background: #2A3320; color: #A3C48A; }
-.dark .garden-stage-growing  { background: #1E3330; color: #7BC4AD; }
-.dark .garden-stage-in-bloom { background: #3D2E0F; color: #E4B560; }
-.garden-item-meta {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-.garden-topics {
-  display: flex;
-  align-items: baseline;
-  gap: 0;
-  flex-wrap: wrap;
-}
-.garden-topic {
-  font-size: 12px;
-  color: var(--secondary);
-  white-space: nowrap;
-  text-transform: lowercase;
-}
-.garden-topic + .garden-topic::before {
-  content: "\00b7";
-  margin: 0 0.4rem;
-  color: var(--tertiary);
-}
-.garden-tended {
-  font-size: 12px;
-  color: var(--tertiary);
-  white-space: nowrap;
-  flex-shrink: 0;
-}
-.garden-legend {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 0.5rem;
-}
-.garden-legend-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.35rem;
-}
-.garden-legend-img {
-  height: 80px;
-  width: auto;
-}
-.garden-legend-desc {
-  font-size: 12px;
-  color: var(--secondary);
+.dark .garden-stage-growing  { background: #1C2E36; color: #9CC5D8; }
+.dark .garden-stage-in-bloom { background: #33300F; color: #D6C85A; }
+
+/* Widen parent .main for garden page */
+body.list:has(.garden-page) .main {
+  max-width: 948px;
 }
 .garden-intro {
   font-size: 14px;

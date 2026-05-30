@@ -93,6 +93,4 @@ There is a lot more I have to learn still, much more to dive in depth. But unlik
 
 There is a lot more to learn, and a lot more time to figure it all out.
 
-***
-
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/). And as always, if you've reached this far, I'd love to know your thoughts. 
+{{< substack-cta >}}

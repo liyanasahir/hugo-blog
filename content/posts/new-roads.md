@@ -9,7 +9,7 @@ tags:
   - "personal"
   - "gurgaon"
   - "bangalore"
-description: "(This is a modified version of an email I sent on Feb 4, 2024, as part of my newsletter project. If you'd like to receive these emails in the future, sign up link is at the end of the post!)"
+description: "On moving to Gurgaon, leaving Bangalore behind, and learning a new city."
 images: 
  - /media/dashboard.jpeg
 substack: true
@@ -85,7 +85,4 @@ But the headlights came on, and as I tentatively twisted the accelerator, my sco
 
 
 
-*If you've come this far and you'd like to leave some quick thoughts, do feel free to reach out to me directly, via [instagram](https://instagram.com/liyanasahir), or [anonymously](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/). They mean so much to me, and gives fuel to further writing!*
-
-
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/).
+{{< substack-cta >}}

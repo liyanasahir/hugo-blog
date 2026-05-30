@@ -13,7 +13,7 @@ ShowShareButtons: false
     <li>Makes a strong cup of chai and has lots of feelings about it.</li>
     <li>Easily derailed by a good bookshop.</li>
     <li>Bad at replying to messages, working on it.</li>
-    <li>Has a long list of tabs open that she will definitely get to.</li>
+    <li>Has a long list of <a href="https://liyana.substack.com/" target="_blank" rel="noopener">tabs open</a> that she will definitely get to.</li>
     <li>Not sure if she's a morning person but keeps trying.</li>
     <li><a href="mailto:liyanaliasahir@gmail.com">Here</a>, mostly.</li>
   </ol>

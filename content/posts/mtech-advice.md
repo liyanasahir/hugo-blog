@@ -79,6 +79,4 @@ The students who left with the clearest sense of direction had built something t
 
 The degree is two years. What it contains is mostly up to you.
 
-***
-
-*If you've come this far and have thoughts or questions, feel free to reach out via [instagram](https://instagram.com/liyanasahir) or [anonymously](https://docs.google.com/forms/d/1NopQb8UuY0yysiPPYgzaPqBXLuE7ecmo_jVcAnO6QAY/).*
+{{< substack-cta >}}

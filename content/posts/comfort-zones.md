@@ -10,7 +10,7 @@ tags:
   - "academic"
   - "iisc"
   - "gate"
-description: "This was something I wrote after my first semester at IISc, sent out privately as a newsletter initially, because it came from a very vulnerable place. Enough time - and the feelings mentioned - have passed that it feels okay to put this out here."
+description: "Written after my first semester at IISc, from a very vulnerable place. Enough time has passed that it feels okay to put this out here."
 socialImage: "/media/author1.jpg"
 substack: true
 ---
@@ -58,6 +58,4 @@ I’ve held my breath for long enough. Maybe it’s time to release it a bit and
 
 But until then, I’m all armed with my action plan. 
 
-***
-
-I post once in a bluemoon. If you'd like updates about future posts, sign up [here](https://liyana.substack.com/).
+{{< substack-cta >}}

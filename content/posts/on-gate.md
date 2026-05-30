@@ -115,4 +115,4 @@ Once you know why you're in this - the rest should be easy enough to figure out.
 
 This interview was coordinated by the folks at Careers360 and has been posted on their website [here](https://engineering.careers360.com/articles/gate-2021-topper-interview-liyana-sahir-air-10-cs-clarity-of-mind).
 
-I post once in a bluemoon. If you'd like updates about future posts, find me on [Instagram](https://www.instagram.com/liyanasahir/) or sign up [here](https://liyana.substack.com/). And as always, if you've reached this far, I'd love to know your thoughts in the comments below. 
+{{< substack-cta >}}
