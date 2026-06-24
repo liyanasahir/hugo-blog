@@ -307,7 +307,7 @@ So we did the arithmetic. Here is what came out, and where the real answer turne
 <div class="gear-card-label">What she was working with</div>
 
 <ul>
-<li><strong>The pot:</strong> Agaro Classic, 240 ml. A gift, so its cost is <strong>₹0</strong>. (It retails around ₹799.)</li>
+<li><strong>The pot:</strong> Agaro Classic Moka Pot, 240 ml.</li>
 <li><strong>The bean:</strong> Blue Tokai <em>Dhak Blend</em>, pre-ground. <strong>₹650 / 250 g</strong>, which is <strong>₹2.60 a gram</strong>. This is the cheapest option on Blue Tokai for 250 g. The range goes up to about ₹800.</li>
 <li><strong>The milk:</strong> Alt Co oat (<strong>₹265/L</strong>) or dairy (<strong>₹34 / 450 ml</strong>).</li>
 <li><strong>The drinkers:</strong> two, her and her partner, which, as it turns out, quietly solves the pot's biggest flaw.</li>
