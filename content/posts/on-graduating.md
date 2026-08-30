@@ -1,5 +1,6 @@
 +++
-title = "Guess Who Just Became an Engineer? (...with 1.5 Million Others)"
+title = "On Graduating"
+description = "On finishing an engineering degree during a pandemic, and what it means to be an engineer in current times."
 date = "2020-10-01T22:12:03.284Z"
 draft = false
 tags = ["personal"]

@@ -1,5 +1,6 @@
 +++
 title = 'On GATE'
+description = "I happened to get AIR 10 in GATE CSE, but I am not sure if I know how that happened. Here is an attempt."
 date = 2021-03-31T21:50:04+05:30
 tags = ["tips", "gate"]
 +++

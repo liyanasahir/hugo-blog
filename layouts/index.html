@@ -28,59 +28,27 @@
   <hr class="lp-divider">
 
   <section class="lp-section">
-    <p class="lp-section-label">Selected publications</p>
-    <ul class="lp-paper-list">
-      <li>
-        <span class="lp-venue lp-venue-top">CIKM 2025</span>
-        <div class="lp-paper-meta">
-          <p class="lp-paper-title">Towards Equitable Coreset Selection: Addressing Challenges Under Class Imbalance</p>
-          <p class="lp-paper-detail">Liyana Sahir Kallooriyakath*, AN Reddy, BS Achary, A Sharma, K Shah, et al.</p>
-        </div>
-      </li>
-      <li>
-        <span class="lp-venue lp-venue-mid">WACV 2024</span>
-        <div class="lp-paper-meta">
-          <p class="lp-paper-title">AMEND: Adaptive Margin and Expanded Neighborhood for Efficient Generalized Category Discovery</p>
-          <p class="lp-paper-detail">A Banerjee, Liyana Sahir Kallooriyakath, S Biswas</p>
-        </div>
-      </li>
-      <li>
-        <span class="lp-venue lp-venue-mid">ICIP 2024</span>
-        <div class="lp-paper-meta">
-          <p class="lp-paper-title">AdaPrompt: Prompt Tuning with Adaptive Neighbours for Generalized Category Discovery</p>
-          <p class="lp-paper-detail">Liyana Sahir Kallooriyakath*, A Banerjee, S Biswas</p>
-        </div>
-      </li>
-      <li>
-        <span class="lp-venue lp-venue-ws">ICDMW 2023</span>
-        <div class="lp-paper-meta">
-          <p class="lp-paper-title">Study of Topology Bias in GNN-based Knowledge Graph Algorithms</p>
-          <p class="lp-paper-detail">A Surisetty, A Malhotra, D Chaurasiya et al.</p>
-        </div>
-      </li>
-    </ul>
-    <a class="lp-see-more" href="{{ "research/" | absURL }}">All publications →</a>
-  </section>
-
-  <hr class="lp-divider">
-
-  <section class="lp-section">
     <p class="lp-section-label">Recent writing</p>
     <ul class="lp-post-list">
       {{- range first 10 (where (where site.RegularPages "Type" "posts") ".Params.protected" "!=" true) }}
       <li>
-        <a class="lp-post-title" href="{{ .Permalink }}">
-          {{- with .Params.tags }}
-            {{- $tag := index . 0 }}
-            {{- if eq $tag "personal" }}
-          <span class="lp-post-tag lp-tag-personal">personal</span>
-            {{- else if eq $tag "notes" }}
-          <span class="lp-post-tag lp-tag-notes">notes</span>
-            {{- else if eq $tag "tips" }}
-          <span class="lp-post-tag lp-tag-tips">tips</span>
+        <div class="lp-post-main">
+          <a class="lp-post-title" href="{{ .Permalink }}">
+            {{- with .Params.tags }}
+              {{- $tag := index . 0 }}
+              {{- if eq $tag "personal" }}
+            <span class="lp-post-tag lp-tag-personal">personal</span>
+              {{- else if eq $tag "notes" }}
+            <span class="lp-post-tag lp-tag-notes">notes</span>
+              {{- else if eq $tag "tips" }}
+            <span class="lp-post-tag lp-tag-tips">tips</span>
+              {{- end }}
             {{- end }}
+            {{- .Title }}</a>
+          {{- with .Description }}
+          <p class="lp-post-dek">{{ . }}</p>
           {{- end }}
-          {{- .Title }}</a>
+        </div>
         <span class="lp-post-meta">{{ .Date.Format "2006" }}</span>
       </li>
       {{- end }}
