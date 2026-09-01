@@ -1,0 +1,356 @@
+{{- define "main" }}
+
+{{- $data := site.Data.delhi }}
+{{- $venues := $data.venues }}
+{{- $updated := (time $data.updated).Format "2006-01-02" }}
+
+<div class="delhi-page">
+
+  <header class="page-header delhi-header">
+    {{- partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+  </header>
+
+  <div class="delhi-intro">
+    {{ .Content }}
+    <p class="delhi-updated">Last updated {{ (time $data.updated).Format "2 January 2006" }}</p>
+  </div>
+
+  {{/* ---- sources, split by whether the calendar could be read ---- */}}
+  {{- $tracked := slice }}
+  {{- $manual := slice }}
+  {{- range $id, $v := $venues }}
+    {{- $count := add (len (where $data.events "venue" $id)) (len (where $data.ongoing "venue" $id)) }}
+    {{- $row := dict "id" $id "name" $v.name "full" $v.full "color" $v.color "url" $v.url "note" $v.statusNote "count" $count }}
+    {{- if gt $count 0 }}
+      {{- $tracked = $tracked | append $row }}
+    {{- else }}
+      {{- $manual = $manual | append $row }}
+    {{- end }}
+  {{- end }}
+  {{- $tracked = sort $tracked "count" "desc" }}
+  {{- $manual = sort $manual "full" }}
+
+  <section class="delhi-sources">
+    <h2 class="delhi-section-title">Where this comes from</h2>
+    <p class="delhi-section-sub">Listings below are pulled from these calendars.</p>
+    <ul class="delhi-source-list">
+      {{- range $tracked }}
+      <li>
+        <span class="delhi-dot" style="--venue-color: var(--venue-{{ .color }})"></span>
+        <span><a href="{{ .url }}" target="_blank" rel="noopener">{{ .full }}</a>
+        {{- with .note }} <span class="delhi-source-note">· {{ . }}</span>{{ end }}</span>
+      </li>
+      {{- end }}
+    </ul>
+
+    {{- if $manual }}
+    <h3 class="delhi-subsection-title">Also worth checking</h3>
+    <p class="delhi-section-sub">These venues have interesting events/exhibitions, in a form that was difficult to scrape. Check them out directly:</p>
+    <ul class="delhi-source-list delhi-source-list-manual">
+      {{- range $manual }}
+      <li>
+        <span class="delhi-dot" style="--venue-color: var(--venue-{{ .color }})"></span>
+        <span><a href="{{ .url }}" target="_blank" rel="noopener">{{ .full }}</a> <span class="delhi-source-arrow">↗</span></span>
+      </li>
+      {{- end }}
+    </ul>
+    {{- end }}
+  </section>
+
+  {{/* ---- summary tiles: server-rendered against the update date, refined by JS ---- */}}
+  {{- $ahead := where $data.events "date" ">=" $updated }}
+  <section class="delhi-tiles" aria-label="Summary">
+    <div class="delhi-tile">
+      <p class="delhi-tile-label">Today</p>
+      <p class="delhi-tile-value" id="delhi-tile-today">{{ len (where $data.events "date" $updated) }}</p>
+      <p class="delhi-tile-sub">events across the city</p>
+    </div>
+    <div class="delhi-tile">
+      <p class="delhi-tile-label">This week</p>
+      <p class="delhi-tile-value" id="delhi-tile-week">–</p>
+      <p class="delhi-tile-sub">through Sunday</p>
+    </div>
+    <div class="delhi-tile">
+      <p class="delhi-tile-label">Next 30 days</p>
+      <p class="delhi-tile-value" id="delhi-tile-month">{{ len $ahead }}</p>
+      <p class="delhi-tile-sub">dated programmes</p>
+    </div>
+    <div class="delhi-tile">
+      <p class="delhi-tile-label">Ongoing</p>
+      <p class="delhi-tile-value" id="delhi-tile-ongoing">{{ len $data.ongoing }}</p>
+      <p class="delhi-tile-sub">exhibitions running</p>
+    </div>
+  </section>
+
+  {{/* ---- filters ---- */}}
+  {{- $types := slice }}
+  {{- range $ahead }}{{ $types = $types | append .type }}{{ end }}
+  {{- $types = $types | uniq | sort }}
+
+  {{/* ---- month strip: one cell per day, height by how much is on ---- */}}
+  {{- $byDate := dict }}
+  {{- range $data.events }}
+    {{- $existing := index $byDate .date | default slice }}
+    {{- $byDate = merge $byDate (dict .date ($existing | append .)) }}
+  {{- end }}
+  {{- $peak := 1 }}
+  {{- range $date, $events := $byDate }}
+    {{- if gt (len $events) $peak }}{{ $peak = len $events }}{{ end }}
+  {{- end }}
+
+  <nav class="delhi-monthstrip" id="delhi-monthstrip" aria-label="Jump to a day">
+    {{- range $date, $events := $byDate }}
+      {{- $d := time $date }}
+      {{- $n := len $events }}
+    <a class="delhi-ms-cell{{ if or (eq ($d.Format "Mon") "Sat") (eq ($d.Format "Mon") "Sun") }} is-weekend{{ end }}"
+       href="#day-{{ $date }}" data-date="{{ $date }}"
+       style="--heat: {{ div (float $n) (float $peak) }}"
+       title="{{ $d.Format "Monday 2 January" }}: {{ $n }} event{{ if ne $n 1 }}s{{ end }}">
+      <span class="delhi-ms-bar"></span>
+      <span class="delhi-ms-num">{{ $d.Format "2" }}</span>
+    </a>
+    {{- end }}
+  </nav>
+
+  <div class="delhi-layout">
+
+  <aside class="delhi-filters" aria-label="Filters">
+    <div class="delhi-filter-row delhi-filter-search">
+      <input class="delhi-search" id="delhi-search" type="search" placeholder="Search title, speaker, room…" autocomplete="off">
+      <button class="delhi-reset" id="delhi-reset">Reset all</button>
+    </div>
+    <div class="delhi-filter-row">
+      <span class="delhi-filter-label">Venue / Organizer</span>
+      <div class="delhi-chips" id="delhi-venue-chips">
+        <button class="delhi-chip on" data-venue="all">All</button>
+        {{- range $tracked }}
+        <button class="delhi-chip" data-venue="{{ .id }}" style="--venue-color: var(--venue-{{ .color }})" title="{{ .full }}">
+          <span class="delhi-dot"></span>{{ .name }}<span class="delhi-count">{{ .count }}</span>
+        </button>
+        {{- end }}
+      </div>
+    </div>
+    <div class="delhi-filter-row">
+      <span class="delhi-filter-label">Kind</span>
+      <div class="delhi-chips" id="delhi-type-chips">
+        <button class="delhi-chip on" data-type="all">All</button>
+        {{- range $types }}
+        <button class="delhi-chip" data-type="{{ . }}">{{ . }}</button>
+        {{- end }}
+      </div>
+    </div>
+  </aside>
+
+  {{/* ---- every dated event, grouped by day; JS hides days already past ---- */}}
+  <section id="delhi-list" aria-label="Upcoming events">
+    {{- range $date, $events := $byDate }}
+      {{- $d := time $date }}
+      {{- $dow := $d.Format "Mon" }}
+      <div class="delhi-day{{ if or (eq $dow "Sat") (eq $dow "Sun") }} is-weekend{{ end }}" id="day-{{ $date }}" data-date="{{ $date }}">
+        <div class="delhi-day-head">
+          <span class="delhi-day-date">{{ $d.Format "2" }}</span>
+          <span class="delhi-day-month">{{ $d.Format "Jan" }}</span>
+          <span class="delhi-day-weekday">{{ $d.Format "Monday" }}</span>
+          <span class="delhi-today-tag" hidden>Today</span>
+        </div>
+        <div class="delhi-day-events">
+          {{- range sort $events "time" }}
+            {{- $v := index $venues .venue }}
+          <div class="delhi-event" style="--venue-color: var(--venue-{{ $v.color }})" data-venue="{{ .venue }}" data-type="{{ .type }}"
+               data-search="{{ lower (printf "%s %s %s %s" .title .loc (or .note "") $v.full) }}">
+            <div class="delhi-event-time">{{ if eq .time "00:00" }}All day{{ else }}{{ (time (printf "%sT%s:00+05:30" .date .time)).Format "3:04 pm" }}{{ end }}</div>
+            <div class="delhi-event-body">
+              <div class="delhi-event-badges">
+                <span class="delhi-venue-badge"><span class="delhi-dot"></span>{{ $v.name }}</span>
+                <span class="delhi-type-badge">{{ partial "delhi-kind-icon.html" .type }}{{ .type }}</span>
+              </div>
+              <p class="delhi-event-title">
+                {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+                {{- else }}{{ .title }}{{ end }}
+              </p>
+              <p class="delhi-event-loc">{{ .loc }}</p>
+              {{- with .note }}<p class="delhi-event-note">{{ . }}</p>{{ end }}
+            </div>
+          </div>
+          {{- end }}
+        </div>
+      </div>
+    {{- end }}
+    <p class="delhi-empty" id="delhi-empty" hidden>Nothing matches that. Try widening the filters.</p>
+  </section>
+
+  </div>
+
+  {{/* ---- ongoing ---- */}}
+  <h2 class="delhi-section-title">Ongoing exhibitions</h2>
+  <p class="delhi-section-sub">Long-run shows you can drop in on any day this month.</p>
+  <section class="delhi-ongoing-grid">
+    {{- range $data.ongoing }}
+      {{- $v := index $venues .venue }}
+    <div class="delhi-ongoing" style="--venue-color: var(--venue-{{ $v.color }})" data-venue="{{ .venue }}" data-start="{{ .start }}" data-end="{{ .end }}">
+      <span class="delhi-venue-badge" style="--venue-color: var(--venue-{{ $v.color }})"><span class="delhi-dot"></span>{{ $v.name }}</span>
+      <p class="delhi-ongoing-title">
+        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>
+        {{- else }}{{ .title }}{{ end }}
+      </p>
+      <p class="delhi-ongoing-dates">{{ (time .start).Format "2 Jan" }} – {{ (time .end).Format "2 Jan 2006" }}</p>
+      <div class="delhi-run" aria-hidden="true"><span class="delhi-run-fill"></span></div>
+      <p class="delhi-run-left"></p>
+    </div>
+    {{- end }}
+  </section>
+
+  <p class="delhi-colophon">Aggregated from public event calendars. IIC and the institutional venues are typically free to attend on a first-come basis. Unlecture, Grounds for Thought, Enroute and Darwesh events are ticketed at the price shown and booked on Urbanaut. Confirm with the venue for popular events that may issue passes in advance.</p>
+
+</div>
+
+<script>
+(function () {
+  /* ---- dates, anchored to Delhi rather than the reader's clock ---- */
+  function istToday() {
+    try { return new Date().toLocaleDateString('en-CA', { timeZone: 'Asia/Kolkata' }); }
+    catch (e) { return new Date().toISOString().slice(0, 10); }
+  }
+  function shift(iso, n) {
+    var d = new Date(iso + 'T00:00:00Z');
+    d.setUTCDate(d.getUTCDate() + n);
+    return d.toISOString().slice(0, 10);
+  }
+  function weekday(iso) { return new Date(iso + 'T00:00:00Z').getUTCDay(); }
+
+  var today = istToday();
+  var endOfWeek = shift(today, 7 - weekday(today));
+  var endOfMonth = shift(today, 30);
+
+  var days = Array.prototype.slice.call(document.querySelectorAll('.delhi-day'));
+  var events = Array.prototype.slice.call(document.querySelectorAll('.delhi-event'));
+  var ongoing = Array.prototype.slice.call(document.querySelectorAll('.delhi-ongoing'));
+  var empty = document.getElementById('delhi-empty');
+  var search = document.getElementById('delhi-search');
+
+  /* ---- drop days already past, and flag today ---- */
+  days.forEach(function (day) {
+    var date = day.dataset.date;
+    if (date < today) {
+      day.dataset.past = 'true';
+      day.hidden = true;
+    } else if (date === today) {
+      day.classList.add('is-today');
+      var tag = day.querySelector('.delhi-today-tag');
+      if (tag) tag.hidden = false;
+    }
+  });
+  var live = events.filter(function (el) { return !el.closest('.delhi-day').dataset.past; });
+
+  /* ---- summary tiles ---- */
+  function dateOf(el) { return el.closest('.delhi-day').dataset.date; }
+  function countBetween(from, to) {
+    return live.filter(function (el) { var d = dateOf(el); return d >= from && d <= to; }).length;
+  }
+  var activeOngoing = ongoing.filter(function (el) { return el.dataset.end >= today; });
+  ongoing.forEach(function (el) { if (el.dataset.end < today) el.hidden = true; });
+
+  /* ---- how far through its run each ongoing show is ---- */
+  function daysBetween(a, b) {
+    return Math.round((Date.parse(b + 'T00:00:00Z') - Date.parse(a + 'T00:00:00Z')) / 86400000);
+  }
+  activeOngoing.forEach(function (el) {
+    var total = daysBetween(el.dataset.start, el.dataset.end);
+    var gone = daysBetween(el.dataset.start, today);
+    var pct = total > 0 ? Math.min(100, Math.max(0, (gone / total) * 100)) : 0;
+    var fill = el.querySelector('.delhi-run-fill');
+    if (fill) fill.style.width = pct.toFixed(1) + '%';
+    var left = daysBetween(today, el.dataset.end);
+    var label = el.querySelector('.delhi-run-left');
+    if (label) {
+      label.textContent = gone < 0 ? 'opens in ' + Math.abs(daysBetween(today, el.dataset.start)) + ' days'
+        : left <= 0 ? 'closes today'
+        : left === 1 ? 'closes tomorrow'
+        : left <= 14 ? 'closes in ' + left + ' days'
+        : left + ' days left';
+      if (left <= 14 && gone >= 0) label.classList.add('is-soon');
+    }
+  });
+
+  /* ---- month strip ---- */
+  var cells = Array.prototype.slice.call(document.querySelectorAll('.delhi-ms-cell'));
+  cells.forEach(function (cell) {
+    if (cell.dataset.date < today) cell.hidden = true;
+    else if (cell.dataset.date === today) cell.classList.add('is-today');
+  });
+
+  document.getElementById('delhi-tile-today').textContent = countBetween(today, today);
+  document.getElementById('delhi-tile-week').textContent = countBetween(today, endOfWeek);
+  document.getElementById('delhi-tile-month').textContent = countBetween(today, endOfMonth);
+  document.getElementById('delhi-tile-ongoing').textContent = activeOngoing.length;
+
+  /* ---- venue chip counts, recomputed against what's actually still ahead ---- */
+  Array.prototype.forEach.call(document.querySelectorAll('#delhi-venue-chips .delhi-chip'), function (chip) {
+    var slot = chip.querySelector('.delhi-count');
+    if (!slot) return;
+    var id = chip.dataset.venue;
+    var n = live.filter(function (el) { return el.dataset.venue === id; }).length +
+            activeOngoing.filter(function (el) { return el.dataset.venue === id; }).length;
+    slot.textContent = n;
+    if (n === 0) chip.hidden = true;
+  });
+
+  /* ---- filtering ---- */
+  var state = { venue: 'all', type: 'all', q: '' };
+
+  function apply() {
+    var shown = 0;
+    live.forEach(function (el) {
+      var ok = (state.venue === 'all' || el.dataset.venue === state.venue) &&
+               (state.type === 'all' || el.dataset.type === state.type) &&
+               (state.q === '' || el.dataset.search.indexOf(state.q) !== -1);
+      el.hidden = !ok;
+      if (ok) shown++;
+    });
+    days.forEach(function (day) {
+      if (day.dataset.past) return;
+      day.hidden = !day.querySelector('.delhi-event:not([hidden])');
+    });
+    empty.hidden = shown > 0;
+    cells.forEach(function (cell) {
+      if (cell.dataset.date < today) return;
+      var day = document.getElementById('day-' + cell.dataset.date);
+      cell.classList.toggle('is-dim', !day || day.hidden);
+    });
+  }
+
+  function wire(container, key) {
+    var chips = Array.prototype.slice.call(container.querySelectorAll('.delhi-chip'));
+    chips.forEach(function (chip) {
+      chip.addEventListener('click', function () {
+        var val = chip.dataset[key];
+        state[key] = (state[key] === val && val !== 'all') ? 'all' : val;
+        chips.forEach(function (c) { c.classList.toggle('on', c.dataset[key] === state[key]); });
+        apply();
+      });
+    });
+  }
+
+  wire(document.getElementById('delhi-venue-chips'), 'venue');
+  wire(document.getElementById('delhi-type-chips'), 'type');
+
+  search.addEventListener('input', function () {
+    state.q = search.value.trim().toLowerCase();
+    apply();
+  });
+
+  document.getElementById('delhi-reset').addEventListener('click', function () {
+    state = { venue: 'all', type: 'all', q: '' };
+    search.value = '';
+    Array.prototype.forEach.call(document.querySelectorAll('.delhi-chip'), function (c) {
+      c.classList.toggle('on', c.dataset.venue === 'all' || c.dataset.type === 'all');
+    });
+    apply();
+  });
+
+  apply();
+})();
+</script>
+
+{{- end }}

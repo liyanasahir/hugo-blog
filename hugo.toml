@@ -65,6 +65,11 @@ buildExpired = false
   weight = 25
 
 [[menu.main]]
+  name = "Delhi"
+  url = "/delhi/"
+  weight = 27
+
+[[menu.main]]
   name = "About"
   url = "/about/"
   weight = 30

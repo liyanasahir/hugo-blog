@@ -1,0 +1,751 @@
+{
+  "updated": "2026-09-01T06:00:00+05:30",
+  "venues": {
+    "iic": {
+      "name": "IIC",
+      "full": "India International Centre",
+      "color": "iic",
+      "url": "https://iicdelhi.in/programmes/current",
+      "id": "iic",
+      "status": "ok",
+      "statusNote": "48 events pulled"
+    },
+    "ihc": {
+      "name": "IHC",
+      "full": "India Habitat Centre",
+      "color": "ihc",
+      "url": "https://indiahabitat.org/Events",
+      "id": "ihc",
+      "status": "fail",
+      "statusNote": "site calendar not current"
+    },
+    "knma": {
+      "name": "KNMA",
+      "full": "Kiran Nadar Museum of Art",
+      "color": "knma",
+      "url": "https://www.knma.org/whats-on/",
+      "id": "knma",
+      "status": "ok",
+      "statusNote": "3 ongoing shows"
+    },
+    "ngma": {
+      "name": "NGMA",
+      "full": "National Gallery of Modern Art",
+      "color": "ngma",
+      "url": "https://ngmaindia.gov.in/exhibitions.asp",
+      "id": "ngma",
+      "status": "fail",
+      "statusNote": "no machine-readable listing"
+    },
+    "bikaner": {
+      "name": "Bikaner House",
+      "full": "Bikaner House",
+      "color": "bikaner",
+      "url": "https://bikanerhouse.rajasthan.gov.in/upcoming-events/2026/09",
+      "id": "bikaner",
+      "status": "fail",
+      "statusNote": "calendar behind login"
+    },
+    "af": {
+      "name": "Alliance Française",
+      "full": "Alliance Française de Delhi",
+      "color": "af",
+      "url": "https://afdelhi.org/events/",
+      "id": "af",
+      "status": "ok",
+      "statusNote": "2 events"
+    },
+    "cerv": {
+      "name": "Instituto Cervantes",
+      "full": "Instituto Cervantes",
+      "color": "cerv",
+      "url": "https://nuevadelhi.cervantes.es/en/culture/cultural_calendar.htm",
+      "id": "cerv",
+      "status": "fail",
+      "statusNote": "listing not accessible"
+    },
+    "goethe": {
+      "name": "Goethe / MMB",
+      "full": "Goethe-Institut / Max Mueller Bhavan",
+      "color": "goethe",
+      "url": "https://www.goethe.de/ins/in/en/sta/new/ver.cfm",
+      "id": "goethe",
+      "status": "fail",
+      "statusNote": "listing error on source"
+    },
+    "jf": {
+      "name": "Japan Foundation",
+      "full": "The Japan Foundation, New Delhi",
+      "color": "jf",
+      "url": "https://nd.jpf.go.jp/events/coming-events-announcements/",
+      "id": "jf",
+      "status": "partial",
+      "statusNote": "workshop + online films"
+    },
+    "unlecture": {
+      "name": "Unlecture",
+      "full": "Unlecture – talks in cafés & bars",
+      "color": "unlecture",
+      "url": "https://urbanaut.app/featured-lectures-at-bars/india",
+      "id": "unlecture",
+      "status": "ok",
+      "statusNote": "2 talks"
+    },
+    "gft": {
+      "name": "Grounds for Thought",
+      "full": "Grounds for Thought – Blue Tokai × unLecture",
+      "color": "gft",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-janpath-sept",
+      "id": "gft",
+      "status": "ok",
+      "statusNote": "6 talks across 2 venues"
+    },
+    "enroute": {
+      "name": "En Route",
+      "full": "Enroute Indian History – heritage walks",
+      "color": "enroute",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "id": "enroute",
+      "status": "ok",
+      "statusNote": "9 walks + 2 recurring"
+    },
+    "darwesh": {
+      "name": "Darwesh",
+      "full": "Darwesh Taleweavers – heritage walks",
+      "color": "darwesh",
+      "url": "https://urbanaut.app/about-darwesh_taleweavers",
+      "id": "darwesh",
+      "status": "ok",
+      "statusNote": "2 heritage walks"
+    }
+  },
+  "events": [
+    {
+      "venue": "iic",
+      "type": "Talks",
+      "date": "2026-09-01",
+      "time": "18:00",
+      "title": "1940s–1960s: The 13th Dalai Lama's ‘Declaration’ in Tsepon Shakabpa's Tibet: A Political History",
+      "loc": "Conference Room II, IIC main",
+      "url": "https://iicdelhi.in/programmes/1940s-1960s-13th-dalai-lamas-declaration-tsepon-shakabpas-tibet-political-history-1",
+      "note": "Speaker: Dr. Scott Relyea, Appalachian State University"
+    },
+    {
+      "venue": "iic",
+      "type": "Exhibitions",
+      "date": "2026-09-02",
+      "time": "11:00",
+      "title": "Rang Mela",
+      "loc": "Art Gallery, Kamaladevi Complex, IIC",
+      "url": "https://iicdelhi.in/programmes/exhibition-rang-mela"
+    },
+    {
+      "venue": "iic",
+      "type": "Festivals",
+      "date": "2026-09-03",
+      "time": "10:00",
+      "title": "Tibet Festival – Spirit of Tibet: Celebrating Culture and Compassion",
+      "loc": "Gandhi-King Memorial Plaza, IIC main",
+      "url": "https://iicdelhi.in/programmes/tibet-festival-spirit-tibet-celebrating-culture-and-compassion-3-5-september-2026",
+      "note": "3–5 September 2026"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-03",
+      "time": "18:00",
+      "title": "Book Discussion Group – Your Silent Love: Poems",
+      "loc": "Conference Room II, IIC main",
+      "url": "https://iicdelhi.in/programmes/book-discussion-group-your-silent-love-poems"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-03",
+      "time": "18:30",
+      "title": "The Mecca Pact: Implications and Complications",
+      "loc": "Conference Room I, IIC main",
+      "url": "https://iicdelhi.in/programmes/mecca-pact-implications-and-complications"
+    },
+    {
+      "venue": "iic",
+      "type": "Seminars",
+      "date": "2026-09-04",
+      "time": "16:30",
+      "title": "13th Creative Theory Colloquium",
+      "loc": "Conference Room II, IIC main",
+      "url": "https://iicdelhi.in/programmes/13th-creative-theory-colloquium-4-6-september-2026",
+      "note": "Day 1 of 3 · through 6 Sep"
+    },
+    {
+      "venue": "iic",
+      "type": "Exhibitions",
+      "date": "2026-09-04",
+      "time": "11:00",
+      "title": "Beyond the Word",
+      "loc": "Art Gallery, IIC Annexe",
+      "url": "https://iicdelhi.in/programmes/exhibition-beyond-word"
+    },
+    {
+      "venue": "iic",
+      "type": "Cultural",
+      "date": "2026-09-04",
+      "time": "18:30",
+      "title": "Janmashtami Celebrations by Dr Uma Sharma and Disciples",
+      "loc": "C.D. Deshmukh Auditorium, IIC main",
+      "url": "https://iicdelhi.in/programmes/janmashtami-celebrations-dr-uma-sharma-and-disciples"
+    },
+    {
+      "venue": "iic",
+      "type": "Seminars",
+      "date": "2026-09-05",
+      "time": "09:30",
+      "title": "13th Creative Theory Colloquium",
+      "loc": "Conference Room II, IIC main",
+      "url": "https://iicdelhi.in/programmes/13th-creative-theory-colloquium-4-6-september-2026-0",
+      "note": "Day 2 of 3"
+    },
+    {
+      "venue": "iic",
+      "type": "Cultural",
+      "date": "2026-09-05",
+      "time": "18:30",
+      "title": "Vision to Victory",
+      "loc": "C.D. Deshmukh Auditorium, IIC main",
+      "url": "https://iicdelhi.in/programmes/vision-victory"
+    },
+    {
+      "venue": "iic",
+      "type": "Seminars",
+      "date": "2026-09-06",
+      "time": "09:30",
+      "title": "13th Creative Theory Colloquium",
+      "loc": "Conference Room II, IIC main",
+      "url": "https://iicdelhi.in/programmes/13th-creative-theory-colloquium-4-6-september-2026-1",
+      "note": "Day 3 of 3"
+    },
+    {
+      "venue": "iic",
+      "type": "Seminars",
+      "date": "2026-09-06",
+      "time": "18:00",
+      "title": "Music Appreciation Promotion",
+      "loc": "Lecture Room I, IIC Annexe",
+      "url": "https://iicdelhi.in/programmes/music-appreciation-promotion-356"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-11",
+      "time": "18:30",
+      "title": "Art Matters",
+      "loc": "Seminar Rooms 1, 2, 3, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Films",
+      "date": "2026-09-11",
+      "time": "18:30",
+      "title": "Paswaar (Caress Me)",
+      "loc": "Lecture Room I, IIC Annexe"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-12",
+      "time": "18:00",
+      "title": "State of the Indian Media – Has social media fundamentally transformed India's media landscape?",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-14",
+      "time": "18:00",
+      "title": "250 years of American Independence: Shifting Global Challenges and US Public Opinion",
+      "loc": "C.D. Deshmukh Auditorium, IIC main",
+      "note": "In Conversation"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-15",
+      "time": "10:00",
+      "title": "Dialogues in Health and Wellness – Recognition of Stress, Anxiety & Depression",
+      "loc": "Seminar Rooms 1, 2, 3, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Cultural",
+      "date": "2026-09-15",
+      "time": "18:00",
+      "title": "IIC Double Bill: Music & Dance Recitals",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Exhibitions",
+      "date": "2026-09-16",
+      "time": "11:00",
+      "title": "Phulkari: A Lingering Presence – Sunaina Suneja",
+      "loc": "Art Gallery, Kamaladevi Complex, IIC"
+    },
+    {
+      "venue": "iic",
+      "type": "Talks",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "title": "4th Kapila Vatsyayan Memorial Lecture 2026",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "title": "Connected Histories, Shared Present: Cross-Cultural Experiences between Latin America, the Caribbean and India",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-16",
+      "time": "18:00",
+      "title": "Book Discussion Group – Rabindranath Tagore: The Myriad Minded Man",
+      "loc": "Conference Room II, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "title": "Kriya Yoga and Peace of Individual and Planet Earth",
+      "loc": "Multipurpose Hall, Kamaladevi Complex, IIC"
+    },
+    {
+      "venue": "iic",
+      "type": "Films",
+      "date": "2026-09-16",
+      "time": "18:30",
+      "title": "Curandera: The Path from Tragedy to Truth",
+      "loc": "Lecture Room I, IIC Annexe"
+    },
+    {
+      "venue": "iic",
+      "type": "Films",
+      "date": "2026-09-17",
+      "time": "18:00",
+      "title": "Maharashtra Sanskritik Diwas 2026",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-18",
+      "time": "18:00",
+      "title": "Book Discussion Group – Ashes to Light: Stories of Hope Towards Gender Justice",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-21",
+      "time": "18:00",
+      "title": "Book Discussion Group – What the Shadow Said",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Talks",
+      "date": "2026-09-21",
+      "time": "18:30",
+      "title": "Indian Archaeology",
+      "loc": "Conference Room II, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-22",
+      "time": "18:30",
+      "title": "Police Reforms – 20 years",
+      "loc": "Seminar Rooms 1, 2, 3, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Exhibitions",
+      "date": "2026-09-23",
+      "time": "11:00",
+      "title": "Journey of Colours – A Solo Exhibition by Sadaf Beg Khan",
+      "loc": "Art Gallery, IIC Annexe"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-23",
+      "time": "18:30",
+      "title": "Delimitation after 2026: Electoral Equality or Federal Balance?",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-23",
+      "time": "18:00",
+      "title": "Book Discussion – Signature on the Wind",
+      "loc": "Conference Room II, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Films",
+      "date": "2026-09-24",
+      "time": "09:30",
+      "title": "Sagarmatha Samta – India's Largest Inclusive Trek to Everest Base Camp",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Cultural",
+      "date": "2026-09-24",
+      "time": "18:00",
+      "title": "IIC Double Bill: Music and Dance Recital",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-25",
+      "time": "18:30",
+      "title": "The Infrastructure of Chinese Civilizationism",
+      "loc": "Seminar Rooms 1, 2, 3, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Films",
+      "date": "2026-09-25",
+      "time": "18:30",
+      "title": "Oslo: A Tail of Promise",
+      "loc": "Lecture Room I, IIC Annexe"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-25",
+      "time": "18:30",
+      "title": "Aaj Kavita",
+      "loc": "Lecture Room II, IIC Annexe"
+    },
+    {
+      "venue": "iic",
+      "type": "Cultural",
+      "date": "2026-09-26",
+      "time": "17:00",
+      "title": "Hindustani Classical Music Recital",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-28",
+      "time": "18:00",
+      "title": "Book Discussion Group – Moral Rupture of Kashmir Society: Impact of Prolonged Conflict",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-29",
+      "time": "18:30",
+      "title": "Indigenous Knowledge Systems as Drivers of Economic Transformation in Northeast India",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-29",
+      "time": "18:00",
+      "title": "Is France a More Reliable Strategic Partner than the US?",
+      "loc": "Conference Room II, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Discussions",
+      "date": "2026-09-30",
+      "time": "18:30",
+      "title": "To Mark Martyrs' Day",
+      "loc": "C.D. Deshmukh Auditorium, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Library",
+      "date": "2026-09-30",
+      "time": "18:00",
+      "title": "Book Discussion Group – Languages of Freedom: The Idea of India in Political Theory, Bombay Cinema and Progressive Urdu Poetry",
+      "loc": "Conference Room I, IIC main"
+    },
+    {
+      "venue": "iic",
+      "type": "Festivals",
+      "date": "2026-10-01",
+      "time": "14:00",
+      "title": "Bhoomi Festival 2026 – Women Regenerating the Earth, Renewing Humanity",
+      "loc": "Gandhi-King Memorial Plaza, IIC main"
+    },
+    {
+      "venue": "af",
+      "type": "Exhibitions",
+      "date": "2026-09-01",
+      "time": "11:00",
+      "title": "The Little Prince Through Pardhan Gond Eyes",
+      "loc": "Galerie Romain Rolland, AF Delhi",
+      "url": "https://afdelhi.org/events/",
+      "note": "Runs 1–9 September · 11:00–19:00"
+    },
+    {
+      "venue": "af",
+      "type": "Talks",
+      "date": "2026-09-03",
+      "time": "09:30",
+      "title": "Meet Emma in Delhi – AI French learning companion",
+      "loc": "Alliance Française de Delhi",
+      "url": "https://afdelhi.org/events/",
+      "note": "Launch event, 09:30–17:00"
+    },
+    {
+      "venue": "jf",
+      "type": "Films",
+      "date": "2026-09-01",
+      "time": "00:00",
+      "title": "JFF Theater – new Japanese films online",
+      "loc": "Online (JFF Theater platform)",
+      "url": "https://jff.jpf.go.jp/theater/",
+      "note": "Includes Midsummer's Equation, Suspect X and three more titles"
+    },
+    {
+      "venue": "unlecture",
+      "type": "Talks",
+      "date": "2026-09-06",
+      "time": "00:00",
+      "title": "Singing The Screen",
+      "loc": "Café / bar venue, New Delhi",
+      "url": "https://urbanaut.app/featured-lectures-at-bars/india",
+      "note": "From ₹500 · Venue announced closer to date"
+    },
+    {
+      "venue": "unlecture",
+      "type": "Talks",
+      "date": "2026-09-06",
+      "time": "00:00",
+      "title": "Rewriting Epics The Feminist Way",
+      "loc": "Café / bar venue, New Delhi",
+      "url": "https://urbanaut.app/featured-lectures-at-bars/india",
+      "note": "From ₹550"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-03",
+      "time": "19:00",
+      "title": "Women, Work and Well Being",
+      "loc": "Blue Tokai Coffee Roasters, Defence Colony",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-defence-colony-sept",
+      "note": "Speaker: Dr. Rahul Kapoor (Gautam Buddha University)"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-17",
+      "time": "19:00",
+      "title": "Chacha Knows Best: Chacha Chaudhary and the Politics of Nostalgia",
+      "loc": "Blue Tokai Coffee Roasters, Defence Colony",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-defence-colony-sept",
+      "note": "Speaker: Anukriti Agarwal (Fulbright Fellow, Yale)"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-24",
+      "time": "19:00",
+      "title": "Princes in the Polls: Indian Royals and Inherited Power, 1948–1967",
+      "loc": "Blue Tokai Coffee Roasters, Defence Colony",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-defence-colony-sept",
+      "note": "Speaker: Dr Shashank Singh (PM's Museum & Library)"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-08",
+      "time": "19:00",
+      "title": "Why Do Good Ideas Fail in Government?",
+      "loc": "Blue Tokai Origins, Janpath, Connaught Place",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-janpath-sept",
+      "note": "Speaker: Prateek Mundeja (Mookerjee Fellow 2025–26)"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-22",
+      "time": "19:00",
+      "title": "The Pause, The Buzzword, and The Collective",
+      "loc": "Blue Tokai Origins, Janpath, Connaught Place",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-janpath-sept",
+      "note": "Speaker: Aarushee Shukla – women's collectives in Bihar & Kerala"
+    },
+    {
+      "venue": "gft",
+      "type": "Talks",
+      "date": "2026-09-29",
+      "time": "19:00",
+      "title": "Voices from War: Revisiting John Keegan's The Face of Battle",
+      "loc": "Blue Tokai Origins, Janpath, Connaught Place",
+      "url": "https://urbanaut.app/spot/grounds-for-thought-janpath-sept",
+      "note": "Speaker: Amitrajeet Mukherjee (Delhi University, English Lit.)"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-06",
+      "time": "00:00",
+      "title": "Lodhi Art District: Art Walk",
+      "loc": "Lodhi Art District, New Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹650 · Solo-friendly"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-06",
+      "time": "00:00",
+      "title": "Raat ke Afsane: Safdarjung Tomb",
+      "loc": "Safdarjung Tomb, New Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹650 · History & heritage · Great for groups"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-13",
+      "time": "00:00",
+      "title": "Bazm-i-Havelis: Chandni Chowk",
+      "loc": "Chandni Chowk, Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹650 · History & heritage · Great for groups"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-13",
+      "time": "00:00",
+      "title": "National Museum – Indus Valley Civilisation",
+      "loc": "National Museum, New Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹700 · History & heritage"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-19",
+      "time": "00:00",
+      "title": "Where the Rain Comes Alive: Hauz-e-Shamsi",
+      "loc": "Hauz-i-Shamsi, Mehrauli",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹700 · Solo-friendly"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-20",
+      "time": "00:00",
+      "title": "Haunted Walk: Purana Quila",
+      "loc": "Purana Quila, New Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹700 · Adventure · Solo-friendly"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-26",
+      "time": "00:00",
+      "title": "Heritage Walk: Phool Walon Ki Sair",
+      "loc": "Mehrauli, New Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹850 · Solo-friendly"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-27",
+      "time": "00:00",
+      "title": "Badass Begum: Women's Architecture in Old Delhi",
+      "loc": "Old Delhi",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹900 · History & heritage"
+    },
+    {
+      "venue": "enroute",
+      "type": "Cultural",
+      "date": "2026-09-27",
+      "time": "00:00",
+      "title": "Haunted Walk: Mehrauli Archaeological Park",
+      "loc": "Mehrauli Archaeological Park",
+      "url": "https://urbanaut.app/about-enrouteindianhistory",
+      "note": "From ₹650 · Adventure"
+    },
+    {
+      "venue": "darwesh",
+      "type": "Cultural",
+      "date": "2026-09-12",
+      "time": "00:00",
+      "title": "Delhi's Metro Morphosis – Metro Train Heritage Walk",
+      "loc": "Across the Delhi Metro network",
+      "url": "https://urbanaut.app/about-darwesh_taleweavers",
+      "note": "From ₹900 · Beginner-friendly"
+    },
+    {
+      "venue": "darwesh",
+      "type": "Cultural",
+      "date": "2026-09-13",
+      "time": "00:00",
+      "title": "Mad Genius Tughlaq – Heritage Walk at Jahanpanah",
+      "loc": "Jahanpanah, New Delhi",
+      "url": "https://urbanaut.app/about-darwesh_taleweavers",
+      "note": "From ₹800 · Beginner-friendly"
+    }
+  ],
+  "ongoing": [
+    {
+      "venue": "knma",
+      "title": "Bice Lazzari & Nasreen Mohamedi: IN-RHYTHM",
+      "start": "2026-09-09",
+      "end": "2026-12-22",
+      "url": "https://www.knma.org/whats-on/"
+    },
+    {
+      "venue": "knma",
+      "title": "Inheritors of Earth",
+      "start": "2026-09-09",
+      "end": "2026-12-22",
+      "url": "https://www.knma.org/whats-on/"
+    },
+    {
+      "venue": "knma",
+      "title": "Pata Dekhabo? (Pattachitra)",
+      "start": "2026-05-22",
+      "end": "2026-11-22",
+      "url": "https://www.knma.org/whats-on/"
+    },
+    {
+      "venue": "enroute",
+      "title": "Raat Ke Afsane: Qutub Minar (recurring night walk)",
+      "start": "2026-09-05",
+      "end": "2026-10-03",
+      "url": "https://urbanaut.app/about-enrouteindianhistory"
+    },
+    {
+      "venue": "enroute",
+      "title": "Heritage Walk: Red Fort (recurring)",
+      "start": "2026-09-12",
+      "end": "2026-10-03",
+      "url": "https://urbanaut.app/about-enrouteindianhistory"
+    }
+  ]
+}
