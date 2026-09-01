@@ -1,0 +1,567 @@
+/* ── What's on in Delhi ── */
+
+/* Two anchors: the site's yellow (#E8A930) and Delhi's sandstone red, the colour
+   of the Red Fort and Jama Masjid (~#A0402F). The venue hues are a Mughal pietra
+   dura palette: sandstone, terracotta, ochre, saffron, madder, crimson, plum and
+   aubergine, with lapis, indigo, jade and pistachio as the cool inlay. Light-mode
+   values are pulled to ~4.5:1 on cream because they carry the 10.5px venue labels,
+   not only the dots and spines. */
+.delhi-page {
+  /* anchors */
+  --delhi-red:       #A8352A;
+  --delhi-red-bright:#C1512F;
+  --delhi-yellow:    #A5710F;
+  --delhi-gold:      #E8A930;
+  --delhi-accent:    #A8352A;
+  --delhi-halo:      rgba(168, 53, 42, 0.05);
+  --delhi-chip-ink:  #FDFBF6;
+
+  /* warm surfaces */
+  --delhi-paper:     #FBF7EF;
+  --delhi-paper-2:   #F5EDDF;
+  --delhi-rule:      #E7DCC7;
+  --delhi-weekend:   rgba(168, 53, 42, 0.028);
+
+  /* warm inlay */
+  --venue-iic:       #A8352A;
+  --venue-bikaner:   #B2551F;
+  --venue-ngma:      #8F6712;
+  --venue-unlecture: #A5710F;
+  --venue-gft:       #7A4224;
+  --venue-jf:        #8E2B3F;
+  --venue-cerv:      #A82F52;
+  --venue-enroute:   #8B3070;
+  --venue-knma:      #6F3466;
+  /* cool inlay */
+  --venue-af:        #2F3F85;
+  --venue-ihc:       #23539B;
+  --venue-darwesh:   #14705C;
+  --venue-goethe:    #5A7B24;
+}
+.dark .delhi-page {
+  --delhi-red:       #E8705C;
+  --delhi-red-bright:#F0836B;
+  --delhi-yellow:    #E8A930;
+  --delhi-gold:      #E8A930;
+  --delhi-accent:    #E8705C;
+  --delhi-halo:      rgba(232, 112, 92, 0.10);
+  --delhi-chip-ink:  #1A1512;
+
+  --delhi-paper:     #241F1A;
+  --delhi-paper-2:   #2C2620;
+  --delhi-rule:      #3A322A;
+  --delhi-weekend:   rgba(232, 169, 48, 0.035);
+
+  --venue-iic:       #F0705C;
+  --venue-bikaner:   #E8945A;
+  --venue-ngma:      #D6B25E;
+  --venue-unlecture: #E8A930;
+  --venue-gft:       #C99070;
+  --venue-jf:        #EC7A90;
+  --venue-cerv:      #F07AA0;
+  --venue-enroute:   #E08AC8;
+  --venue-knma:      #C495C0;
+  --venue-af:        #8FA0F0;
+  --venue-ihc:       #6FAEF0;
+  --venue-darwesh:   #4FC9AC;
+  --venue-goethe:    #A8C96A;
+}
+
+
+/* Author display rules outrank the UA's [hidden] { display: none }, and this page
+   hides things by attribute (past days, filtered events, the Today tag). */
+.delhi-page [hidden] { display: none !important; }
+
+/* Break out of PaperMod's 720px column: this page is a browsing surface,
+   not an essay, and the day grid needs room. */
+.delhi-page {
+  --delhi-w: min(1180px, calc(100vw - 3rem));
+  width: var(--delhi-w);
+  margin-left: calc(50% - var(--delhi-w) / 2);
+}
+.delhi-header { margin-inline: 0; }
+.delhi-intro { max-width: 62ch; }
+
+/* Filters rail beside the listings */
+.delhi-layout {
+  display: grid;
+  grid-template-columns: 236px minmax(0, 1fr);
+  gap: 44px;
+  align-items: start;
+}
+@media (max-width: 1000px) {
+  .delhi-layout { grid-template-columns: 1fr; gap: 0; }
+}
+
+.delhi-intro p { font-size: 15px; color: var(--content); line-height: 1.65; margin: 0 0 0.9rem; }
+.delhi-intro p.delhi-updated {
+  font-size: 12px;
+  color: var(--delhi-yellow);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  margin-top: 0.75rem;
+}
+
+
+/* Summary tiles */
+/* Summary figures: no card, no rule on one edge. The colour lives in the
+   numeral itself and a small marker beside the label, and the figures are set
+   in Georgia so they read as a masthead rather than a dashboard. */
+.delhi-tiles {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 36px;
+  margin: 0.5rem 0 2.5rem;
+}
+@media (max-width: 700px) { .delhi-tiles { grid-template-columns: repeat(2, 1fr); gap: 22px 28px; } }
+.delhi-tile {
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+.delhi-tile:nth-child(1) { --tile-hue: var(--delhi-yellow); }
+.delhi-tile:nth-child(2) { --tile-hue: var(--delhi-accent); }
+.delhi-tile:nth-child(3) { --tile-hue: var(--venue-knma); }
+.delhi-tile:nth-child(4) { --tile-hue: var(--venue-darwesh); }
+.delhi-tile-label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 10px;
+}
+.delhi-tile-label::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--tile-hue);
+  flex-shrink: 0;
+}
+.delhi-tile-value {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 46px;
+  line-height: 0.95;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: var(--tile-hue, var(--primary));
+  font-variant-numeric: tabular-nums;
+  margin: 0;
+}
+.delhi-tile-sub {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 13px;
+  color: var(--secondary);
+  margin: 8px 0 0;
+}
+
+/* Filters, a sticky facet rail on wide screens */
+.delhi-filters {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 18px;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+@media (min-width: 1001px) {
+  .delhi-filters {
+    position: sticky;
+    top: 24px;
+    max-height: calc(100vh - 48px);
+    overflow-y: auto;
+    margin-bottom: 0;
+  }
+}
+.delhi-filter-row { display: flex; flex-direction: column; gap: 8px; }
+.delhi-filter-label {
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+}
+.delhi-filter-search { flex-direction: row; align-items: center; gap: 10px; }
+.delhi-chips { display: flex; gap: 6px; flex-wrap: wrap; }
+.delhi-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--delhi-rule);
+  border-radius: 999px;
+  background: var(--theme);
+  color: var(--content);
+  font: inherit;
+  font-size: 12.5px;
+  line-height: 1.4;
+  cursor: pointer;
+}
+.delhi-chip:hover { border-color: var(--secondary); }
+.delhi-chip.on {
+  background: var(--venue-color, var(--delhi-accent));
+  color: var(--delhi-chip-ink);
+  border-color: var(--venue-color, var(--delhi-accent));
+}
+.delhi-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--venue-color, var(--secondary));
+  flex-shrink: 0;
+  display: inline-block;
+}
+.delhi-chip.on .delhi-dot { background: var(--delhi-chip-ink); }
+.delhi-count { font-size: 10.5px; color: var(--secondary); font-variant-numeric: tabular-nums; }
+.delhi-chip.on .delhi-count { color: var(--delhi-chip-ink); opacity: 0.75; }
+
+/* In the rail the venue facets read better as a stacked list */
+@media (min-width: 1001px) {
+  #delhi-venue-chips { flex-direction: column; align-items: stretch; gap: 2px; }
+  #delhi-venue-chips .delhi-chip {
+    border: none;
+    border-radius: 3px;
+    background: none;
+    padding: 5px 8px;
+    justify-content: flex-start;
+  }
+  #delhi-venue-chips .delhi-chip .delhi-count { margin-left: auto; }
+  #delhi-venue-chips .delhi-chip:hover { background: var(--delhi-paper-2); }
+  #delhi-venue-chips .delhi-chip.on { background: var(--venue-color, var(--delhi-accent)); color: var(--delhi-chip-ink); }
+}
+
+.delhi-search {
+  flex: 1;
+  min-width: 0;
+  padding: 6px 10px;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+  color: var(--primary);
+  font: inherit;
+  font-size: 13px;
+}
+.delhi-search:focus { outline: none; border-color: var(--delhi-accent); }
+.delhi-reset {
+  background: none;
+  border: none;
+  color: var(--delhi-accent);
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Day groups */
+.delhi-day {
+  display: grid;
+  scroll-margin-top: 24px;
+  grid-template-columns: 92px minmax(0, 1fr);
+  gap: 20px;
+  padding: 18px 0;
+  border-top: 1px solid var(--delhi-rule);
+}
+.delhi-day:first-of-type { border-top: none; }
+@media (max-width: 640px) { .delhi-day { grid-template-columns: 1fr; gap: 6px; } }
+.delhi-day-head { align-self: start; }
+@media (min-width: 641px) { .delhi-day-head { position: sticky; top: 20px; } }
+.delhi-day-date {
+  display: block;
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 500;
+  color: var(--primary);
+  font-variant-numeric: tabular-nums;
+}
+.delhi-day-month {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin-top: 5px;
+}
+.delhi-day-weekday { display: block; font-size: 13px; color: var(--secondary); margin-top: 2px; }
+.delhi-day.is-today .delhi-day-weekday { color: var(--delhi-accent); }
+.delhi-day.is-today {
+  background: var(--delhi-halo);
+  border-radius: 6px;
+  padding-inline: 14px;
+  margin-inline: -14px;
+  box-shadow: inset 3px 0 0 var(--delhi-accent);
+}
+.delhi-today-tag {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--delhi-accent);
+  margin-top: 4px;
+}
+.delhi-day-events { display: flex; flex-direction: column; min-width: 0; }
+
+/* Events */
+.delhi-event {
+  display: grid;
+  grid-template-columns: 86px minmax(0, 1fr);
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--delhi-rule);
+}
+.delhi-event:last-child { border-bottom: none; }
+@media (max-width: 640px) { .delhi-event { grid-template-columns: 1fr; gap: 4px; } }
+.delhi-event-time {
+  font-size: 12.5px;
+  color: var(--secondary);
+  font-variant-numeric: tabular-nums;
+  padding-top: 2px;
+}
+.delhi-event-body { min-width: 0; }
+.delhi-event-badges { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 3px; }
+.delhi-venue-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--venue-color, var(--content));
+}
+.delhi-type-badge {
+  font-size: 10.5px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  padding: 1px 6px;
+  border: 1px solid var(--delhi-rule);
+  border-radius: 3px;
+  background: var(--theme);
+}
+.delhi-event-title { font-size: 16.5px; line-height: 1.35; margin: 2px 0 3px; color: var(--primary); }
+.delhi-event-title a { color: var(--primary); text-decoration: none; box-shadow: 0 1px 0 var(--border); }
+.delhi-event-title a:hover { color: var(--delhi-accent); box-shadow: 0 1px 0 var(--delhi-accent); }
+.delhi-event-loc { font-size: 12.5px; color: var(--secondary); font-style: italic; margin: 0; }
+.delhi-event-note {
+  font-size: 12.5px;
+  color: var(--secondary);
+  margin: 4px 0 0;
+  padding-left: 9px;
+  border-left: 2px solid var(--delhi-rule);
+}
+.delhi-empty { text-align: center; padding: 48px 20px; color: var(--secondary); font-style: italic; }
+
+/* Ongoing */
+.delhi-section-title { font-size: 19px; font-weight: 500; margin: 2.5rem 0 4px; color: var(--primary); }
+.delhi-section-sub {
+  font-size: 12.5px;
+  color: var(--secondary);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--delhi-rule);
+  margin-bottom: 1rem;
+}
+.delhi-ongoing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+.delhi-ongoing {
+  padding: 13px 15px;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+}
+.delhi-ongoing-title { font-size: 15.5px; line-height: 1.35; margin: 6px 0 7px; color: var(--primary); }
+.delhi-ongoing-title a { color: var(--primary); text-decoration: none; }
+.delhi-ongoing-title a:hover { color: var(--delhi-accent); }
+.delhi-ongoing-dates { font-size: 11.5px; color: var(--secondary); font-variant-numeric: tabular-nums; margin: 0; }
+
+/* Sources, above the listings */
+.delhi-sources {
+  margin: 2rem 0 2.25rem;
+  padding: 16px 18px;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+  font-size: 12.5px;
+  color: var(--secondary);
+  line-height: 1.6;
+}
+.delhi-sources .delhi-section-title { margin-top: 0; }
+.delhi-subsection-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--content);
+  margin: 1.25rem 0 2px;
+}
+.delhi-source-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  columns: 3;
+  column-gap: 32px;
+}
+@media (max-width: 900px) { .delhi-source-list { columns: 2; } }
+@media (max-width: 560px) { .delhi-source-list { columns: 1; } }
+.delhi-source-list li {
+  break-inside: avoid;
+  padding: 3px 0;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin: 0;
+}
+.delhi-source-list a {
+  color: var(--content);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--delhi-rule);
+}
+.delhi-source-list a:hover { color: var(--delhi-accent); text-decoration-color: var(--delhi-accent); }
+.delhi-source-note { color: var(--secondary); }
+.delhi-source-arrow { color: var(--secondary); font-size: 11px; }
+.delhi-source-list-manual a { color: var(--primary); }
+
+.delhi-colophon {
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--secondary);
+  line-height: 1.6;
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--delhi-rule);
+}
+
+/* ── Month strip: the shape of the month, and a way to jump into it ── */
+.delhi-monthstrip {
+  display: flex;
+  align-items: flex-end;
+  gap: 3px;
+  padding: 14px 16px 10px;
+  margin-bottom: 1.75rem;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+  overflow-x: auto;
+}
+.delhi-ms-cell {
+  flex: 1 1 0;
+  min-width: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 2px 0 3px;
+}
+.delhi-ms-bar {
+  width: 100%;
+  height: calc(6px + var(--heat, 0) * 34px);
+  border-radius: 2px;
+  background: color-mix(in oklab, var(--delhi-red) calc(28% + var(--heat, 0) * 60%), var(--delhi-paper-2));
+}
+.delhi-ms-num {
+  font-size: 10px;
+  color: var(--secondary);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+.delhi-ms-cell.is-weekend .delhi-ms-bar {
+  background: color-mix(in oklab, var(--delhi-gold) calc(34% + var(--heat, 0) * 60%), var(--delhi-paper-2));
+}
+.delhi-ms-cell:hover { background: var(--delhi-paper-2); }
+.delhi-ms-cell:hover .delhi-ms-num { color: var(--primary); }
+.delhi-ms-cell.is-today .delhi-ms-num { color: var(--delhi-red); font-weight: 600; }
+.delhi-ms-cell.is-today .delhi-ms-bar { outline: 1.5px solid var(--delhi-red); outline-offset: 1px; }
+.delhi-ms-cell.is-dim { opacity: 0.28; }
+
+/* ── Venue spine on every event row ── */
+.delhi-event {
+  border-left: 3px solid var(--venue-color, var(--delhi-rule));
+  padding-left: 14px;
+  border-bottom: none;
+  margin-bottom: 2px;
+  border-radius: 0 3px 3px 0;
+}
+.delhi-event:hover { background: var(--delhi-paper); }
+@media (max-width: 640px) { .delhi-event { padding-left: 11px; } }
+
+/* ── Weekend rows ── */
+.delhi-day.is-weekend {
+  background: var(--delhi-weekend);
+  border-radius: 6px;
+  padding-inline: 14px;
+  margin-inline: -14px;
+}
+.delhi-day.is-weekend .delhi-day-weekday { color: var(--delhi-yellow); }
+
+/* ── Kind icons ── */
+.delhi-kind-icon {
+  width: 11px;
+  height: 11px;
+  flex-shrink: 0;
+  opacity: 0.85;
+}
+.delhi-type-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* ── Today, promoted to a card ── */
+.delhi-day.is-today {
+  background: var(--delhi-paper);
+  border: 1px solid color-mix(in oklab, var(--delhi-red) 32%, var(--delhi-rule));
+  border-radius: 6px;
+  padding: 18px 16px;
+  margin-inline: -17px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+}
+.delhi-day.is-today .delhi-day-date { color: var(--delhi-red); }
+.delhi-today-tag {
+  background: var(--delhi-red);
+  color: var(--delhi-chip-ink);
+  padding: 2px 7px;
+  border-radius: 3px;
+  font-weight: 600;
+}
+
+/* ── Ongoing run-length ── */
+.delhi-run {
+  height: 3px;
+  border-radius: 2px;
+  background: var(--delhi-paper-2);
+  margin-top: 9px;
+  overflow: hidden;
+}
+.delhi-run-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 2px;
+  background: var(--venue-color, var(--delhi-red));
+}
+.delhi-run-left {
+  font-size: 11px;
+  color: var(--secondary);
+  margin: 5px 0 0;
+  font-variant-numeric: tabular-nums;
+}
+.delhi-run-left.is-soon { color: var(--delhi-red); }
+
+
+@media (max-width: 640px) {
+  .delhi-day.is-today { margin-inline: 0; padding: 14px 12px; }
+  .delhi-day.is-weekend { margin-inline: 0; padding-inline: 12px; }
+  .delhi-monthstrip { padding: 12px 12px 8px; }
+}

@@ -1,0 +1,22 @@
+{{- $t := . -}}
+{{- $p := "" -}}
+{{- if eq $t "Films" -}}
+  {{- $p = `<rect x="1.5" y="3" width="13" height="10" rx="1.5"/><path d="M4.5 3v10M11.5 3v10M1.5 8h13"/>` -}}
+{{- else if eq $t "Talks" -}}
+  {{- $p = `<rect x="6" y="1.5" width="4" height="7" rx="2"/><path d="M3.5 7.5a4.5 4.5 0 0 0 9 0M8 12v2.5M5.5 14.5h5"/>` -}}
+{{- else if eq $t "Discussions" -}}
+  {{- $p = `<path d="M1.5 3.5h9v6h-5l-3 2.5V9.5h-1z"/><path d="M12 6h2.5v6h-1v2l-2.5-2H7"/>` -}}
+{{- else if eq $t "Exhibitions" -}}
+  {{- $p = `<rect x="1.5" y="2.5" width="13" height="11" rx="1"/><path d="M1.5 10.5l3.5-3 3 2.5 2.5-2 3.5 3"/><circle cx="5.5" cy="5.5" r="1"/>` -}}
+{{- else if eq $t "Library" -}}
+  {{- $p = `<path d="M8 4.5C6.5 3 4.5 2.5 1.5 2.5v9c3 0 5 .5 6.5 2 1.5-1.5 3.5-2 6.5-2v-9c-3 0-5 .5-6.5 2z"/><path d="M8 4.5v9"/>` -}}
+{{- else if eq $t "Seminars" -}}
+  {{- $p = `<rect x="1.5" y="2" width="13" height="9" rx="1"/><path d="M8 11v3M5 14.5h6M4.5 5.5h7M4.5 8h4"/>` -}}
+{{- else if eq $t "Festivals" -}}
+  {{- $p = `<path d="M3.5 14.5V2h8l-1.5 2.5L11.5 7h-8"/><circle cx="3.5" cy="1.5" r="1"/>` -}}
+{{- else if eq $t "Cultural" -}}
+  {{- $p = `<path d="M6 12V3.5l7-1.5v8.5"/><ellipse cx="4" cy="12.5" rx="2.5" ry="2"/><ellipse cx="11" cy="10.5" rx="2.5" ry="2"/>` -}}
+{{- else -}}
+  {{- $p = `<circle cx="8" cy="8" r="5.5"/>` -}}
+{{- end -}}
+<svg class="delhi-kind-icon" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{{ $p | safeHTML }}</svg>
