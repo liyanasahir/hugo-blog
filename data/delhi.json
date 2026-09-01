@@ -747,5 +747,68 @@
       "end": "2026-10-03",
       "url": "https://urbanaut.app/about-enrouteindianhistory"
     }
-  ]
+  ],
+  "watching": {
+    "note": "Most book related events and niche-lectures are announced on instagram accounts without websites to scrape from. Here are some that I go through:",
+    "groups": [
+      {
+        "label": "Book events",
+        "accounts": [
+          {
+            "name": "The Bookshop",
+            "handle": "thebookshopinc",
+            "url": "https://www.instagram.com/thebookshopinc",
+            "color": "iic"
+          },
+          {
+            "name": "Midland Books",
+            "handle": "midlandbooksofficial",
+            "url": "https://www.instagram.com/midlandbooksofficial/",
+            "color": "bikaner"
+          },
+          {
+            "name": "CMYK Bookstore",
+            "handle": "cmyk_bookstore",
+            "url": "https://www.instagram.com/cmyk_bookstore/",
+            "color": "ngma"
+          },
+          {
+            "name": "Juggernaut Books",
+            "handle": "juggernaut.in",
+            "url": "https://www.instagram.com/juggernaut.in",
+            "color": "unlecture"
+          },
+          {
+            "name": "Kunzum",
+            "handle": "kunzum",
+            "url": "https://www.instagram.com/kunzum",
+            "color": "gft"
+          }
+        ]
+      },
+      {
+        "label": "Social lectures",
+        "accounts": [
+          {
+            "name": "Pint of View",
+            "handle": "pintofview.delhi",
+            "url": "https://www.instagram.com/pintofview.delhi",
+            "color": "darwesh"
+          },
+          {
+            "name": "Karwaan Heritage",
+            "handle": "karwaanheritage",
+            "url": "https://www.instagram.com/karwaanheritage",
+            "color": "af"
+          },
+          {
+            "name": "Public Policy India",
+            "handle": "publicpolicyindia",
+            "url": "https://www.instagram.com/publicpolicyindia",
+            "color": "ihc"
+          }
+        ]
+      }
+    ]
+  }
 }

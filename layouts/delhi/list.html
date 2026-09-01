@@ -16,6 +16,28 @@
     <p class="delhi-updated">Last updated {{ (time $data.updated).Format "2 January 2006" }}</p>
   </div>
 
+
+  {{/* ---- instagram accounts watched by hand ---- */}}
+  {{- with $data.watching }}
+  <section class="delhi-watching">
+    <p class="delhi-watching-note">{{ .note }}</p>
+    {{- range .groups }}
+    <div class="delhi-watch-group">
+      <h3 class="delhi-watch-label">{{ .label }}</h3>
+      <ul class="delhi-watch-list">
+        {{- range .accounts }}
+        <li>
+          <a href="{{ .url }}" target="_blank" rel="noopener" title="@{{ .handle }} on Instagram" style="--acct: var(--venue-{{ .color }})">
+            <svg class="delhi-ig" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="2" y="2" width="12" height="12" rx="3.6"/><circle cx="8" cy="8" r="3"/><circle cx="11.7" cy="4.3" r="0.85" fill="currentColor" stroke="none"/></svg>{{ .name }}</a>
+          {{- with .note }}<span class="delhi-watch-note">{{ . }}</span>{{ end }}
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+    {{- end }}
+  </section>
+  {{- end }}
+
   {{/* ---- sources, split by whether the calendar could be read ---- */}}
   {{- $tracked := slice }}
   {{- $manual := slice }}
