@@ -783,6 +783,12 @@
             "handle": "kunzum",
             "url": "https://www.instagram.com/kunzum",
             "color": "gft"
+          },
+          {
+            "name": "Tangerine Circle",
+            "handle": "tangerinecircleofficial",
+            "url": "https://www.instagram.com/tangerinecircleofficial/",
+            "color": "cerv"
           }
         ]
       },
@@ -806,6 +812,12 @@
             "handle": "publicpolicyindia",
             "url": "https://www.instagram.com/publicpolicyindia",
             "color": "ihc"
+          },
+          {
+            "name": "The Third Eye Portal",
+            "handle": "thethirdeyeportal.in",
+            "url": "https://www.instagram.com/thethirdeyeportal.in/",
+            "color": "goethe"
           }
         ]
       }
