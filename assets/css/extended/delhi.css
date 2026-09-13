@@ -565,3 +565,76 @@
   .delhi-day.is-weekend { margin-inline: 0; padding-inline: 12px; }
   .delhi-monthstrip { padding: 12px 12px 8px; }
 }
+
+/* ── Instagram accounts checked by hand ── */
+.delhi-watching {
+  margin: 1.75rem 0 2rem;
+  padding: 18px 20px;
+  background: var(--delhi-paper);
+  border: 1px solid var(--delhi-rule);
+  border-radius: 4px;
+}
+.delhi-watching-note {
+  font-size: 13.5px;
+  color: var(--content);
+  line-height: 1.6;
+  margin: 0 0 16px;
+  max-width: 68ch;
+}
+.delhi-watch-group + .delhi-watch-group { margin-top: 14px; }
+.delhi-watch-label {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--secondary);
+  margin: 0 0 8px;
+}
+.delhi-watch-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px 11px;
+}
+.delhi-watch-list li {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 0;
+}
+.delhi-watch-list a {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 7px;
+  padding: 5px 13px 6px;
+  border: 1px solid color-mix(in oklab, var(--acct) 34%, transparent);
+  border-radius: 999px;
+  background: color-mix(in oklab, var(--acct) 8%, transparent);
+  color: var(--acct);
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-size: 14px;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: background 0.14s ease, border-color 0.14s ease, color 0.14s ease;
+}
+.delhi-watch-list a:hover {
+  background: var(--acct);
+  border-color: var(--acct);
+  color: var(--delhi-chip-ink);
+}
+.delhi-ig {
+  width: 12px;
+  height: 12px;
+  flex-shrink: 0;
+  align-self: center;
+  opacity: 0.9;
+}
+.delhi-watch-note {
+  font-family: Georgia, "Iowan Old Style", "Times New Roman", serif;
+  font-style: italic;
+  font-size: 12.5px;
+  color: var(--secondary);
+}
+@media (max-width: 640px) { .delhi-watching { padding: 15px 14px; } }
